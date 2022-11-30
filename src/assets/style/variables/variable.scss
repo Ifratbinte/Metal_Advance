@@ -1,0 +1,51 @@
+// *-------color--------*
+
+// Base
+$primary: linear-gradient(to right, #0c0f72, #252885, #090fb3);
+$secondary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
+
+// btn
+$btnBgPrimary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
+$btnBgSecondary: #5a5a5a;
+$btnColor: #ffffff;
+
+// global-color
+$dark: #000;
+$light: #ffffff;
+$primary: #090fb3;
+$danger: #f3222a;
+$gray: #666666;
+$seaBlue: #16cabd;
+
+// body-background
+$bg-light: #fbfbff;
+
+// border
+$border-color: #dfdfdf;
+
+// text-color
+$heading: #242424;
+$headingChild: #4e4e4e;
+$paragraph: #5b5b5b;
+
+// *----------- Font -----------*
+
+// font-family
+$font-family: "Poppins";
+
+// font-size
+$fs-200: 12.5rem;
+$fs-64: 4rem;
+$fs-36: 2.25rem;
+$fs-22: 1.375rem;
+$fs-20: 1.25rem;
+$fs-18: 1.125rem;
+$fs-16: 1rem;
+$fs-12: 0.75rem;
+
+// font-weight
+$fw-light: 300;
+$fw-normal: 400;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-bolder: 800;
