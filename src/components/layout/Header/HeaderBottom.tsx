@@ -1,4 +1,4 @@
 function HeaderBottom() {
-  return <div>HeaderBottom</div>;
+  return <></>;
 }
-export default  HeaderBottom
+export default HeaderBottom;
