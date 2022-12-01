@@ -1,13 +1,8 @@
-import Footer from "#components/layout/Footer/Footer";
 import HeaderMain from "#components/layout/Header/HeaderMain";
+import "./assets/style/component.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <HeaderMain />
-      <Footer />
-    </div>
-  );
+  return <HeaderMain />;
 }
 
 export default App;

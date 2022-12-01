@@ -18,6 +18,7 @@
     "baseUrl": "./src/",
     "paths" : {
       "#assets/*" : ["./assets/*"],
+      "#mocks/*" : ["./__mocks__/*"],
       "#components/*" : ["./components/*"],
       "#constants/*" : ["./constants/*"],
       "#helpers/*" : ["./helpers/*"],

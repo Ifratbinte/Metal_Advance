@@ -1,7 +1,6 @@
-.header {
-  &.menu{
-    li{
-      color: red;
-    }
-  }
+@import "../../variables/variable.scss";
+.topBar {
+  background: $danger;
+  padding: 7px;
+  color: $light;
 }
