@@ -16,7 +16,7 @@ const socialIcon: SocialIconInterface[] = [
     Icon: FaLinkedinIn,
   },
   {
-    id: 2,
+    id: 3,
     Icon: FaTwitter,
   },
 ];
