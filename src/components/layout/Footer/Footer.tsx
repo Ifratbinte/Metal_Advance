@@ -1,5 +1,7 @@
 import contactItem, { PhoneInterface } from "#mocks/contact";
 import email, { EmailInterface } from "#mocks/email";
+import footerContact, { FooterContactInterface } from "#mocks/footerContact";
+import footerLinks, { FooterLinksInterface } from "#mocks/footerLinks";
 import location, { LocationInterface } from "#mocks/location";
 function Footer() {
   return (
@@ -33,8 +35,10 @@ function Footer() {
                 <div className="location">
                   {location.map((item: LocationInterface, i: number) => {
                     return (
-                      <span>{item.Icon ? <item.Icon/> : null} {item.location}</span>
-                    )
+                      <span>
+                        {item.Icon ? <item.Icon /> : null} {item.location}
+                      </span>
+                    );
                   })}
                 </div>
               </div>
@@ -43,18 +47,13 @@ function Footer() {
               <div className="footer-contact">
                 <h4 className="title">Get In Touch</h4>
                 <ul className="list-unstyled">
-                  <li>
-                    <a href="">Contact Us</a>
-                  </li>
-                  <li>
-                    <a href="">Blog</a>
-                  </li>
-                  <li>
-                    <a href="">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="">Career</a>
-                  </li>
+                  {footerContact.map((item: FooterContactInterface, i: number) => {
+                    return (
+                      <li>
+                        <a href="#">{item.name}</a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
@@ -62,19 +61,26 @@ function Footer() {
               <div className="footer-links">
                 <h4 className="title">Get In Touch</h4>
                 <ul className="list-unstyled">
-                  <li>
-                    <a href="">BSEC</a>
-                  </li>
-                  <li>
-                    <a href="">DCL</a>
-                  </li>
-                  <li>
-                    <a href="">BBL</a>
-                  </li>
-                  <li>
-                    <a href="">CCL</a>
-                  </li>
+                  {footerLinks.map((item: FooterLinksInterface, i: number) => {
+                    return (
+                      <li>
+                        <a href="#">{item.name}</a>
+                      </li>
+                    );
+                  })}
                 </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 col-12 footer-info">
+              <div className="newsletter">
+                <h4 className="title">Newsletter SignUp Form</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illo odit totam </p>
+                <div className="input-group">
+                  <input type="text" className="form-control" placeholder="Your Email..." />
+                  <button className="btn btn-danger" type="submit" id="newsletterSubmit">
+                    Submit
+                  </button>
+                </div>
               </div>
             </div>
           </div>
