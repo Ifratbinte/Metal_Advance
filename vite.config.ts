@@ -6,7 +6,8 @@ import { defineConfig } from "vite";
 export default defineConfig({
   resolve: {
     alias: {
-      "#mocks": resolve(__dirname, "./src//__mocks__/"),
+      "#mocks": resolve(__dirname, "./src/__mocks__/"),
+      "#container": resolve(__dirname, "./src/container/"),
       "#assets": resolve(__dirname, "./src/assets/"),
       "#components": resolve(__dirname, "./src/components/"),
       "#constants": resolve(__dirname, "./src/constants/"),

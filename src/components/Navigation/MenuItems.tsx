@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
 const MenuItems = ({ items }: any) => {
@@ -9,9 +10,9 @@ const MenuItems = ({ items }: any) => {
           <Dropdown submenus={items.submenu} />
         </>
       ) : (
-        <a className="menu-links d-block fs-18 text-white" href={items.url}>
+        <NavLink className="menu-links d-block fs-18 text-white" to={items.url}>
           {items.title}
-        </a>
+        </NavLink>
       )}
     </li>
   );
