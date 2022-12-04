@@ -3,7 +3,7 @@ import NavItems from "./NavItems";
 const Navbar = () => {
   return (
     <nav>
-      <ul className="menus">
+      <ul className="menus d-flex align-items-center flex-wrap">
         {NavItems.map((menu: any, i: number) => {
           return <MenuItems items={menu} key={i} />;
           // return (
