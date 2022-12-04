@@ -34,7 +34,7 @@ function Footer() {
                 <ul className="list-unstyled">
                   {footerContact.map((item: FooterContactInterface, i: number) => {
                     return (
-                      <li>
+                      <li key={i}>
                         <a href="#">{item.name}</a>
                       </li>
                     );
@@ -48,7 +48,7 @@ function Footer() {
                 <ul className="list-unstyled">
                   {footerLinks.map((item: FooterLinksInterface, i: number) => {
                     return (
-                      <li>
+                      <li key={i}>
                         <a href="#">{item.name}</a>
                       </li>
                     );
