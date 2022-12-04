@@ -1,0 +1,10 @@
+@import "../../variables/variable.scss";
+.title {
+  font-family: $fontPoppins;
+  line-height: 1.625rem;
+  font-style: normal;
+}
+.footer-title {
+  font-weight: $fw-medium;
+  font-size: $fs-22;
+}

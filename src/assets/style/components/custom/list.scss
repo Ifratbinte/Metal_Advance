@@ -3,8 +3,17 @@
 .list {
   display: flex;
   align-items: center;
-  li {
-    padding: 2px 6px;
+  &-icon {
+    font-weight: normal;
+    letter-spacing: normal;
+    width: 36px;
+    line-height: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  &-content {
+    flex-grow: 1;
+    display: inline-block;
   }
 }
 .social-icon {

@@ -1,5 +1,5 @@
-import SocialIcon from "#components/common/icon/SocialIcon";
-import PhoneContact from "#components/common/phone/phoneContact";
+import PhoneContact from "#components/common/PhoneContact";
+import SocialIcon from "#components/common/SocialIcon";
 
 function HeaderTop() {
   return (

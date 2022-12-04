@@ -5,7 +5,13 @@ import "./assets/style/component.scss";
 function App() {
   return (
     <>
+    <div className="body-container">
+
+    </div>
       <HeaderMain />
+
+      
+
       <Footer />
     </>
   );
