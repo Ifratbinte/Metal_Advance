@@ -3,11 +3,13 @@ import socialIcon, { SocialIconInterface } from "#mocks/socialIcon";
 function SocialIcon() {
   return (
     <>
-      <ul className="list-unstyled list social-icon">
+      <ul className="list-unstyled list social-icon ">
         {socialIcon.map((item: SocialIconInterface, i: number) => {
           return (
             <li key={i}>
-              <a href="">{<item.Icon />}</a>
+              <a className="text-white" href="">
+                {<item.Icon />}
+              </a>
             </li>
           );
         })}

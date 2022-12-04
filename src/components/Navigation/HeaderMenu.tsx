@@ -12,7 +12,7 @@ const HeaderMenu = () => {
           </div>
           <div className="nav-right d-flex align-items-center justify-content-between">
             <Navbar />
-            <button className="btn btn-danger btn-auth ms-2">Login</button>
+            <button className="btn btn-danger btn-auth ms-5">Login</button>
           </div>
         </div>
       </div>

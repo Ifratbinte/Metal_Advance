@@ -6,7 +6,7 @@
   &-icon {
     font-weight: normal;
     letter-spacing: normal;
-    width: 36px;
+    width: 2.25rem;
     line-height: 1;
     flex-grow: 0;
     flex-shrink: 0;
@@ -17,10 +17,10 @@
   }
 }
 .social-icon {
-  li {
+  li:not(:last-child) {
     padding: 0 0.75rem;
-    a {
-      color: $light;
-    }
+  }
+  li:last-child {
+    padding-left: 0.75rem;
   }
 }
