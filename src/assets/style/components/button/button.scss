@@ -1,4 +1,3 @@
-// @import "../../variables//variable.scss";
 .btn {
   font-family: $fontUbuntu;
   font-style: normal;
@@ -12,4 +11,11 @@
 .btn-auth {
   padding: 0.675rem 2rem;
   margin-left: 1.5rem;
+}
+.button-base-primary {
+  border: 1px solid $baseSecondary;
+  border-radius: inherit;
+  padding: .75rem 1.875rem;
+  background: $baseSecondary;
+  color: $light;
 }
