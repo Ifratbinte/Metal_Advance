@@ -1,5 +1,6 @@
 import About from "#components/pages/About";
 import Home from "#components/pages/Home";
+import Service from "#components/pages/Service";
 import MasterLayout from "#container/layout/MasterLayout";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -10,6 +11,7 @@ const AppRoutes = () => {
         <Route element={<MasterLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Service />} />
         </Route>
       </Routes>
     </BrowserRouter>
