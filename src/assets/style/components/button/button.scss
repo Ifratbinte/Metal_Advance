@@ -4,18 +4,21 @@
   line-height: 17px;
   font-weight: $fw-medium;
   font-size: 1rem;
+  &-auth {
+    padding: 0.675rem 2rem;
+    margin-left: 1.5rem;
+  }
+  &.button-base-primary {
+    border: 1px solid $btnBgPrimary;
+    border-radius: inherit;
+    padding: 0.75rem 1.875rem;
+    background: $btnBgPrimary;
+    color: $light;
+    &:hover{
+      color: #f2f2f2;
+    }
+  }
 }
 .submit-btn {
   padding: 0px 24px;
-}
-.btn-auth {
-  padding: 0.675rem 2rem;
-  margin-left: 1.5rem;
-}
-.button-base-primary {
-  border: 1px solid $baseSecondary;
-  border-radius: inherit;
-  padding: .75rem 1.875rem;
-  background: $baseSecondary;
-  color: $light;
 }
