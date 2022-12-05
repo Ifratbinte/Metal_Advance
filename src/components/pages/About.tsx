@@ -1,6 +1,5 @@
-// import Subtitle from "#components/common/subTitle";
-// import Title from "#components/common/title";
-import SectionHeading from "#components/common/sectionHeading";
+import CardComponent from "#components/common/Card";
+import SectionHeading from "#components/common/SectionHeading";
 import aboutData from "#mocks/jsonData/about.json";
 const About = () => {
   const about = aboutData.about;
@@ -9,9 +8,8 @@ const About = () => {
     <>
       <section id="about" className="about section-gap base-bg-white">
         <div className="container">
-          <div className="section-head section-border text-center">
-            <SectionHeading subtitle={about.subtitle} title={about.title} span={about.title_span} />
-          </div>
+          <SectionHeading subtitle={about.subtitle} title={about.title} span={about.title_span} />
+
           <div className="row section-description">
             <div className="col-lg-5">
               <div className="number">
@@ -29,16 +27,10 @@ const About = () => {
           </div>
           <div className="row section-card">
             {about.card &&
-              about.card.map((card: any, i: number) => {
+              about.card.map((about: any, i: number) => {
                 return (
                   <div className="col-lg-4">
-                    <div className="card h-100">
-                      <img src={card.image} className="card-img-top" alt={card.image_alt} />
-                      <div className="card-body">
-                        <h5 className="card-title">{card.about_title}</h5>
-                        <p className="card-text">{card.about_desc}</p>
-                      </div>
-                    </div>
+                    <CardComponent image={about.image} alt={about.image_alt} title={about.about_title} description={about.about_desc} />
                   </div>
                 );
               })}

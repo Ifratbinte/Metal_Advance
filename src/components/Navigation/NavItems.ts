@@ -10,21 +10,25 @@ const NavItems = [
   {
     title: "Service",
     url: "/service",
-    submenu: [
-      {
-        title: "Service one",
-        url: "/service-one",
-      },
-      {
-        title: "Service two",
-        url: "/service-two",
-      },
-      {
-        title: "Service three",
-        url: "/service-three",
-      },
-    ],
   },
+  // {
+  //   title: "Service",
+  //   url: "/service",
+  //   submenu: [
+  //     {
+  //       title: "Service one",
+  //       url: "/service-one",
+  //     },
+  //     {
+  //       title: "Service two",
+  //       url: "/service-two",
+  //     },
+  //     {
+  //       title: "Service three",
+  //       url: "/service-three",
+  //     },
+  //   ],
+  // },
   {
     title: "Download",
     url: "/download",
