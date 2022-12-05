@@ -12,7 +12,7 @@ const Service = () => {
           {services.card &&
             services.card.map((service: any, i: number) => {
               return (
-                <div className="col-lg-4">
+                <div className="col-lg-4" key={i}>
                   <CardComponent
                     image={service.image}
                     alt={service.image_alt}

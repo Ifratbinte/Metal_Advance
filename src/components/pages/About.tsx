@@ -19,9 +19,7 @@ const About = () => {
             <div className="col-lg-7">
               <div className="description">
                 <p>{about.description}</p>
-                <a href={about.link} className="link">
-                  {about.link_text}
-                </a>
+                <a href={about.link} className="link">{about.link_text}</a>
               </div>
             </div>
           </div>
@@ -29,7 +27,7 @@ const About = () => {
             {about.card &&
               about.card.map((about: any, i: number) => {
                 return (
-                  <div className="col-lg-4">
+                  <div className="col-lg-4" key={i}>
                     <CardComponent image={about.image} alt={about.image_alt} title={about.about_title} description={about.about_desc} />
                   </div>
                 );

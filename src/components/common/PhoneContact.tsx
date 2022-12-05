@@ -5,7 +5,7 @@ function phoneContact() {
     <>
       <ul className="list-unstyled list gap-3">
         {contactItem.map((item: PhoneInterface, i: number) => {
-          console.log(item.Icon);
+          // console.log(item.Icon);
 
           return (
             <li key={i} className="d-flex align-middle align-items-center">

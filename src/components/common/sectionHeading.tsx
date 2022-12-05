@@ -10,7 +10,7 @@ const sectionHeading: React.FC<Props> = ({ subtitle, title, span }) => {
 
       <h2 className="title banner-title fs-35">
         {title}
-        <span className="text-danger"> {span}</span>
+        {span && <span className="text-danger"> {span}</span>}
       </h2>
     </div>
   );
