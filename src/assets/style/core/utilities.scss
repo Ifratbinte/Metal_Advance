@@ -12,10 +12,13 @@ a {
 .base-bg-light {
   background-color: $bgLight;
 }
+.base-bg-white {
+  background-color: $light;
+}
 .h-100vh {
   height: 100vh;
 }
-.section-gap{
+.section-gap {
   padding: 50px 0;
 }
 
