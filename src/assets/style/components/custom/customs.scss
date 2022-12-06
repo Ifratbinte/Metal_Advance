@@ -1,10 +1,36 @@
 @import "../../variables/variable.scss";
 .title {
-  font-family: $fontPoppins;
-  line-height: 1.625rem;
+  line-height: 3.125rem;
   font-style: normal;
+  padding-bottom: 1.125rem;
+}
+.subtitle {
+  line-height: 1rem;
 }
 .footer-title {
   font-weight: $fw-medium;
   font-size: $fs-22;
+}
+
+.section-head {
+  position: relative;
+  margin-bottom: 2.675rem;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 74px;
+    height: 6px;
+    background: $danger;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: none;
+  }
+}
+.service {
+  .card {
+    border-bottom: 7px solid $danger;
+  }
 }
