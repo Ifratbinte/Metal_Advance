@@ -1,0 +1,15 @@
+.card {
+  &-body {
+    padding: 28px 40px;
+  }
+  &-title {
+    font-style: medium;
+    line-height: 1.375rem;
+    color: $headingChild;
+  }
+  &-text {
+    font-style: normal;
+    line-height: 1.75rem;
+    letter-spacing: 0.35px;
+  }
+}

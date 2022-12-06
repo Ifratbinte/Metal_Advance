@@ -1,12 +1,14 @@
 @import "./components/layout/Header.scss";
 @import "./components/layout/nav.scss";
-@import "./components/custom/list.scss";
-@import "./components/custom/customs.scss";
 @import "./components/footer.scss";
 @import "./components/button/button.scss";
 @import "./core/utilities.scss";
 @import "overrideStyle.scss";
 @import "./variables/variable.scss";
 
+@import "./components/custom/list.scss";
+@import "./components/custom/customs.scss";
 @import "./components/custom/hero.scss";
 @import "./components/custom/about.scss";
+@import "./components/custom/testimonial.scss";
+@import "./components/custom/card.scss";
