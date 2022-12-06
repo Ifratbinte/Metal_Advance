@@ -1,9 +1,10 @@
+@import "overrideStyle.scss";
+@import "responsive.scss";
 @import "./components/layout/Header.scss";
 @import "./components/layout/nav.scss";
 @import "./components/footer.scss";
 @import "./components/button/button.scss";
 @import "./core/utilities.scss";
-@import "overrideStyle.scss";
 @import "./variables/variable.scss";
 
 @import "./components/custom/list.scss";
