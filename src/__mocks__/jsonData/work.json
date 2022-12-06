@@ -1,0 +1,25 @@
+{
+
+  "work" : {
+    "id" : 1,
+    "title" : "How It Work",
+    "sort_title" : "What We Are Offering To Customers", 
+    "item" : [
+      {
+        "id" : 1,
+        "icon" : "images/icon/support.svg",
+        "title" : "Best support for 24th daily."
+      },
+      {
+        "id" : 2,
+        "icon" : "images/icon/update.svg",
+        "title" : "High-End diagnostic equipment and continuously update."
+      },
+      {
+        "id" : 3,
+        "icon" : "images/icon/employee.svg",
+        "title" : "Best employees in the industry."
+      }
+    ]
+  }
+}
