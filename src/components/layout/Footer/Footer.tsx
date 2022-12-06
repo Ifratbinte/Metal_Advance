@@ -59,7 +59,7 @@ function Footer() {
             <div className="col-md-3">
               <div className="newsletter">
                 <h4 className="title newsletter-title text-uppercase fs-18">Newsletter SignUp Form</h4>
-                <p className="newsletter-text sf-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p className="newsletter-text text-white sf-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 <div className="newsletter-form input-group">
                   <input type="text" className="form-control" placeholder="Your Email..." />
                   <button className="btn btn-danger submit-btn" type="submit" id="newsletterSubmit">
