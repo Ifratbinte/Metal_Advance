@@ -1,0 +1,26 @@
+.about {
+  .description {
+    p {
+      line-height: 30px;
+      letter-spacing: 0.15px;
+    }
+    .link {
+      letter-spacing: -0.045em;
+      .icon {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+}
+.year-base {
+  color: $primary;
+}
+.number-text {
+  padding-right: 3.25rem;
+  margin-bottom: 3rem;
+  padding-left: 0.675rem;
+  color: $gray-100;
+  letter-spacing: -0.065rem;
+  line-height: 1.25rem;
+}
