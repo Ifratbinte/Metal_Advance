@@ -8,12 +8,22 @@ li {
 a {
   text-decoration: none;
 }
+p {
+  font-family: $fontPoppins;
+  color: $paragraph;
+  font-weight: $fw-normal;
+  font-size: $fs-14;
+  line-height: 1.875rem;
+}
 
 .base-bg-light {
   background-color: $bgLight;
 }
 .base-bg-white {
   background-color: $light;
+}
+.danger {
+  color: $danger;
 }
 .h-100vh {
   height: 100vh;
