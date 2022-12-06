@@ -1,0 +1,30 @@
+{
+  "review" : {
+    "id" : 1,
+    "subtitle" : "Client Review",
+    "title" : "What People Say About Us",
+    "card" : [
+      {
+        "id" : 1,
+        "client_thumb" : "images/client/client-1.png",
+        "client_name" : "Abul Barakat",
+        "client_designation" : "CEO, Benimoy Security",
+        "client_review" : "A highly experienced, proficient and dedicated management team with the aim of offering global standard brokerage services to our clients at home and abroad is at the core of this success.standard brokerage services to our clients at home and abroad is at the core of this success."
+      },
+      {
+        "id" : 1,
+        "client_thumb" : "images/client/client-2.png",
+        "client_name" : "Khan Bellal",
+        "client_designation" : "CEO, Toffye",
+        "client_review" : "A highly experienced, proficient and dedicated management team with the aim of offering global standard brokerage services to our clients at home and abroad is at the core of this success.standard brokerage services to our clients at home and abroad is at the core of this success."
+      },
+      {
+        "id" : 1,
+        "client_thumb" : "images/client/client-3.png",
+        "client_name" : "Rafikulla Khan",
+        "client_designation" : "CEO, Dorjibari",
+        "client_review" : "A highly experienced, proficient and dedicated management team with the aim of offering global standard brokerage services to our clients at home and abroad is at the core of this success.standard brokerage services to our clients at home and abroad is at the core of this success."
+      }
+    ]
+  }
+}
