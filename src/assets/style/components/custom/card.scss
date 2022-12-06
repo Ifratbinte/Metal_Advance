@@ -13,3 +13,25 @@
     letter-spacing: 0.35px;
   }
 }
+.service {
+  .card {
+    border-bottom: 7px solid $btnBgSecondary;
+  }
+}
+.custom-card:hover {
+  .card {
+    &-title {
+      color: $danger;
+    }
+    &-btn {
+      background: $btnBgPrimary;
+      color: $light;
+      border: 1px solid $btnBgPrimary
+    }
+  }
+  // .service {
+  //   .card {
+  //     border-bottom: 7px solid $danger;
+  //   }
+  // }
+}

@@ -8,7 +8,7 @@ const Service = () => {
     <section id="service" className="service section-gap">
       <div className="container">
         <SectionHeading subtitle={services.subtitle} title={services.title} />
-        <div className="row section-card">
+        <div className="row gy-4 section-card">
           {services.card &&
             services.card.map((service: any, i: number) => {
               return (
