@@ -8,16 +8,19 @@
       {
         "id" : 1,
         "icon" : "images/icon/support.svg",
+        "alt" : "Support",
         "title" : "Best support for 24th daily."
       },
       {
         "id" : 2,
         "icon" : "images/icon/update.svg",
+        "alt" : "Update",
         "title" : "High-End diagnostic equipment and continuously update."
       },
       {
         "id" : 3,
         "icon" : "images/icon/employee.svg",
+        "alt" : "Employee",
         "title" : "Best employees in the industry."
       }
     ]
