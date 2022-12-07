@@ -1,0 +1,36 @@
+{
+  "article" : {
+    "id" : 1,
+    "title" :"Latest Article",
+    "short_title" : "What We Are Offering To Customers",
+    "card" : [
+      {
+        "id" : 1,
+        "article_img" : "images/thumb/article/article-1.png",
+        "image_alt" : "Rent a Room",
+        "article_date" : "16 jun 2022",
+        "article_title" : "We Need to Rent a Room For Our Party",
+        "article_desc" : "We are not just a security company, we are your home’s & business’s",
+        "article_link" : "Read More"
+      },
+      {
+        "id" : 1,
+        "article_img" : "images/thumb/article/article-2.png",
+        "image_alt" : "Saving Balance",
+        "article_date" : "16 jun 2022",
+        "article_title" : "We Need to Rent a Room For Our Party",
+        "article_desc" : "We are not just a security company, we are your home’s & business’s",
+        "article_link" : "Read More"
+      },
+      {
+        "id" : 1,
+        "article_img" : "images/thumb/article/article-3.png",
+        "image_alt" : "Investment Rate",
+        "article_date" : "16 jun 2022",
+        "article_title" : "We Need to Rent a Room For Our Party",
+        "article_desc" : "We are not just a security company, we are your home’s & business’s",
+        "article_link" : "Read More"
+      }
+    ]
+  }
+}

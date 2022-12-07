@@ -1,11 +1,13 @@
 .card {
-  &-body {
-    padding: 28px 40px;
+  &-date {
+    margin-top: -1.875rem;
   }
   &-title {
     font-style: medium;
-    line-height: 1.375rem;
+    line-height: 1.875rem;
     color: $headingChild;
+
+    letter-spacing: -0.045rem;
   }
   &-text {
     font-style: normal;
@@ -18,20 +20,30 @@
     border-bottom: 7px solid $btnBgSecondary;
   }
 }
-.custom-card:hover {
-  .card {
-    &-title {
-      color: $danger;
-    }
-    &-btn {
-      background: $btnBgPrimary;
-      color: $light;
-      border: 1px solid $btnBgPrimary
+.custom-card {
+  &:hover {
+    .card {
+      &-title {
+        color: $danger;
+      }
+      &-btn {
+        background: $btnBgPrimary;
+        color: $light;
+        border: 1px solid $btnBgPrimary;
+      }
     }
   }
-  // .service {
-  //   .card {
-  //     border-bottom: 7px solid $danger;
-  //   }
-  // }
+  .card {
+    &-body {
+      padding: 28px 38px;
+    }
+  }
+}
+.base {
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.675rem;
+  font-size: $fs-14;
+  background: $danger;
+  color: $light;
 }

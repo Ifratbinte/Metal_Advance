@@ -6,7 +6,14 @@
   padding-bottom: 1.5rem;
 }
 .subtitle {
-  line-height: 1rem;
+  line-height: $fs-16;
+}
+.short-title {
+  padding-bottom: 20px;
+  margin-top: -27px;
+  font-size: $fs-16;
+  font-weight: $fw-medium;
+  color: $gray;
 }
 .footer-title {
   font-weight: $fw-medium;
@@ -20,6 +27,16 @@
     width: 3rem;
   }
 }
+.link {
+  font-family: $fontInter;
+  color : $danger;
+  letter-spacing: -0.045em;
+  .icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
 .section-head {
   position: relative;
   margin-bottom: 2.675rem;
