@@ -7,7 +7,7 @@ const Work = () => {
     <>
       <section id="work" className="work section-gap base-bg-white">
         <div className="container">
-          <SectionHeading title={works.title} short_title={works.sort_title} />
+          <SectionHeading title={works.title} short_title={works.short_title} />
         </div>
       </section>
     </>

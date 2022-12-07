@@ -3,7 +3,7 @@
   "work" : {
     "id" : 1,
     "title" : "How It Work",
-    "sort_title" : "What We Are Offering To Customers", 
+    "short_title" : "What We Are Offering To Customers", 
     "item" : [
       {
         "id" : 1,
