@@ -21,7 +21,7 @@ const About = () => {
             <div className="col-lg-7">
               <div className="description ps-4 pe-5">
                 <p>{about.description}</p>
-                <a href={about.link} className="link font-Inter fw-bold danger ">
+                <a href={about.link} className="link fw-bold">
                   {about.link_text}
                   <FiArrowRight className="ps-2 icon" />
                 </a>
