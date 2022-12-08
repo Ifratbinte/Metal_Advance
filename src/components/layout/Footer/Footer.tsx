@@ -58,11 +58,8 @@ function Footer() {
             </div>
             <div className="col-md-3">
               <div className="newsletter">
-<<<<<<< HEAD
                 <h4 className="newsletter-title font-Ubuntu fw-medium text-uppercase fs-20">Newsletter SignUp Form</h4>
-=======
                 <h4 className="title newsletter-title text-uppercase fs-18">Newsletter SignUp Form</h4>
->>>>>>> 2b0cfb7e720e45628a768eb2f211090fbd06bba7
                 <p className="newsletter-text text-white sf-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 <div className="newsletter-form input-group">
                   <input type="text" className="form-control" placeholder="Your Email..." />
