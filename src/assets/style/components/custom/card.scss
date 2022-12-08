@@ -1,4 +1,5 @@
 .card {
+<<<<<<< HEAD
   &-date {
     margin-top: -1.875rem;
   }
@@ -8,6 +9,15 @@
     color: $headingChild;
 
     letter-spacing: -0.045rem;
+=======
+  &-body {
+    padding: 28px 40px;
+  }
+  &-title {
+    font-style: medium;
+    line-height: 1.375rem;
+    color: $headingChild;
+>>>>>>> 2b0cfb7e720e45628a768eb2f211090fbd06bba7
   }
   &-text {
     font-style: normal;
@@ -15,6 +25,7 @@
     letter-spacing: 0.35px;
   }
 }
+<<<<<<< HEAD
 .service {
   .card {
     border-bottom: 7px solid $btnBgSecondary;
@@ -47,3 +58,5 @@
   background: $danger;
   color: $light;
 }
+=======
+>>>>>>> 2b0cfb7e720e45628a768eb2f211090fbd06bba7

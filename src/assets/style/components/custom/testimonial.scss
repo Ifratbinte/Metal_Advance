@@ -1,5 +1,6 @@
 .testimonial {
   &-wrap {
+<<<<<<< HEAD
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
     margin: 10px;
@@ -12,4 +13,9 @@
       line-height: 1.875rem;
     }
   }
+=======
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
+    border-radius: 24px;
+  }
+>>>>>>> 2b0cfb7e720e45628a768eb2f211090fbd06bba7
 }
