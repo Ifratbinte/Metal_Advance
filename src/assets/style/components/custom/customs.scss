@@ -1,6 +1,5 @@
 @import "../../variables/variable.scss";
 .title {
-<<<<<<< HEAD
   font-size: 35px;
   line-height: 2.75rem;
   font-style: normal;
@@ -15,20 +14,17 @@
   font-size: $fs-16;
   font-weight: $fw-medium;
   color: $gray;
-=======
   line-height: 3.125rem;
   font-style: normal;
   padding-bottom: 1.125rem;
 }
 .subtitle {
   line-height: 1rem;
->>>>>>> 2b0cfb7e720e45628a768eb2f211090fbd06bba7
 }
 .footer-title {
   font-weight: $fw-medium;
   font-size: $fs-22;
 }
-<<<<<<< HEAD
 .quote {
   font-size: 2.675rem;
   color: $gray-200;
@@ -46,8 +42,6 @@
     width: 2rem;
   }
 }
-=======
->>>>>>> 2b0cfb7e720e45628a768eb2f211090fbd06bba7
 
 .section-head {
   position: relative;
@@ -66,13 +60,10 @@
     border: none;
   }
 }
-<<<<<<< HEAD
 .year-base {
   line-height: 220px;
-=======
 .service {
   .card {
     border-bottom: 7px solid $danger;
   }
->>>>>>> 2b0cfb7e720e45628a768eb2f211090fbd06bba7
 }
