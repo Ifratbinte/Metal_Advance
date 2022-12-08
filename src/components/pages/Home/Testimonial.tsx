@@ -3,10 +3,10 @@ import SectionHeading from "#components/common/SectionHeading";
 import reviewData from "#mocks/jsonData/review.json";
 import ReviewSlider from "react-slick";
 var Slider = {
-  // autoplay: true,
+  autoplay: true,
   dots: true,
   infinite: true,
-  // speed: 400,
+  arrows: true,
   slidesToShow: 3,
   slidesToScroll: 1,
 };

@@ -1,9 +1,21 @@
-.slick-dots li button:before{
-  font-size: 10px;
+.slick {
+  &-dots li button:before {
+    font-size: 10px;
+    color: $primary;
+  }
+  &-dots li.slick-active button:before {
+    color: $primary;
+  }
 }
-.slick-dots li.slick-active button:before {
-  color: $primary;
-}
-.slick-dots li button:before{
-  color: $primary;
+.testimonial {
+  .slick {
+    &-next {
+      right: -16px;
+    }
+    &-prev::before,
+    &-next::before {
+      color: $gray-100;
+      font-size: 2rem;
+    }
+  }
 }
