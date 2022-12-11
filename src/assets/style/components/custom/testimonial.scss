@@ -2,13 +2,14 @@
   &-wrap {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
-    margin: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
   }
   &-item {
     padding: 20px 0px 30px;
   }
   &-bottom {
-    .review{
+    .review {
       line-height: 1.875rem;
     }
   }

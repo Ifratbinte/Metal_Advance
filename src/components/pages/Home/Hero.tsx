@@ -19,8 +19,6 @@ const Hero = () => {
           sliders.map((slider, i) => {
             return (
               <div key={i}>
-                {/* <div className="hero-bg" style={{ background: `url(${slider.img})`, backgroundRepeat: "no-repeat", backgroundPosition: right }}> */}
-                {/* <div className="hero-bg"> */}
                   <div className="container ">
                     <div className="row gy-5 banner flex-row-reverse align-items-center justify-content-between hero-inner-content">
                       <div className="col-lg-5">
@@ -29,7 +27,7 @@ const Hero = () => {
                         </div>
                       </div>
                       <div className="col-lg-7">
-                        <div className="banner-block pe-xl-5">
+                        <div className="banner-block pe-xl-4">
                           <h1 className="banner-title fs-64 font-Poppins fw-semibold">{slider.title}</h1>
                           <p className="banner-desc font-Poppins fs-16 fw-normal">{slider.desc}</p>
                           <a href="#" className="btn button-base-primary">

@@ -4,7 +4,6 @@ import reviewData from "#mocks/jsonData/review.json";
 import ReviewSlider from "react-slick";
 var Slider = {
   autoplay: true,
-  // dots: true,
   infinite: true,
   arrows: true,
   slidesToShow: 3,

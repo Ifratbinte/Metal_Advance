@@ -5,8 +5,7 @@ interface Props {
 }
 const WorkItem: React.FC<Props> = ({ svgIcon, alt, title }) => {
   return (
-    <div className="work-item-wrapper">
-
+    // <div className="work-item-wrapper">
     <div className="work-single-item d-flex align-items-center rounded-circle">
       <div className="items-status is-outline"></div>
       <div className="work-single-item-border border-color d-flex flex-direction-column justify-content-center align-items-center rounded-circle">
@@ -16,7 +15,7 @@ const WorkItem: React.FC<Props> = ({ svgIcon, alt, title }) => {
         </div>
       </div>
     </div>
-    </div>
+    // </div>
   );
 };
 

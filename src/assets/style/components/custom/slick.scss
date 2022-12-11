@@ -10,7 +10,7 @@
     bottom: 0;
   }
 }
-.testimonial {
+.testimonial, .service {
   .slick {
     &-next {
       right: -16px;
@@ -20,6 +20,5 @@
       color: $gray-100;
       font-size: 2rem;
     }
-    
   }
 }
