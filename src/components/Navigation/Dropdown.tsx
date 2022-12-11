@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 const Dropdown = ({ submenus }: any) => {
   return (
-    <ul className="dropdown">
+    <ul className="dropdown-submenu">
       {submenus.map((submenu: any, i: number) => {
         return (
           <li key={i} className="menu-items">

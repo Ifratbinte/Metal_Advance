@@ -11,6 +11,9 @@ const AppRoutes = () => {
         <Route element={<MasterLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          {/* <Route path="/about-benemoy" element={<About />} /> */}
+          {/* <Route path="/board-of-director" element={<About />} />
+          <Route path="/senior-management" element={<About />} /> */}
           <Route path="/service" element={<Service />} />
         </Route>
       </Routes>
