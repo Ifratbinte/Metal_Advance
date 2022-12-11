@@ -1,5 +1,6 @@
 import CardComponent from "#components/common/Card";
 import SectionHeading from "#components/common/SectionHeading";
+import Service from "#components/pages/Service";
 import aboutData from "#mocks/jsonData/about.json";
 import { FiArrowRight } from "react-icons/fi";
 const About = () => {
@@ -40,6 +41,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Service />
     </>
   );
 };
