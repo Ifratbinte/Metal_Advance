@@ -14,7 +14,7 @@ const About = () => {
 
           <div className="row align-items-center section-description about-content">
             <div className="col-lg-4 offset-1">
-              <div className="number d-flex justify-content-between">
+              <div className="number d-flex justify-content-between" data-aos="fade-left">
                 <span className="year-base font-Poppins fw-bold fs-200">{about.year_base}</span>
                 <span className="number-text d-flex align-items-end font-Inter fw-semibold fs-18">{about.year_content}</span>
               </div>
