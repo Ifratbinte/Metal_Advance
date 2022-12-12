@@ -6,10 +6,10 @@ interface Props {
 }
 const sectionHeading: React.FC<Props> = ({ subtitle, title, span, short_title }) => {
   return (
-    <div className="section-head section-border text-center width-md mx-auto">
+    <div className="section-head section-border text-center width-md mx-auto" data-aos="fade-down" data-aos-delay="500">
       {subtitle && <h5 className="subtitle font-Inter fw-semibold fs-18 fw-semibold danger">{subtitle}</h5>}
 
-      <h2 className="title font-Inter fw-semibold">
+      <h2 className="title font-Inter fw-semibold" data-aos="zoom-in">
         {title}
         {span && <span className="danger"> {span}</span>}
       </h2>

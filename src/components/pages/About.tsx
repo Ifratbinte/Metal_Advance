@@ -1,5 +1,6 @@
 import CardComponent from "#components/common/Card";
 import SectionHeading from "#components/common/SectionHeading";
+// import SubHeader from "#components/common/SubHeader";
 import Service from "#components/pages/Service";
 import aboutData from "#mocks/jsonData/about.json";
 import { FiArrowRight } from "react-icons/fi";
@@ -8,19 +9,31 @@ const About = () => {
 
   return (
     <>
-      <section id="about" className="about section-gap base-bg-white">
+      <section className="section sub-header">
+        <div className="container">
+          <div
+            className="sub-header-inner d-flex flex-column justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2 className="sub-header-title">About Benemoy Security</h2>
+            <h6 className="sub-header-subtitle">Home - About</h6>
+          </div>
+        </div>
+      </section>
+      <section id="about" className="about section-gap base-bg-light">
         <div className="container">
           <SectionHeading subtitle={about.subtitle} title={about.title} span={about.title_span} />
 
           <div className="row align-items-center section-description about-content">
             <div className="col-lg-4 offset-1">
-              <div className="number d-flex justify-content-between" data-aos="fade-left">
+              <div className="number d-flex justify-content-between" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
                 <span className="year-base font-Poppins fw-bold fs-200">{about.year_base}</span>
                 <span className="number-text d-flex align-items-end font-Inter fw-semibold fs-18">{about.year_content}</span>
               </div>
             </div>
             <div className="col-lg-7">
-              <div className="description ps-4 pe-5">
+              <div className="description ps-4 pe-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
                 <p>{about.description}</p>
                 <a href={about.link} className="link fw-bold">
                   {about.link_text}
