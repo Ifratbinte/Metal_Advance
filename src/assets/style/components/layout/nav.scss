@@ -5,12 +5,25 @@
 
 .menu-items > a,
 .menu-items button {
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 1.5rem;
 }
 
 .menu-items a:hover,
 .menu-items button:hover {
-  background: $btnBgPrimary;
+  // background: $btnBgPrimary;
+}
+.menu-items:hover:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 63%;
+  height: 2px;
+  background: #f3222a;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: none;
 }
 
 .dropdown {
