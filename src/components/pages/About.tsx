@@ -1,27 +1,24 @@
 import CardComponent from "#components/common/Card";
 import SectionHeading from "#components/common/SectionHeading";
-// import SubHeader from "#components/common/SubHeader";
-import Service from "#components/pages/Service";
+import ServiceSlider from "#components/pages/ServiceSlider";
 import aboutData from "#mocks/jsonData/about.json";
 import { FiArrowRight } from "react-icons/fi";
+
 const About = () => {
   const about = aboutData.about;
+  const pathname = window.location.pathname;
 
   return (
     <>
       <section className="section sub-header">
         <div className="container">
-          <div
-            className="sub-header-inner d-flex flex-column justify-content-center align-items-center"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <h2 className="sub-header-title">About Benemoy Security</h2>
-            <h6 className="sub-header-subtitle">Home - About</h6>
+          <div className="sub-header-inner d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
+            <h2 className="sub-header-title font-Poppins fs-45 fw-bold">About Benemoy Securities</h2>
+            <h6 className="sub-header-subtitle font-Poppins fs-20 fw-normal">Home - {pathname}</h6>
           </div>
         </div>
       </section>
-      <section id="about" className="about section-gap base-bg-light">
+      <section id="about" className="about section-gap base-bg-white">
         <div className="container">
           <SectionHeading subtitle={about.subtitle} title={about.title} span={about.title_span} />
 
@@ -54,7 +51,29 @@ const About = () => {
           </div>
         </div>
       </section>
-      <Service />
+      <section id="aboutIdeas" className="about-ideas section-gap base-bg-light">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="about-ideas-thumb" data-aos="fade-up-right" data-aos-duration="1500">
+                <img className="about-ideas-thumb-lg" src={about.about_ideas.about_ideas_img_lg} alt="Benemoy securities" />
+                <img className="about-ideas-thumb-sm" src={about.about_ideas.about_ideas_img_sm} alt="Benemoy securities" />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="about-ideas-inner" data-aos="fade-down-left" data-aos-duration="1500">
+                <h5 className="subtitle danger text-uppercase font-Inter fw-bold fs-18">{about.subtitle}</h5>
+                <h2 className="about-ideas-title font-Inter fw-bold fs-45">{about.about_ideas.about_ideas_title}</h2>
+                <div className="about-ideas-desc">
+                  <p className="fs-16">{about.about_ideas.about_ideas_desc}</p>
+                  <p className="fs-16">{about.about_ideas.about_ideas_desc_2}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <ServiceSlider />
     </>
   );
 };

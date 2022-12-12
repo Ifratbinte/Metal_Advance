@@ -8,7 +8,7 @@ interface Props {
 
 const Card: React.FC<Props> = ({ image, alt, title, description, button }) => {
   return (
-    <div className="card rounded-0 h-100 custom-card slider-gap" data-aos="zoom-in-down" data-aos-duration="1500">
+    <div className="card rounded-0 h-100 custom-card" data-aos="zoom-in-down" data-aos-duration="1500">
       <img src={image} alt={alt} className="card-img-top" />
       <div className="card-body text-center">
         <h5 className="card-title font-Poppins fw-medium pb-3 fs-20">{title}</h5>
