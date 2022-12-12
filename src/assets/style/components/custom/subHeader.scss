@@ -1,0 +1,10 @@
+.sub-header {
+  background: url("images/bg-sub-header.png");
+  background-color: $bgLight;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 260px;
+  &-inner {
+    height: 260px;
+  }
+}
