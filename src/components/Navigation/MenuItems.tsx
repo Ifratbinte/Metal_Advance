@@ -3,11 +3,7 @@ import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
 const MenuItems = ({ items }: any) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleDropdown = () => {
-    setIsOpen(true);
-  };
+  const [dropdown, setDropdown] = useState(false);
 
   return (
     <li className="menu-items position-relative text-white fs-14">
@@ -15,11 +11,12 @@ const MenuItems = ({ items }: any) => {
         <>
           <button
             className="menu-unlink d-flex align-items-center border-0 cursor-pointer bg-transparent text-white w-100 fs-18"
-            onClick={() => handleDropdown()}
+            aria-expanded={dropdown ? "true" : "false"}
+            onClick={() => setDropdown((prev) => !prev)}
           >
             {items.title}
           </button>
-          {isOpen && <Dropdown submenus={items.submenu} />}
+          <Dropdown submenus={items.submenu} dropdown={dropdown} />
         </>
       ) : (
         <NavLink className="menu-links d-block fs-18 text-white" to={items.url}>

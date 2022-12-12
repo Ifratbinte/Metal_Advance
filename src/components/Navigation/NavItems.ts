@@ -6,20 +6,20 @@ const NavItems = [
   {
     title: "About",
     url: "/about",
-    // submenu: [
-    //   {
-    //     title: "profile",
-    //     url: "/about-benemoy",
-    //   },
-    //   {
-    //     title: "Board of Director",
-    //     url: "/board-of-director",
-    //   },
-    //   {
-    //     title: "Senior Management",
-    //     url: "/senior-management",
-    //   },
-    // ],
+    submenu: [
+      {
+        title: "Profile",
+        url: "/about-benemoy",
+      },
+      {
+        title: "Board of Director",
+        url: "/board-of-director",
+      },
+      {
+        title: "Senior Management",
+        url: "/senior-management",
+      },
+    ],
   },
   {
     title: "Service",
