@@ -31,6 +31,22 @@
 
       {
         "id" : 4,
+        "image" : "images/thumb/service/service-1.png",
+        "image_alt" : "Institutional & VIP Trade",
+        "service_title" : "Institutional & VIP Trade",
+        "service_desc" : "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
+        "service_btn" : "Read More"
+      },
+      {
+        "id" : 5,
+        "image" : "images/thumb/service/service-3.png",
+        "image_alt" : "Institutional & VIP Trade",
+        "service_title" : "Institutional & VIP Trade",
+        "service_desc" : "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
+        "service_btn" : "Read More"
+      },
+      {
+        "id" : 6,
         "image" : "images/thumb/service/service-2.png",
         "image_alt" : "Institutional & VIP Trade",
         "service_title" : "Institutional & VIP Trade",

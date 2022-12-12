@@ -1,23 +1,24 @@
 import CardComponent from "#components/common/Card";
 import SectionHeading from "#components/common/SectionHeading";
 import serviceData from "#mocks/jsonData/service.json";
-import ServiceSlider from "react-slick";
-var Slider = {
-  autoplay: true,
-  infinite: true,
-  arrows: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-};
 
 const Service = () => {
   const services = serviceData.service;
+  const pathname = window.location.pathname;
   return (
-    <section id="service" className="service section-gap">
-      <div className="container">
-        <SectionHeading subtitle={services.subtitle} title={services.title} />
-        <div className="row gy-4 section-card">
-          <ServiceSlider {...Slider}>
+    <>
+      <section className="section sub-header">
+        <div className="container">
+          <div className="sub-header-inner d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
+            <h2 className="sub-header-title font-Poppins fs-45 fw-bold">Our Services</h2>
+            <h6 className="sub-header-subtitle font-Poppins fs-20 fw-normal">Home - {pathname}</h6>
+          </div>
+        </div>
+      </section>
+      <section id="service" className="service section-gap">
+        <div className="container">
+          <SectionHeading subtitle={services.subtitle} title={services.title} />
+          <div className="row gy-4 section-card">
             {services.card &&
               services.card.map((service: any, i: number) => {
                 return (
@@ -32,10 +33,10 @@ const Service = () => {
                   </div>
                 );
               })}
-          </ServiceSlider>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
