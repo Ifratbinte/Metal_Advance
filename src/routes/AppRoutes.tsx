@@ -1,4 +1,5 @@
 import About from "#components/pages/About";
+import BoardOfDirector from "#components/pages/BoardOfDirector";
 import Home from "#components/pages/Home";
 import Service from "#components/pages/Service";
 import MasterLayout from "#container/layout/MasterLayout";
@@ -11,8 +12,8 @@ const AppRoutes = () => {
         <Route element={<MasterLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about-benemoy" element={<About />} />
-          {/* <Route path="/board-of-director" element={<About />} />
-          <Route path="/senior-management" element={<About />} /> */}
+          <Route path="/board-of-director" element={<BoardOfDirector />} />
+          {/* <Route path="/senior-management" element={<About />} /> */}
           <Route path="/service" element={<Service />} />
         </Route>
       </Routes>

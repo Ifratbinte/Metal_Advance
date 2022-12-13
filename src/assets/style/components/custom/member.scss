@@ -1,0 +1,26 @@
+.author {
+  &-content-bottom{
+    p{
+      color : $dark-100;
+      line-height: 28px;
+    }
+  }
+  &-thumb {
+    height: 195px;
+    width: 155px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  &-wrap {
+    background: url("images/shape/shape-2.png");
+    background-color: $bgLight;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 50px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0 2px;
+  }
+}
+.author-card {
+  .author-content-bottom {
+    height: 230px;
+  }
+}
