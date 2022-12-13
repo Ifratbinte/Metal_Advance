@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
 const HeaderMenu = () => {
@@ -6,9 +7,9 @@ const HeaderMenu = () => {
       <div className="nav-area d-flex align-items-center my-0 mx-auto">
         <div className="container d-flex align-items-center justify-content-between">
           <div className="nav-left">
-            <a href="/" className="header-logo">
+            <Link to="/" className="header-logo">
               <img src="images/benemoy-securities.png" alt="" />
-            </a>
+            </Link>
           </div>
           <div className="nav-right d-flex align-items-center justify-content-between">
             <Navbar />

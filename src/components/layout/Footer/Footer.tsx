@@ -5,6 +5,7 @@ import PhoneContact from "#components/common/PhoneContact";
 
 import footerContact, { FooterContactInterface } from "#mocks/footerContact";
 import footerLinks, { FooterLinksInterface } from "#mocks/footerLinks";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -35,7 +36,7 @@ function Footer() {
                   {footerContact.map((item: FooterContactInterface, i: number) => {
                     return (
                       <li key={i}>
-                        <a href="#">{item.name}</a>
+                        <Link to="#">{item.name}</Link>
                       </li>
                     );
                   })}
@@ -49,7 +50,7 @@ function Footer() {
                   {footerLinks.map((item: FooterLinksInterface, i: number) => {
                     return (
                       <li key={i}>
-                        <a href="#">{item.name}</a>
+                        <Link to="#">{item.name}</Link>
                       </li>
                     );
                   })}

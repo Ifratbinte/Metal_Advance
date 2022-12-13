@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface Props {
   image: string;
   alt: any;
@@ -14,9 +16,9 @@ const Card: React.FC<Props> = ({ image, alt, title, description, button }) => {
         <h5 className="card-title font-Poppins fw-medium pb-3 fs-20">{title}</h5>
         <p className="card-text font-Poppins fs-16">{description}</p>
         {button && (
-          <a href="#" className="btn button-base-secondary card-btn">
+          <Link to="#" className="btn button-base-secondary card-btn">
             {button}
-          </a>
+          </Link>
         )}
       </div>
     </div>

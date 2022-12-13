@@ -1,4 +1,5 @@
 import socialIcon, { SocialIconInterface } from "#mocks/socialIcon";
+import { Link } from "react-router-dom";
 
 function SocialIcon() {
   return (
@@ -7,9 +8,9 @@ function SocialIcon() {
         {socialIcon.map((item: SocialIconInterface, i: number) => {
           return (
             <li key={i}>
-              <a className="text-white" href="">
+              <Link className="text-white" to="">
                 {<item.Icon />}
-              </a>
+              </Link>
             </li>
           );
         })}

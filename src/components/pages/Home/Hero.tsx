@@ -1,5 +1,6 @@
 // import heroContents from "#mocks/heroContent";
 import heroContent from "#mocks/jsonData/home.json";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const Hero = () => {
@@ -30,9 +31,9 @@ const Hero = () => {
                       <div className="banner-block pe-xl-4" data-aos="fade-down" data-aos-duration="800">
                         <h1 className="banner-title fs-64 font-Poppins fw-semibold">{slider.title}</h1>
                         <p className="banner-desc font-Poppins fs-16 fw-normal">{slider.desc}</p>
-                        <a href="#" className="btn button-base-primary">
+                        <Link to="#" className="btn button-base-primary">
                           Read More
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
