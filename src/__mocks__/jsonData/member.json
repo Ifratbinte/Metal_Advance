@@ -1,0 +1,108 @@
+{
+  "id" : 1,
+  "title" : "Board of Director",
+  "pathname" : "Corporate Profile",
+  "board" : [
+    {
+      "id" : 1,
+      "author_thumb" : "images/author/author-1.png",
+      "author_alt" : "Joshoda Jibon Debnath",
+      "author_name" : "Joshoda Jibon Debnath, CIP, PHD",
+      "author_deg" :"Chairman",
+      "author_bio" : "Mr. Joshoda Jibon Debnath is a renowned and well respected figure in the business community and is the Director of Bangladesh Chamber of Industries (BCI). He started his journey as a founder and Managing Director of Technomedia Limited in 2001 as an ICT company. Mr. Debnath is the Chairman of Banking leasing & Sick Industry, Protection One (PVT.) Ltd., TechoConfidence Securities Ltd. and Lenden BD Ltd. He is also Managing Director of Money Plant link Ltd., Dalta Force Ltd. and Pay Union BD Ltd. Mr. Debnath is associated as Directors of Bengal Commercial Bank Ltd., Plastic Card ID Ltd., Rajendra Eco Resort, Vibrant Software BD Ltd., Improvement Multipurpose Co-operative Society Ltd. and Independent Director of Shampur Suger Mill Ltd.",
+      "author_bio_2" : "In recognition of his extraordinary performances and contributions to the economy of Bangladesh, the Government of the People's Republic of Bangladesh has selected Mr. Joshoda Jibon Debnath as the CIP (Commercially Important Person) for several times. Mr. Jibon also Awarded for Distinction from NCR Corporation (2014), Circle of Distinction from NCR Corporation (2011) and 2nd largest distributor for NCR ATM in Middle East Africa (MEA) region from NCR (2010). </br> Mr. Debnathis good in social interaction and continued his different social activities through the membership of Banani Club Ltd., All Community Club Ltd., Faridpur Diabetic Association, Faridpur Foundation, Faridpur Shishu Hospital, Faridpur Heart Foundation. He is the Vice President India Bangladesh Friendship Club and also Director of Dhanmondi Club Ltd. </br> Mr. Debnath engaged in Corporate Social Activities immensely. He is the President of Faridpur Puja Udzapan parisad, President of School Managing Committee of Dhopadanga ML High School appointed by Ministry of Education. Own Land Donate for CIP Joshoda Jibon Debnath Govt Primary School, School Sanction by Primary Education Board and Founder President of Shudarshon International Kinder Garden School at Dhopadanga, Faridpur.Mr. Joshoda Jibon Debnath was born in 1972 at Faridpur District. He did his PhD in Finance & Banking, American Independent University, California, USA."
+    },
+    {
+      "id" : 2,
+      "author_thumb" : "images/author/author-2.png",
+      "author_alt" : "Md. Khurshid Alam",
+      "author_name" : "Md. Khurshid Alam",
+      "author_deg" : "Managing Director",
+      "author_bio" : "Mr. Md. Khurshid Alam is a young entrepreneur with visionary thinking, commitment and dedication. He has an excellent academic record. He within a short span of time has proven his entrepreneurship skills in finance sector and capital market. After completed Graduation from University of Dhaka he founded JSK Group in 2011. He is very successful in his business field.",
+      "author_link" : "Read More"
+    },
+    {
+      "id" : 3,
+      "author_thumb" : "images/author/author-3.png",
+      "author_alt" : "Umma Salma",
+      "author_name" : "Umma Salma",
+      "author_deg" : "Deputy Managing Director",
+      "author_bio" : "Mrs. Umma Salma was born in Dhaka district in the year 1993. She secured GPA-5 in the H.S.C examination held in 2011 and secured GPA-5(Golden) in the S.S.C. examination in 2009 respectively. She obtained her B.Sc. in Pure Mathematics from the University of Dhaka (DU) and did her M.Sc. in Applied Mathematics from the University of Dhaka (DU).",
+      "author_link" : "Read More"
+    },
+    {
+      "id" : 4,
+      "author_thumb" : "images/author/author-4.png",
+      "author_alt" : "Sardar Imrul Kayesh",
+      "author_name" : "Sardar Imrul Kayesh",
+      "author_deg" : "Director",
+      "author_bio" : "Mr. Sardar Imrul Kayesh was born in Dhaka district in the year 1972. He secured Second Division in the H.S.C examination held in 1992 and secured Second Division in S.S.C. examination in 1989 respectively. He obtained his Bachelor of Commerce from National University.",
+      "author_link" : "Read More"
+    },
+    {
+      "id" : 5,
+      "author_thumb" : "images/author/author-5.png",
+      "author_alt" : "Md. Abul Barakat Bhuiyan",
+      "author_name" : "Md. Abul Barakat Bhuiyan",
+      "author_deg" : "Director",
+      "author_bio" : "Mr. Mohammed Abul Barakat Bhuiyan is a well-established business leader and an outstanding entrepreneur who has taken his business in Bangladesh to the higher level of success. He is highly experienced professional with successful track record in International Trading, Banking, Insurance and Capital Market. He held different positions with various capacities in his more than 20 years of career. ",
+      "author_link" : "Read More"
+    }
+  ],
+  "management" : [
+    {
+      "id" : 1,
+      "author_thumb" : "images/author/employee/emp-1-.png",
+      "author_alt" : "Subrata Roy",
+      "author_name" : "Subrata Roy",
+      "author_deg" : "Chief Executive Officer",
+      "author_bio" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "author_link" : "Read More"
+    },
+    {
+      "id" : 2,
+      "author_thumb" : "images/author/employee/emp-2.png",
+      "author_alt" : "Subrata Roy",
+      "author_name" : "Subrata Roy",
+      "author_deg" : "Chief Executive Officer",
+      "author_bio" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "author_link" : "Read More"
+    },
+    {
+      "id" : 3,
+      "author_thumb" : "images/author/employee/emp-3.png",
+      "author_alt" : "Subrata Roy",
+      "author_name" : "Subrata Roy",
+      "author_deg" : "Chief Executive Officer",
+      "author_bio" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "author_link" : "Read More"
+    },
+    {
+      "id" : 4,
+      "author_thumb" : "images/author/employee/emp-4.png",
+      "author_alt" : "Subrata Roy",
+      "author_name" : "Subrata Roy",
+      "author_deg" : "Chief Executive Officer",
+      "author_bio" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "author_link" : "Read More"
+    },
+    {
+      "id" : 5,
+      "author_thumb" : "images/author/employee/emp-5.png",
+      "author_alt" : "Subrata Roy",
+      "author_name" : "Subrata Roy",
+      "author_deg" : "Chief Executive Officer",
+      "author_bio" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "author_link" : "Read More"
+    },
+    {
+      "id" : 6,
+      "author_thumb" : "images/author/employee/emp-6.png",
+      "author_alt" : "Subrata Roy",
+      "author_name" : "Subrata Roy",
+      "author_deg" : "Chief Executive Officer",
+      "author_bio" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "author_link" : "Read More"
+    }
+  ]
+}
