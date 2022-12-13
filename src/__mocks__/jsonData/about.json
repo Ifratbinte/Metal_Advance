@@ -1,4 +1,7 @@
 {
+  "id" : 1,
+  "title_main" : "About Benemoy Security",
+  "pathname" : "About",
   "about" : {
     "id" : 1,
     "subtitle" : "About Benemoy",

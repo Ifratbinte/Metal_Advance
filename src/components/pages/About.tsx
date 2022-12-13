@@ -3,18 +3,19 @@ import SectionHeading from "#components/common/SectionHeading";
 import ServiceSlider from "#components/pages/ServiceSlider";
 import aboutData from "#mocks/jsonData/about.json";
 import { FiArrowRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const about = aboutData.about;
-  const pathname = window.location.pathname;
+  // const pathname = window.location.pathname;
 
   return (
     <>
       <section className="section sub-header">
         <div className="container">
           <div className="sub-header-inner d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
-            <h2 className="sub-header-title font-Poppins fs-45 fw-bold">About Benemoy Securities</h2>
-            <h6 className="sub-header-subtitle font-Poppins fs-20 fw-normal">Home - {pathname}</h6>
+            <h2 className="sub-header-title font-Poppins fs-45 fw-bold">{aboutData.title_main}</h2>
+            <h6 className="sub-header-subtitle font-Poppins fs-20 fw-normal">Home - {aboutData.pathname}</h6>
           </div>
         </div>
       </section>
@@ -32,10 +33,10 @@ const About = () => {
             <div className="col-lg-7">
               <div className="description ps-4 pe-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
                 <p>{about.description}</p>
-                <a href={about.link} className="link fw-bold">
+                <Link to={about.link} className="link fw-bold">
                   {about.link_text}
                   <FiArrowRight className="ps-2 icon" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
