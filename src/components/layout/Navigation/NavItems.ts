@@ -13,6 +13,18 @@ const NavItems = [
         id: 1,
         title: "Corporate Profile",
         url: "/corporate-profile",
+        // submenu: [
+        //   {
+        //     id: 1,
+        //     title: "Hello 1",
+        //     url: "/hello1",
+        //   },
+        //   {
+        //     id: 2,
+        //     title: "Hello 2",
+        //     url: "/hello2",
+        //   },
+        // ],
       },
       {
         id: 2,
@@ -122,5 +134,9 @@ const NavItems = [
       },
     ],
   },
+  {
+    id: 6,
+    title: "Contact",
+  }
 ];
 export default NavItems;
