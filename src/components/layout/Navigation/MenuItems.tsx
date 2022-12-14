@@ -1,13 +1,27 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
 const MenuItems = ({ items, depthLevel }: any) => {
   const [dropdown, setDropdown] = useState(false);
- 
+  let ref = useRef(null);
+
+  useEffect(() => {
+    const handler = (e: any) => {
+      if (dropdown && ref.current && !(ref.current as any)?.contains(e.target)) {
+        setDropdown(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    document.addEventListener("touchstart", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+      document.removeEventListener("touchstart", handler);
+    };
+  }, [dropdown]);
 
   return (
-    <li className="menu-items position-relative text-white fs-14">
+    <li className="menu-items position-relative text-white fs-14" ref={ref}>
       {items.submenu ? (
         <>
           <button
