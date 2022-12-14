@@ -6,7 +6,7 @@ const Article = () => {
   const articles = articleData.article;
   return (
     <>
-      <section id="article" className="article section-gap base-bg-white">
+      <section id="article" className="article section-gap base-bg-light">
         <div className="container">
           <SectionHeading title={articles.title} short_title={articles.short_title} />
           <div className="row gy-3 section-card">

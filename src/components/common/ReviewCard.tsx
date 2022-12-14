@@ -11,7 +11,7 @@ interface Props {
 
 const ReviewCard: React.FC<Props> = ({ thumb, alt, name, designation, review }) => {
   return (
-    <div className="testimonial-wrap slider-gap base-bg-white py-3 px-4 h-100" data-aos="zoom-in-right" data-aos-duration="1000">
+    <div className="testimonial-wrap slider-gap base-bg-light py-3 px-4 h-100" data-aos="zoom-in-right" data-aos-duration="1000">
       <div className="testimonial-item">
         <div className="testimonial-top d-flex align-items-center justify-content-between pb-4">
           <div className="author d-flex align-items-center">

@@ -15,7 +15,7 @@ const Review = () => {
   return (
     <>
      
-      <section className="testimonial section-gap base-bg-light" id="testimonial">
+      <section className="testimonial section-gap base-bg-white" id="testimonial">
         <div className="container">
           <SectionHeading subtitle={reviews.subtitle} title={reviews.title} />
           <div className="row section-card">

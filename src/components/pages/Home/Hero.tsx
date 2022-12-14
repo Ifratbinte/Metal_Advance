@@ -1,4 +1,3 @@
-// import heroContents from "#mocks/heroContent";
 import heroContent from "#mocks/jsonData/home.json";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
@@ -11,7 +10,7 @@ const Hero = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
   };
   return (
     <section id="hero" className="hero base-bg-light">
