@@ -2,7 +2,7 @@
   "board" : {
       "id" : 1,
       "title" : "Board of Director",
-      "pathname" : "Corporate Profile",
+      "pathname" : "Board of Director",
       "board_card":[
         {
           "id" : 1,
@@ -54,7 +54,7 @@
   "management" :{
       "id" : 1,
       "title" : "Senior Management",
-      "pathname" : "Corporate Profile",
+      "pathname" : "Senior Management",
       "management_card" : [
         {
           "id" : 1,
