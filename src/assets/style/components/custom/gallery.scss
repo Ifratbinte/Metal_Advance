@@ -1,0 +1,179 @@
+.portfolio {
+  &-box {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+  }
+}
+.portfolio .portfolio-box .portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .portfolio-box .portfolio-overlay {
+  text-align: center;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio .portfolio-box:hover .portfolio-overlay {
+  opacity: 1;
+}
+.portfolio .portfolio-box .portfolio-img img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio .portfolio-box:hover .portfolio-img img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+.portfolio .portfolio-box .portfolio-overlay-details {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.portfolio .portfolio-details {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+// nav
+
+.portfolio {
+  .nav .nav-item .nav-link {
+    color: #444;
+  }
+
+  .nav.nav-light .nav-item .nav-link {
+    color: #ddd;
+  }
+
+  .nav:not(.nav-pills) .nav-item .nav-link.active,
+  .nav:not(.nav-pills) .nav-item .nav-link:hover {
+    color: $primary;
+  }
+
+  .nav-pills .nav-link:not(.active):hover {
+    color: $primary;
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills.nav-light .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: #fff;
+  }
+
+  .nav.nav-separator .nav-item .nav-link {
+    position: relative;
+  }
+
+  .nav.nav-separator .nav-item + .nav-item .nav-link:after {
+    height: 14px;
+    width: 1px;
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.2);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+  }
+
+  .nav.nav-separator.nav-separator-light .nav-item + .nav-item .nav-link:after {
+    background-color: rgba(250, 250, 250, 0.2);
+  }
+
+  .nav.nav-sm .nav-item .nav-link {
+    font-size: 14px;
+  }
+
+  /*=== 5.5 Tabs ===*/
+  .nav-tabs {
+    border-bottom: 1px solid #d7dee3;
+  }
+  .nav-tabs .nav-item .nav-link {
+    border: 0;
+    background: transparent;
+    position: relative;
+    border-radius: 0;
+    padding: 0.6rem 1rem;
+    color: #7b8084;
+    white-space: nowrap !important;
+    cursor: pointer;
+  }
+  .nav-tabs .nav-item .nav-link.active {
+    color: #0c2f55;
+  }
+  .nav-tabs .nav-item .nav-link.active:after {
+    height: 2px;
+    width: 100%;
+    content: " ";
+    background-color: $primary;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  .nav-tabs .nav-item .nav-link:not(.active):hover {
+    color: $primary;
+  }
+  .nav-tabs.flex-column {
+    border-right: 1px solid #d7dee3;
+    border-bottom: 0px;
+    padding: 1.5rem 0;
+  }
+  .nav-tabs.flex-column .nav-item .nav-link {
+    border: 1px solid #d7dee3;
+    border-right: 0px;
+    background-color: #f6f7f8;
+    font-size: 14px;
+    padding: 0.75rem 1rem;
+    color: #535b61;
+  }
+  .nav-tabs.flex-column .nav-item:first-of-type .nav-link {
+    border-top-left-radius: 4px;
+  }
+  .nav-tabs.flex-column .nav-item:last-of-type .nav-link {
+    border-bottom-left-radius: 4px;
+  }
+  .nav-tabs.flex-column .nav-item .nav-link.active {
+    background-color: transparent;
+    color: $primary;
+  }
+  .nav-tabs.flex-column .nav-item .nav-link.active:after {
+    height: 100%;
+    width: 2px;
+    background: #fff;
+    right: -1px;
+    left: auto;
+  }
+
+  .nav-tabs:not(.flex-column) {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-tabs:not(.flex-column) .nav-item {
+    margin-bottom: 0px;
+  }
+  .nav-item .nav-link.active {
+    background-color: transparent;
+    color: #1e1d1c;
+    border-bottom: 3px solid $primary;
+  }
+}
