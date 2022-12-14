@@ -4,13 +4,7 @@ import Dropdown from "./Dropdown";
 
 const MenuItems = ({ items, depthLevel }: any) => {
   const [dropdown, setDropdown] = useState(false);
-  // const [isOpen, setIsOpen] = useState(false);
-  // const ref = useRef();
-
-  // useOutsideClick(ref, () => {
-  //   // alert("You clicked outside");
-  //   if (isOpen) setIsOpen(false);
-  // });
+ 
 
   return (
     <li className="menu-items position-relative text-white fs-14">
@@ -22,9 +16,8 @@ const MenuItems = ({ items, depthLevel }: any) => {
             onClick={() => setDropdown((prev) => !prev)}
           >
             {items.title}
-            {/* {depthLevel > 0 ? <span>&darr;</span> : <span className="arrow" />} */}
+            {depthLevel > 0 ? <span>&darr;</span> : <span className="arrow" />}
           </button>
-          {/* {isOpen && <Dropdown ref={ref} submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />} */}
           <Dropdown submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />
         </>
       ) : (
