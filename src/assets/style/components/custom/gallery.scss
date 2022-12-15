@@ -30,6 +30,9 @@
 .portfolio .portfolio-box .portfolio-img img {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border: 1px solid #ddd;
+    padding: 4px;
+    background: #fff;
 }
 .portfolio .portfolio-box:hover .portfolio-img img {
   -webkit-filter: blur(2px);

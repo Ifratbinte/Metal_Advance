@@ -41,28 +41,27 @@ const PortfolioContent = [
     category: "ipo_service",
     type: "Currency",
   },
-
-//   {
-//     id: 7,
-//     image: "images/gallery/gallery-7.jpg",
-//     name: "Stock House",
-//     category: "mobile_app",
-//     type: "Portfolio",
-//   },
-//   {
-//     id: 8,
-//     image: "images/gallery/gallery-8.jpg",
-//     name: "Trade Conference",
-//     category: "conference",
-//     type: "Conference",
-//   },
-//   {
-//     id: 9,
-//     image: "images/gallery/gallery-9.jpg",
-//     name: "Trade Management",
-//     category: "ipo_service",
-//     type: "Trading",
-//   },
+  {
+    id: 7,
+    image: "images/gallery/gallery-7.jpg",
+    name: "Stock House",
+    category: "mobile_app",
+    type: "Portfolio",
+  },
+  {
+    id: 8,
+    image: "images/gallery/gallery-8.jpg",
+    name: "Trade Conference",
+    category: "conference",
+    type: "Conference",
+  },
+  {
+    id: 9,
+    image: "images/gallery/gallery-9.jpg",
+    name: "Trade Management",
+    category: "ipo_service",
+    type: "Trading",
+  },
 ];
 
 export default PortfolioContent;
