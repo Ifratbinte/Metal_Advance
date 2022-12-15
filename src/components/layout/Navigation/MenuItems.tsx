@@ -4,6 +4,8 @@ import Dropdown from "./Dropdown";
 
 const MenuItems = ({ items, depthLevel }: any) => {
   const [dropdown, setDropdown] = useState(false);
+
+  // close dropdown on outside click
   let ref = useRef(null);
 
   useEffect(() => {
@@ -20,8 +22,16 @@ const MenuItems = ({ items, depthLevel }: any) => {
     };
   }, [dropdown]);
 
+  // open dropdown on hover
+  const onMouseEnter = () => {
+    window.innerWidth > 991 && setDropdown(true);
+  };
+  const onMouseLeave = () => {
+    window.innerWidth > 991 && setDropdown(false);
+  };
+
   return (
-    <li className="menu-items position-relative text-white fs-14" ref={ref}>
+    <li className="menu-items position-relative text-white fs-14" ref={ref} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       {items.submenu ? (
         <>
           <button
