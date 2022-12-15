@@ -1,0 +1,62 @@
+.nav-area {
+  .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: $light;
+    // visibility: hidden; // using visibility it keeps area after hidden. use display instead of visibility 
+    display: none;
+    opacity: 0;
+    font-size: 20px;
+  }
+  .nav-right {
+    justify-content: between;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 991px) {
+  .menu {
+    align-items: baseline;
+  }
+  .nav-area {
+    .nav-btn {
+      // visibility: visible; 
+      display: block;
+      opacity: 1;
+    }
+    .nav-right {
+      position: fixed;
+      height: 100%;
+      width: 320px;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      padding: 2rem;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: flex-start;
+      gap: 1.5rem;
+      background: $basePrimary;
+      transition: 1s;
+      transform: translate(-100vh);
+    }
+    .responsive-nav {
+      transform: none;
+    }
+    .nav-close-btn {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      height: 2rem;
+      width: 2rem;
+      border: 1px solid $light;
+      line-height: 0.675rem;
+      border-radius: 50%;
+      background: $light;
+      color: $primary;
+    }
+  }
+}

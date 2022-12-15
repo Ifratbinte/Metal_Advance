@@ -35,7 +35,7 @@ const MenuItems = ({ items, depthLevel }: any) => {
       {items.submenu ? (
         <>
           <button
-            className="menu-links d-flex align-items-center border-0 cursor-pointer bg-transparent w-100 fs-18"
+            className="menu-links border-0 cursor-pointer bg-transparent w-100 fs-18"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
           >
