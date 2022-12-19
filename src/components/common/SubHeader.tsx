@@ -4,7 +4,6 @@ const SubHeader = () => {
   // function -> match with pathname -> title
 
   const pathname = window.location.pathname;
-  console.log("pathname", pathname);
   return (
     <div className="section sub-header">
       <div className="container">

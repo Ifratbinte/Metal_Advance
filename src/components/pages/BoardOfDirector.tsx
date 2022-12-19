@@ -3,8 +3,6 @@ import employeeData from "#mocks/jsonData/member.json";
 
 const BoardOfDirector = () => {
   const members = employeeData.board.board_card;
-  console.log("members", members);
-  console.log("employeeData", employeeData);
 
   return (
     <>

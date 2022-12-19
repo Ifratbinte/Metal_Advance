@@ -1,6 +1,5 @@
 import MenuItems from "./MenuItems";
 const Dropdown = ({ submenus, dropdown, depthLevel }: any) => {
-  console.log("submenus", submenus);
   depthLevel = depthLevel + 1;
   const dropdownClass = depthLevel > 1 ? "dropdown-submenu" : "";
   return (
