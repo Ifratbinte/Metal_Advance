@@ -10,7 +10,7 @@ const Hero = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
   };
   return (
     <section id="hero" className="hero base-bg-light">

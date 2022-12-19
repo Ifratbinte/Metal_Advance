@@ -6,14 +6,15 @@
   &-dots li.slick-active button:before {
     color: $primary;
   }
-  &-dots{
+  &-dots {
     bottom: 0;
   }
-  &-slide{
+  &-slide {
     padding: 0 .5rem;
   }
 }
-.testimonial, .service {
+.testimonial,
+.service {
   .slick {
     &-next {
       right: -16px;
@@ -22,6 +23,13 @@
     &-next::before {
       color: $gray-100;
       font-size: 2rem;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .slick {
+    &-arrow {
+      display: none !important;
     }
   }
 }

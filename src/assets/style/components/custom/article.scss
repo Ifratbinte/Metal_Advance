@@ -1,18 +1,21 @@
-.article-card {
-  cursor: pointer;
-  .card {
-    &-body {
-      padding-left: 1.75rem;
-      padding-right: 1.75rem;
-    }
-    &-title {
-      letter-spacing: -0.045em !important;
-      padding-top: 1.25rem;
-      padding-right: 54px;
-    }
-    &-text{
-      letter-spacing: -0.045em;
-      padding-top: .25rem;
+.article {
+  max-width: 100vw;
+  &-card {
+    cursor: pointer;
+    .card {
+      &-body {
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+      }
+      &-title {
+        letter-spacing: -0.045em !important;
+        padding-top: 1.25rem;
+        padding-right: 54px;
+      }
+      &-text {
+        letter-spacing: -0.045em;
+        padding-top: 0.25rem;
+      }
     }
   }
 }

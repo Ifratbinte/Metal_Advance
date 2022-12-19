@@ -11,5 +11,11 @@ header {
 // header-bottom
 .header-logo img {
   height: 100%;
-  max-width: 12.5rem;
+  max-width: 9.5rem;
+}
+
+@media (min-width: 576px) {
+  .header-logo img {
+    max-width: 12.5rem;
+  }
 }

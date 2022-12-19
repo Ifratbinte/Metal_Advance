@@ -1,8 +1,6 @@
 @import "../../variables/variable.scss";
 
 .list {
-  display: flex;
-  align-items: center;
   &-icon {
     font-weight: normal;
     letter-spacing: normal;
@@ -14,13 +12,34 @@
   &-content {
     flex-grow: 1;
     display: inline-block;
+    font-size: $fs-14;
   }
 }
 .social-icon {
+  display: flex;
+  align-items: center;
   li:not(:last-child) {
-    padding: 0 0.75rem;
+    padding: 0 0.5rem;
   }
   li:last-child {
-    padding-left: 0.75rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .list {
+    display: flex;
+    align-items: center;
+    &-content {
+      font-size: $fs-16;
+    }
+  }
+  .social-icon {
+    li:not(:last-child) {
+      padding: 0 0.75rem;
+    }
+    li:last-child {
+      padding-left: 0.75rem;
+    }
   }
 }

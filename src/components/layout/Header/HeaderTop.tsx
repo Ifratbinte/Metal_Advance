@@ -5,7 +5,7 @@ function HeaderTop() {
   return (
     <>
       <section id="topBar" className="topBar text-white">
-        <div className="container d-flex justify-content-between align-items-center py-1">
+        <div className="container d-flex justify-content-between align-items-center">
           <div className="contact-info d-flex align-items-center">
             <PhoneContact />
           </div>
