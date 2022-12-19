@@ -58,7 +58,7 @@ const PortfolioIsotop = () => {
               {/* filter item loop */}
               {items.map((item, i) => {
                 return (
-                  <div className="portfolio-box rounded my-3">
+                  <div key={i} className="portfolio-box rounded my-3">
                     <div className="portfolio-img rounded">
                       <img className="img-fluid d-block" src={item.image} alt="" />
                       <div className="portfolio-overlay">
