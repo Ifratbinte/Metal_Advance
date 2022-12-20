@@ -1,7 +1,9 @@
-import React from 'react'
+import { configureStore } from "@reduxjs/toolkit";
+import { article } from "./api/article";
 
-export default function index() {
-  return (
-    <div>index</div>
-  )
-}
+export const store = configureStore({
+  reducer: {
+    [article.reducerPath]: article.reducer,
+  },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([article.middleware]),
+});

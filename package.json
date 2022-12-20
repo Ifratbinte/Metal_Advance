@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
+    "@reduxjs/toolkit": "^1.9.1",
     "@types/react-slick": "^0.23.10",
     "aos": "^3.0.0-beta.6",
+    "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
@@ -19,8 +21,11 @@
     "react-icons": "^4.7.1",
     "react-images": "^1.2.0-beta.7",
     "react-photo-gallery": "^8.0.0",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.4",
+    "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
+    "redux": "^4.2.0",
     "sass": "^1.56.1"
   },
   "devDependencies": {
@@ -28,6 +33,7 @@
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "@types/react-redux": "^7.1.24",
     "@vitejs/plugin-react": "^2.2.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.3",
