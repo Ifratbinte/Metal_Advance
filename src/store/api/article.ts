@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const TOKEN = `776717f8f058355b9a4bf35a216b188bba373c981ea982dd036b82b6b4dbdcb1f57200ed28b54a1e8a0b63e51cc74c2b01c058b6da002e6e503e244e367a792977685c850a8f19333b40e46fef34d4a0ac04c54bd3466b5071f555fe0817ad3ce77535c46d5bf8897cdcbcf5f9692b0a246a330b85092afea6d65d46f41cb5b2`;
+const TOKEN = `3124d34ba6d202a6db449b9e7827e19ab1fd4a4f909b2529dedfb640432aea11ceebc032fdd772564d4caa66906983fede41e280d52b6276bf749727163ad654579276856e495df5001ff373f775e752baea23733ae5758d6f8c1a0c5d386a515ab732d82e02ff0c29efa5fbbc07de6cdd9088a282bae6aab2e1e9b2d06aed43`;
 
 export const article = createApi({
   reducerPath: "article",
@@ -14,7 +14,7 @@ export const article = createApi({
   endpoints: (builder) => ({
     getArticles: builder.query({
       query: () => ({
-        url: "/api/articles?populate=*",
+        url: "/v1/articles?populate=*",
         method: "GET",
       }),
     }),
