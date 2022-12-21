@@ -6,7 +6,7 @@ const BoardOfDirector = () => {
 
   return (
     <>
-      <section className="section sub-header">
+      <section className="sub-header">
         <div className="container">
           <div className="sub-header-inner d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
             <h2 className="sub-header-title font-Poppins fs-45 fw-bold">{employeeData.board.title}</h2>

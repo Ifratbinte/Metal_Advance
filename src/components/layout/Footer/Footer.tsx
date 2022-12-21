@@ -36,7 +36,7 @@ function Footer() {
                   {footerContact.map((item: FooterContactInterface, i: number) => {
                     return (
                       <li key={i}>
-                        <Link to="#">{item.name}</Link>
+                        <Link to={item.url}>{item.name}</Link>
                       </li>
                     );
                   })}

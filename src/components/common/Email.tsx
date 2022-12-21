@@ -1,5 +1,5 @@
 import email, { EmailInterface } from "#mocks/email";
-function Location() {
+function Email() {
   return (
     <>
       <div className="email">
@@ -15,4 +15,4 @@ function Location() {
     </>
   );
 }
-export default Location;
+export default Email;

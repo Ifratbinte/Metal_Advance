@@ -10,7 +10,7 @@ const location: LocationInterface[] = [
   {
     id: 1,
     Icon: FiMapPin,
-    location: "+880 Swantex Bhaban (5th Floor), 9/i Motijheel Commercial Area, Dhaka- 1000",
+    location: "Swantex Bhaban (5th Floor), 9/i Motijheel Commercial Area, Dhaka- 1000",
   },
 ];
 export default location;
