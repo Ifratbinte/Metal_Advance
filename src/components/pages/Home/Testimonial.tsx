@@ -3,7 +3,7 @@ import SectionHeading from "#components/common/SectionHeading";
 import reviewData from "#mocks/jsonData/review.json";
 import { useGetTestimonialQuery } from "#store/api/testimonial";
 import ReviewSlider from "react-slick";
-import CONFIGS from "../../../configs";
+import CONFIGS from "#configs/index";
 var Slider = {
   // autoplay: true,
   infinite: true,

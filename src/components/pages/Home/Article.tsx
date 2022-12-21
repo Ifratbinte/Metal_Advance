@@ -1,8 +1,8 @@
 import ArticleCard from "#components/common/ArticleCard";
 import SectionHeading from "#components/common/SectionHeading";
+import CONFIGS from "#configs/index";
 import articleData from "#mocks/jsonData/article.json";
 import { useGetArticlesQuery } from "#store/api/article";
-import CONFIGS from "../../../configs";
 
 const Article = () => {
   const { data: articles, isLoading, isError, error } = useGetArticlesQuery(null);

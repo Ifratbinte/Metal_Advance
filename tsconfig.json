@@ -27,6 +27,7 @@
       "#routes/*" : ["./routes/*"],
       "#utils/*" : ["./utils/*"],
       "#store/*" : ["./store/*"],
+      "#configs/*" : ["./configs/*"],
     }
   },
   "include": ["src"],
