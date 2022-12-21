@@ -1,7 +1,9 @@
 import ReviewCard from "#components/common/ReviewCard";
 import SectionHeading from "#components/common/SectionHeading";
 import reviewData from "#mocks/jsonData/review.json";
+import { useGetTestimonialQuery } from "#store/api/testimonial";
 import ReviewSlider from "react-slick";
+import CONFIGS from "../../../configs";
 var Slider = {
   // autoplay: true,
   infinite: true,
@@ -44,6 +46,9 @@ var Slider = {
 };
 
 const Review = () => {
+  const { data: testimonial, isLoading, isError, error } = useGetTestimonialQuery(null);
+  console.log("testimonial,", testimonial);
+
   const reviews = reviewData.review;
   return (
     <>
@@ -52,7 +57,20 @@ const Review = () => {
           <SectionHeading subtitle={reviews.subtitle} title={reviews.title} />
           <div className="row section-card">
             <ReviewSlider {...Slider}>
-              {reviews.card &&
+              {testimonial &&
+                testimonial.data.map((review: any, i: any) => {
+                  return (
+                    <ReviewCard
+                      key={i}
+                      thumb={CONFIGS.CMS_URL + review.attributes.avatar.data.attributes.url}
+                      alt={review.attributes.name}
+                      name={review.attributes.name}
+                      designation={review.attributes.designation}
+                      review={review.attributes.content}
+                    />
+                  );
+                })}
+              {/* {reviews.card &&
                 reviews.card.map((review: any, i: any) => {
                   return (
                     <ReviewCard
@@ -64,7 +82,7 @@ const Review = () => {
                       review={review.client_review}
                     />
                   );
-                })}
+                })} */}
             </ReviewSlider>
           </div>
         </div>
