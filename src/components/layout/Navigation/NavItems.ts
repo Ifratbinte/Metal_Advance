@@ -137,6 +137,7 @@ const NavItems = [
   {
     id: 6,
     title: "Contact",
-  }
+    url: "/contact",
+  },
 ];
 export default NavItems;

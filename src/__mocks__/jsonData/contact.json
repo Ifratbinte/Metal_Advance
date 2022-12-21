@@ -1,0 +1,29 @@
+{
+  "contact" : {
+      "id" : 1,
+      "title" : "Get In Touch",
+      "pathname" : "Contact",
+      "phone_info" : [
+        {
+          "id" : 1,
+          "phone" : "+8801404428804"
+        },
+        {
+          "id" : 2,
+          "phone" : "+880247120687"
+        }
+      ],
+      "email_info" : [
+        {
+          "id" : 1,
+          "email" : "contact@benemoysecurities.com"
+        }
+      ],
+      "location_info" : [
+        {
+           "id" : 1,
+          "location" : "Swantex Bhaban (5th Floor), 9/I, Motijheel Commercial Area, "
+        }
+      ]
+  }
+}
