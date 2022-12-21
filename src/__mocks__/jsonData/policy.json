@@ -1,0 +1,30 @@
+{
+  "policy" : {
+      "id" : 1,
+      "title" : "Web Privacy Policy",
+      "pathname" : "Privacy & Policy",
+      "content" : "Benemoy Securities Limited is committed to protecting its client’s personal information. This Privacy Policy is created to help the client understand how the financial institution collects, uses, and protects customer’s information when they visit the institution’s websites and use their products and services. Your privacy, personal information, and data protection are very important to us and we comply with all aspects of the Data Protection legislation. Your security and information assurance are vital to us and guarantees that every client's information should be kept confidential. You can figure out additional about your privileges to information from our corporate office.",
+      "policy_data" : [
+        {
+          "id" : 1,
+          "policy_title" : "Personal Data Privacy",
+          "desc" : "We collect data from you when you fill out a form or enter data on our site. Personal Data implies actually recognizable data, for example, client information given through forms, sign up for our newsletter, surveys, applications, or other web-based fields including name, postal or email addresses, phone numbers, etc. We ensure our client’s Data Privacy very carefully and kept it confidential."
+        },
+        {
+          "id" : 2,
+          "policy_title" : "Data Protection",
+          "desc" : "Client data protection is very important to us and we comply with all aspects of the Data Protection legislation. We do scanning regularly to protect our digital service from Malware. We are continuously monitoring our website to ensure every security issue so that client can input their data safely."
+        },
+        {
+          "id" : 3,
+          "policy_title" : "Cookies",
+          "desc" : "Cookies are snippets of data put away straightforwardly on the gadget while the client is utilizing the site. Cookies used by Benemoy Securities Limited do not contain or capture unencrypted Personal Data. Cookies permit gathering data, for example, program type, time spent on the Site, pages visited, language inclinations, and client's relationship with Benemoy Securities Limited. We utilize the data for security purposes, to work with the route, to show data all the more real, to customize client's insight and gather measurable data about the utilization of the Site to persistently work on the plan and usefulness, to screen reactions to commercials and content, to comprehend how account holders and guests utilize the Site and to determine the inquiries in regards to the Site."
+        },
+        {
+          "id" : 4,
+          "policy_title" : "Security",
+          "desc" : "To shield Individual Data from unapproved access and use, Benemoy Securities Limited Restricted uses safety efforts that consent to material regulations. These actions might incorporate gadget shields, got documents, and structures along with oversight of their outsider specialist co-ops to guarantee data stays private and secure."
+        }
+      ]
+  }
+}
