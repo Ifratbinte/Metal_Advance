@@ -1,8 +1,13 @@
 import CardComponent from "#components/common/Card";
 import SectionHeading from "#components/common/SectionHeading";
+import CONFIGS from "#configs/index";
 import serviceData from "#mocks/jsonData/service.json";
+import { useGetServicesQuery } from "#store/api/service";
 
 const Service = () => {
+  const { data: serviceInfo, isLoading, isError, error } = useGetServicesQuery(null);
+  console.log("serviceInfo", serviceInfo);
+
   const services = serviceData.service;
   // const pathname = window.location.pathname;
   return (
@@ -19,16 +24,16 @@ const Service = () => {
         <div className="container">
           <SectionHeading subtitle={services.subtitle} title={services.title} />
           <div className="row gy-4 section-card">
-            {services.card &&
-              services.card.map((service: any, i: number) => {
+            {serviceInfo &&
+              serviceInfo.data.map((service: any, i: number) => {
                 return (
                   <div className="col-lg-4" key={i}>
                     <CardComponent
-                      image={service.image}
-                      alt={service.image_alt}
-                      title={service.service_title}
-                      description={service.service_desc}
-                      button={service.service_btn}
+                      image={CONFIGS.CMS_URL + service.attributes.image.data.attributes.formats.thumbnail.url}
+                      alt={service.attributes.title}
+                      title={service.attributes.title}
+                      description={service.attributes.content}
+                      button={service.attributes.btn_text}
                     />
                   </div>
                 );
