@@ -6,11 +6,10 @@ interface Props {
   name: string;
   designation: string;
   bio: string;
-  bio_2: string;
   button?: string;
 }
 
-const EmployeeCard: React.FC<Props> = ({ image, alt, name, designation, bio, bio_2, button }) => {
+const EmployeeCard: React.FC<Props> = ({ image, alt, name, designation, bio, button }) => {
   return (
     <div className="author-wrap rounded-4 h-100">
       <div className="author-content-top d-flex align-items-center">
@@ -22,7 +21,6 @@ const EmployeeCard: React.FC<Props> = ({ image, alt, name, designation, bio, bio
       </div>
       <div className="author-content-bottom pt-4" data-aos="fade-up" data-aos-duration="1500">
         <p className="font-Poppins fs-16 fw-normal">{bio}</p>
-        {bio_2 && <p className="font-Poppins fs-16 fw-normal">{bio_2}</p>}
       </div>
       {button && (
         <div className="author-link">
