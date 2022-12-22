@@ -12,8 +12,8 @@ export const management = createApi({
   }),
   endpoints: (builder) => ({
     getManagement: builder.query({
-      query: () => ({
-        url: "/v1/teams?populate=*",
+      query: (url: string = "/v1/teams?populate=*") => ({
+        url,
         method: "GET",
       }),
     }),

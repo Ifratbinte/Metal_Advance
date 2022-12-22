@@ -1,7 +1,7 @@
 .author {
-  &-content-bottom{
-    p{
-      color : $dark-100;
+  &-content-bottom {
+    p {
+      color: $dark-100;
       line-height: 28px;
     }
   }
@@ -9,6 +9,8 @@
     height: 175px;
     width: 155px;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.125));
+    border: 1px solid transparent;
+    border-radius: 16px;
   }
   &-wrap {
     background: url("/images/shape/shape-2.png");

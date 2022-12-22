@@ -4,7 +4,7 @@ import employeeData from "#mocks/jsonData/member.json";
 import { useGetManagementQuery } from "#store/api/management";
 
 const Management = () => {
-  const { data: teams, isLoading, isError, error } = useGetManagementQuery(null);
+  const { data: teams, isLoading, isError, error } = useGetManagementQuery("/v1/teams?populate=*&filters[role][$eq]=management");
   console.log("team", teams);
   const managements = employeeData.management.management_card;
 
