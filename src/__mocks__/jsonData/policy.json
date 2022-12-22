@@ -1,8 +1,8 @@
 {
   "policy" : {
       "id" : 1,
-      "title" : "Web Privacy Policy",
-      "pathname" : "Privacy & Policy",
+      "title" : "Privacy Policy",
+      "pathname" : "Privacy Policy",
       "content" : "Benemoy Securities Limited is committed to protecting its client’s personal information. This Privacy Policy is created to help the client understand how the financial institution collects, uses, and protects customer’s information when they visit the institution’s websites and use their products and services. Your privacy, personal information, and data protection are very important to us and we comply with all aspects of the Data Protection legislation. Your security and information assurance are vital to us and guarantees that every client's information should be kept confidential. You can figure out additional about your privileges to information from our corporate office.",
       "policy_data" : [
         {

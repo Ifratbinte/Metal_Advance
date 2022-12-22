@@ -22,7 +22,7 @@ const footerContact: FooterContactInterface[] = [
   },
   {
     id: 4,
-    name: "Privacy & Policy",
+    name: "Privacy Policy",
     url: "/privacy-policy",
   },
 ];

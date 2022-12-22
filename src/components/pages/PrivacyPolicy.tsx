@@ -1,5 +1,6 @@
 import PolicyData from "#mocks/jsonData/policy.json";
 import { FaCheckSquare } from "react-icons/fa";
+import Particles from "react-particles-js";
 const TermsPrivacyPolicy = () => {
   const PrivacyPolicy = PolicyData.policy;
   console.log("policy", PrivacyPolicy);

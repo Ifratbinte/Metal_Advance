@@ -1,5 +1,8 @@
 .author {
   &-content-bottom {
+    height: 255px;
+    text-overflow: ellipsis;
+    overflow: hidden;
     p {
       color: $dark-100;
       line-height: 28px;
@@ -19,10 +22,5 @@
     background-repeat: no-repeat;
     padding: 50px 40px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0 2px;
-  }
-}
-.author-card {
-  .author-content-bottom {
-    height: 230px;
   }
 }
