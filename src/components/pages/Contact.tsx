@@ -8,7 +8,6 @@ const Contact = () => {
         <div className="container">
           <div className="sub-header-inner d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
             <h2 className="sub-header-title font-Poppins fs-45 fw-bold">{members.title}</h2>
-            <h6 className="sub-header-subtitle font-Poppins fs-20 fw-normal">Home - {members.pathname}</h6>
           </div>
         </div>
       </section>
