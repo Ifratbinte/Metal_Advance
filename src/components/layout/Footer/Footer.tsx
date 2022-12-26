@@ -63,7 +63,7 @@ function Footer() {
                 <p className="newsletter-text text-white sf-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 <div className="newsletter-form input-group">
                   <input type="text" className="form-control" placeholder="Your Email..." />
-                  <button className="btn btn-danger submit-btn" type="submit" id="newsletterSubmit">
+                  <button className="btn btn-warning submit-btn" type="submit" id="newsletterSubmit">
                     Submit
                   </button>
                 </div>

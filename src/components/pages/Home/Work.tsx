@@ -6,7 +6,7 @@ const Work = () => {
   const works = workData.work;
   return (
     <>
-      <section id="work" className="work section-gap base-bg-white">
+      <section id="work" className="work section-gap base-bg-light">
         <div className="container">
           <SectionHeading title={works.title} short_title={works.short_title} />
           <div className="work-shape-wrap pt-5">

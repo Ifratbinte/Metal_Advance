@@ -19,7 +19,7 @@ const PortfolioIsotop = () => {
 
   return (
     <>
-      <section id="portfolio" className="portfolio section-gap base-bg-light">
+      <section id="portfolio" className="portfolio section-gap base-bg-white">
         <div className="container px-lg-5">
           <SectionHeading subtitle={portfolio.subtitle} title={portfolio.title} />
 

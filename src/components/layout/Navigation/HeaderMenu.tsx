@@ -20,7 +20,7 @@ const HeaderMenu = () => {
           </div>
           <div className="nav-right" ref={navRef}>
             <Navbar />
-            <button className="btn button-base-primary">Login</button>
+            <button className="btn button-login button-base-warning">Login</button>
             <button className="nav-btn nav-close-btn" onClick={showNavBar}>
               <FaTimes />
             </button>
