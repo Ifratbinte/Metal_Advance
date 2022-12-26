@@ -29,7 +29,7 @@
 }
 .link {
   font-family: $fontInter;
-  color : $danger;
+  color: $danger;
   letter-spacing: -0.045em;
   .icon {
     height: 2rem;
@@ -46,7 +46,7 @@
     display: block;
     width: 74px;
     height: 6px;
-    background: $danger;
+    background: $primary;
     left: 0;
     right: 0;
     bottom: 0;
@@ -59,4 +59,17 @@
 }
 .slider-gap {
   margin: 0 10px;
+}
+.date-base {
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.675rem;
+  font-size: $fs-14;
+}
+.long-arrow {
+  margin-left:4px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 }

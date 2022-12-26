@@ -20,19 +20,48 @@ p {
 }
 
 .base-bg-light {
-  background-color: $bgLight;
+  background: $bgLight;
 }
 .base-bg-white {
   background-color: $light;
 }
+
+// color
 .danger {
   color: $danger;
 }
+.primary {
+  color: $primary;
+}
+.warning {
+  color: $warning;
+}
+//bg
+.primary-bg {
+  color: $light;
+  background-color: $primary;
+}
+.danger-bg {
+  color: $light;
+  background: $danger;
+}
+
 .h-100vh {
   height: 100vh;
 }
 .section-gap {
   padding: 80px 0;
+}
+.section-gap-bottom {
+  padding-bottom: 80px;
+}
+
+// badge
+.badge {
+  &.primary-bg {
+    padding: 4px 14px !important;
+    line-height: 13px;
+  }
 }
 
 // font-size

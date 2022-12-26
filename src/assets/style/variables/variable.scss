@@ -7,8 +7,11 @@
 // }
 
 // Base
+$sectionBgDark: #f6ebff;
+$sectionBgLight: #f9f4fd;
 $basePrimary: linear-gradient(to right, #0c0f72, #252885, #090fb3);
 $baseSecondary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
+$baseWarning: #fdb515;
 
 // btn
 $btnBgPrimary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
@@ -19,9 +22,13 @@ $btnColor: #ffffff;
 $dark: #000;
 $dark-100: #3d3d3d;
 $light: #ffffff;
+$light-100: #f2f2f2;
 $primary: #090fb3;
+$primary-100: #070a5a;
 $danger: #f50e16;
+$warning: rgb(253 181 21 / 98%);
 $danger-100: #d70c13;
+
 $gray: #666666;
 $gray-100: #ababab;
 $gray-200: #e7e7e7;
@@ -36,7 +43,7 @@ $borderColor: #dfdfdf;
 // text-color
 $heading: #242424;
 $headingChild: #4e4e4e;
-$paragraph: #5b5b5b;
+$paragraph: #777777;
 
 $h-100vh: 100vh;
 
