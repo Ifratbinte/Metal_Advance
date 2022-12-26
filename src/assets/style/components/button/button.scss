@@ -4,27 +4,48 @@
   line-height: 17px;
   font-weight: $fw-medium;
   font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  color: $light;
+  padding: 0.75rem 1.875rem;
   &.button-base-primary {
-    border: none;
-    border-radius: inherit;
-    padding: 0.75rem 1.875rem;
-    background: $btnBgPrimary;
-    color: $light;
+    background: $basePrimary;
     &:hover {
-      color: #f2f2f2;
+      color: $light-100;
+    }
+  }
+  &.button-base-warning {
+    background: $baseWarning;
+    &:hover {
+      color: $light-100;
+    }
+  }
+  &.button-base-warning-outline {
+    background: $light;
+    border: 2px solid $baseWarning;
+    color: $baseWarning !important;
+    &:hover {
+      color: $light-100 !important;
+      background: $baseWarning;
     }
   }
   &.button-base-secondary {
-    border: none;
-    border-radius: inherit;
-    padding: 0.75rem 1.875rem;
     background: $btnBgSecondary;
-    color: $light;
     &:hover {
-      color: #f2f2f2;
+      color: $light-100;
     }
+  }
+  &.button-login {
+    padding: 0.5rem 1.75rem !important;
   }
 }
 .submit-btn {
   padding: 0px 24px;
+}
+
+.list {
+  margin-left: -1rem;
+  li {
+    margin-left: 1rem;
+  }
 }
