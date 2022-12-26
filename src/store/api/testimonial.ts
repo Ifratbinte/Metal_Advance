@@ -4,7 +4,7 @@ import { createApi } from "@reduxjs/toolkit/query/react";
 export const testimonial = createApi({
   reducerPath: "testimonial",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://157.245.56.86:1337",
+    baseUrl: "https://api.binimoysecurities.com",
     prepareHeaders: (headers, { getState }) => {
       headers.set("authorization", `Bearer ${TOKEN}`);
       return headers;
