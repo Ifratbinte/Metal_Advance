@@ -1,4 +1,4 @@
 const CONFIGS = {
-  CMS_URL: "http://157.245.56.86:1337",
+  CMS_URL: "https://api.binimoysecurities.com",
 };
 export default CONFIGS;
