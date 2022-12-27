@@ -25,7 +25,6 @@ const Hero = () => {
           </div>
           <div className="col-lg-5">
             <div className="banner-block" data-aos="fade-down" data-aos-duration="800">
-              <span className="badge rounded-pill primary-bg">Invest</span>
               <h1 className="banner-title fs-45 font-Poppins fw-semibold">{hero.title}</h1>
               <p className="banner-desc font-Poppins fs-16 fw-normal">{hero.desc}</p>
               <ul className="d-flex list">
@@ -44,33 +43,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* <Slider {...settings}>
-        {sliders &&
-          sliders.map((slider, i) => {
-            return (
-              <div key={i}>
-                <div className="container ">
-                  <div className="row gy-5 banner flex-row-reverse align-items-center justify-content-between hero-inner-content">
-                    <div className="col-lg-5">
-                      <div className="banner-img" data-aos="fade-up" data-aos-duration="800">
-                        <img src={slider.img} alt="" />
-                      </div>
-                    </div>
-                    <div className="col-lg-7">
-                      <div className="banner-block pe-xl-4" data-aos="fade-down" data-aos-duration="800">
-                        <h1 className="banner-title fs-64 font-Poppins fw-semibold">{slider.title}</h1>
-                        <p className="banner-desc font-Poppins fs-16 fw-normal">{slider.desc}</p>
-                        <Link to="#" className="btn button-base-primary">
-                          Read More
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-      </Slider> */}
     </section>
   );
 };
