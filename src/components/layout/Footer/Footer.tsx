@@ -50,7 +50,7 @@ function Footer() {
                   {footerLinks.map((item: FooterLinksInterface, i: number) => {
                     return (
                       <li key={i}>
-                        <Link to="#">{item.name}</Link>
+                        <a href={item.url}>{item.name}</a>
                       </li>
                     );
                   })}
@@ -60,7 +60,9 @@ function Footer() {
             <div className="col-md-3">
               <div className="newsletter">
                 <h4 className="newsletter-title font-Ubuntu fw-medium text-uppercase fs-20">Newsletter SignUp Form</h4>
-                <p className="newsletter-text text-white sf-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p className="newsletter-text text-white sf-14">
+                  To get updated news, smart decision making, exclusive offers & opportunities, subscribe to KSL’s newsletter.
+                </p>
                 <div className="newsletter-form input-group">
                   <input type="text" className="form-control" placeholder="Your Email..." />
                   <button className="btn btn-warning submit-btn" type="submit" id="newsletterSubmit">
