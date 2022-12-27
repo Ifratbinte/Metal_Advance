@@ -7,14 +7,13 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .container {
     width: 90%;
-    max-width: 1540px;
+    max-width: 1440px;
   }
   .hero {
     &-video {
