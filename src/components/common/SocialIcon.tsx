@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 function SocialIcon() {
   return (
     <>
-      <ul className="list-unstyled list social-icon ">
+      <ul className="list-unstyled list social-icon">
         {socialIcon.map((item: SocialIconInterface, i: number) => {
           return (
             <li key={i}>
-              <Link className="text-white" to="">
+              <Link className="social-icon-link" to="">
                 {<item.Icon />}
               </Link>
             </li>
