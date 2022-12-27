@@ -1,5 +1,6 @@
 import heroContent from "#mocks/jsonData/home.json";
 import { Link } from "react-router-dom";
+import Particles from 'react-particles-js';
 
 const Hero = () => {
   // const hero = heroContent.home.hero.slider;
@@ -14,14 +15,13 @@ const Hero = () => {
   };
   return (
     <section id="hero" className="hero base-bg-white">
+      
       <div className="container ">
         <div className="row gy-5 banner flex-row-reverse align-items-center justify-content-between hero-inner-content">
           <div className="col-lg-6">
-            {/* <div className="banner-gfx" data-aos="fade-up" data-aos-duration="800"> */}
             <video className="banner-gfx hero-video" autoPlay muted loop data-aos="fade-up" data-aos-duration="800">
               <source src="/video/cryptocurrency_3.mp4" />
             </video>
-            {/* </div> */}
           </div>
           <div className="col-lg-5">
             <div className="banner-block" data-aos="fade-down" data-aos-duration="800">
