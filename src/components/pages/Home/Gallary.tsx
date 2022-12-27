@@ -67,10 +67,6 @@ const PortfolioIsotop = () => {
                               <a href="" title="More Details">
                                 <FaLink />
                               </a>
-                              {/* <div className="portfolio-overlay-details">
-                                <h5 className="text-white font-weight-400">{item.attributes.title}</h5>
-                                <span className="text-light">{item.attributes.portfolio_category.data.attributes.title}</span>
-                              </div> */}
                             </div>
                           </div>
                         </div>

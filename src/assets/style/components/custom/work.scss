@@ -36,7 +36,7 @@
       top: 129px;
       right: 5px;
       margin: auto;
-      border: 2px solid #000;
+      border: 2px solid $gray-100;
     }
 
     &:not(:last-child):before {
@@ -44,7 +44,7 @@
       display: block;
       height: 2px;
       width: 35px;
-      background: $dark;
+      background: $gray-100;
       content: "";
       top: 18px;
       right: -29px;
@@ -77,6 +77,6 @@
   margin-top: 18px;
   margin-left: 5px;
   background: $light;
-  border: 2px solid $dark;
+  border: 2px solid $gray-100;
   border-radius: 50%;
 }
