@@ -17,13 +17,13 @@ const ArticleCard: React.FC<Props> = ({ image, alt, date, title, description, li
       <img src={image} alt={alt} className="card-img-top position-relative" />
       <div className="card-body">
         <span className="card-date date-base danger-bg position-absolute">{date}</span>
-        <h5 className="card-title font-Inter primary fw-bold fs-22">{title}</h5>
-        <p className="card-text fs-18 fw-normal">{description}</p>
+        <h5 className="card-title font-Inter primary fw-bold fs-20">{title}</h5>
+        <p className="card-text fs-16 fw-normal">{description}</p>
         <Link to="#" className="card-link primary fw-semibold fs-20">
           {link}
-          <span className="long-arrow">
+          {/* <span className="long-arrow">
             <FaLongArrowAltRight />
-          </span>
+          </span> */}
         </Link>
       </div>
     </div>

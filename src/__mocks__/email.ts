@@ -10,7 +10,7 @@ const email: EmailInterface[] = [
   {
     id: 1,
     Icon: FiMail,
-    email: "contact@benemoy.com",
+    email: "contact@benemoysecurities.com ",
   },
 ];
 export default email;

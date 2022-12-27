@@ -39,11 +39,15 @@ p {
 //bg
 .primary-bg {
   color: $light;
-  background-color: $primary;
+  background: $primary;
 }
 .danger-bg {
   color: $light;
   background: $danger;
+}
+.warning-bg {
+  color: $light;
+  background: $warning;
 }
 
 .h-100vh {

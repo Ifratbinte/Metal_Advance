@@ -18,20 +18,20 @@ const Management = () => {
         </div>
       </section>
 
-      <section id="board" className="board section-gap base-bg-white">
+      <section id="employee" className="employee section-gap base-bg-white">
         <div className="container">
           <div className="row gy-5">
             {teams &&
               teams.data.map((team: any, i: any) => {
                 return (
-                  <div className="col-lg-6 author-card" key={i}>
+                  <div className="col-lg-4 author-card" key={i}>
                     <EmployeeCard
                       image={CONFIGS.CMS_URL + team.attributes.image.data.attributes.formats.thumbnail.url}
                       alt={team.attributes.name}
                       name={team.attributes.name}
                       designation={team.attributes.designation}
                       bio={team.attributes.content}
-                      button={team.attributes.btn_text}
+                      // button={team.attributes.btn_text}
                     />
                   </div>
                 );

@@ -1,13 +1,14 @@
 import ReviewCard from "#components/common/ReviewCard";
 import SectionHeading from "#components/common/SectionHeading";
+import CONFIGS from "#configs/index";
 import reviewData from "#mocks/jsonData/review.json";
 import { useGetTestimonialQuery } from "#store/api/testimonial";
 import ReviewSlider from "react-slick";
-import CONFIGS from "#configs/index";
 var Slider = {
-  // autoplay: true,
+  autoplay: true,
   infinite: true,
-  arrows: true,
+  // arrows: true,
+  dots: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
@@ -52,10 +53,11 @@ const Review = () => {
   const reviews = reviewData.review;
   return (
     <>
-      <section className="testimonial section-gap base-bg-light" id="testimonial">
+      <section className="testimonials section-gap" id="testimonials">
         <div className="container">
           <SectionHeading subtitle={reviews.subtitle} title={reviews.title} />
-          <div className="row section-card">
+          <div className="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+            <div className="swiper-wrapper"></div>
             <ReviewSlider {...Slider}>
               {testimonial &&
                 testimonial.data.map((review: any, i: any) => {
@@ -70,19 +72,6 @@ const Review = () => {
                     />
                   );
                 })}
-              {/* {reviews.card &&
-                reviews.card.map((review: any, i: any) => {
-                  return (
-                    <ReviewCard
-                      key={i}
-                      thumb={review.client_thumb}
-                      alt={review.client_alt}
-                      name={review.client_name}
-                      designation={review.client_designation}
-                      review={review.client_review}
-                    />
-                  );
-                })} */}
             </ReviewSlider>
           </div>
         </div>
