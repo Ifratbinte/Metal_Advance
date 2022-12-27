@@ -1,22 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom";
 interface Props {
   image: string;
   alt: string;
   name: string;
   designation: string;
   bio: string;
-  button?: string;
+  // button?: string;
 }
 
-const EmployeeCard: React.FC<Props> = ({ image, alt, name, designation, bio, button }) => {
+const EmployeeCard: React.FC<Props> = ({ image, alt, name, designation, bio }) => {
   return (
-    <div className="author-wrap rounded-4 h-100">
-      <div className="author-content-top d-flex align-items-center">
+    <div className="employee-wrap rounded-4">
+      <div className="employee-card">
+        <div className="employee-info text-center">
+          <img src={image} alt={alt} className="employee-thumb" />
+          <div className="pt-3">
+            <h3 className="fs-22 font-Poppins fw-600 primary">{name}</h3>
+            <h5 className="fs-18 font-Poppins">{designation}</h5>
+          </div>
+        </div>
+        <div className="employee-content">
+          <p>
+            {bio} <span className="btn primary">view More</span>
+          </p>
+        </div>
+      </div>
+      {/* <div className="author-content-top d-flex align-items-center">
         <img src={image} alt={alt} className="author-thumb flex-shrink-0" data-aos="zoom-in" data-aos-duration="1000" />
         <div className="author-info ms-4" data-aos="fade-down" data-aos-duration="1000">
           <h4 className="font-Poppins fw-bold fs-24">{name}</h4>
           <h5 className="font-Poppins font-normal danger fs-20">{designation}</h5>
+          <p></p>
         </div>
       </div>
       <div className="author-content-bottom pt-4" data-aos="fade-up" data-aos-duration="1500">
@@ -28,7 +42,7 @@ const EmployeeCard: React.FC<Props> = ({ image, alt, name, designation, bio, but
             {button}
           </Link>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
