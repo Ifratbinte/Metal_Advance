@@ -72,19 +72,6 @@ const Review = () => {
                     />
                   );
                 })}
-              {/* {reviews.card &&
-                reviews.card.map((review: any, i: any) => {
-                  return (
-                    <ReviewCard
-                      key={i}
-                      thumb={review.client_thumb}
-                      alt={review.client_alt}
-                      name={review.client_name}
-                      designation={review.client_designation}
-                      review={review.client_review}
-                    />
-                  );
-                })} */}
             </ReviewSlider>
           </div>
         </div>
