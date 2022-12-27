@@ -61,7 +61,7 @@ function Footer() {
               <div className="newsletter">
                 <h4 className="newsletter-title font-Ubuntu fw-medium text-uppercase fs-20">Newsletter SignUp Form</h4>
                 <p className="newsletter-text text-white sf-14">
-                  To get updated news, smart decision making, exclusive offers & opportunities, subscribe to KSL’s newsletter.
+                  To get updated news, smart decision making, exclusive offers & opportunities, subscribe to Benemoy’s newsletter.
                 </p>
                 <div className="newsletter-form input-group">
                   <input type="text" className="form-control" placeholder="Your Email..." />
