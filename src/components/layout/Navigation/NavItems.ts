@@ -12,37 +12,20 @@ const NavItems = [
       {
         id: 1,
         title: "Corporate Profile",
-        url: "/corporate-profile",
-        // submenu: [
-        //   {
-        //     id: 1,
-        //     title: "Hello 1",
-        //     url: "/hello1",
-        //   },
-        //   {
-        //     id: 2,
-        //     title: "Hello 2",
-        //     url: "/hello2",
-        //   },
-        // ],
-      },
-      {
-        id: 2,
-        title: "Profile",
         url: "/about-benemoy",
       },
       {
-        id: 3,
+        id: 2,
         title: "Board of Director",
         url: "/board-of-director",
       },
       {
-        id: 4,
+        id: 3,
         title: "Senior Management",
         url: "/senior-management",
       },
       {
-        id: 5,
+        id: 4,
         title: "Group Concern",
         url: "/group-concern",
       },
