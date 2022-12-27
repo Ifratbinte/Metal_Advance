@@ -35,17 +35,17 @@
       box-shadow: 0px 2px 15px rgb(116 68 239 / 22%);
       font-size: 14px;
       line-height: 28px;
-      &::after{
+      &::after {
         content: "";
-  width: 0;
-  height: 0;
-  border-top: 20px solid #d5c8ff;
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
-  position: absolute;
-  bottom: -20px;
-  left: calc(10% - 20px);
-  transform: skew(58deg, 0deg);
+        width: 0;
+        height: 0;
+        border-top: 20px solid #d5c8ff;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        position: absolute;
+        bottom: -20px;
+        left: calc(10% - 20px);
+        transform: skew(58deg, 0deg);
       }
     }
   }
@@ -67,4 +67,3 @@
     color: #d5c8ff;
   }
 }
-

@@ -1,4 +1,4 @@
-import EmployeeCard from "#components/common/EmployeeCard";
+import AuthorCard from "#components/common/AuthorCard";
 import employeeData from "#mocks/jsonData/member.json";
 
 const BoardOfDirector = () => {
@@ -20,7 +20,7 @@ const BoardOfDirector = () => {
               members.map((member: any, i: any) => {
                 return (
                   <div className={i === 0 ? "col-12" : "col-lg-6 author-card"} key={i}>
-                    <EmployeeCard
+                    <AuthorCard
                       image={member.author_thumb}
                       alt={member.author_alt}
                       name={member.author_name}
