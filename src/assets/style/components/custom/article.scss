@@ -1,4 +1,7 @@
 .article {
+  .card-img-top {
+    height: 330px;
+  }
   max-width: 100vw;
   &-card {
     cursor: pointer;

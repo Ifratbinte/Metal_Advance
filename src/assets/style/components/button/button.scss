@@ -21,7 +21,7 @@
     }
   }
   &.button-base-warning-outline {
-    background: $light;
+    background: transparent;
     border: 2px solid $baseWarning;
     color: $baseWarning !important;
     &:hover {
@@ -43,9 +43,4 @@
   padding: 0px 24px;
 }
 
-.list {
-  margin-left: -1rem;
-  li {
-    margin-left: 1rem;
-  }
-}
+
