@@ -26,3 +26,25 @@
 @import "./components/custom/slick.scss";
 
 @import "./components/custom/subHeader.scss";
+
+/* Scrollbar Style */
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 10px;
+}
+
+/* scrollbar-thumb */
+body::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #4f35a1;
+}
+
+/* scrollbar-track */
+body::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #d2c4ff;
+}
+
