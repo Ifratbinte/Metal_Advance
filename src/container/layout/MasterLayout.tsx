@@ -1,21 +1,15 @@
-import Footer from '#components/layout/Footer/Footer';
-import Header from '#components/layout/Header/HeaderMain';
-import { Outlet } from 'react-router-dom';
+import Footer from "#components/layout/Footer/Footer";
+import Header from "#components/layout/Header/HeaderMain";
+import HeaderTransparent from "#components/layout/HeaderTransparent/HeaderMain";
+import { Outlet, useLocation } from "react-router-dom";
 
 const MasterLayout = () => {
+  const navLocation = useLocation();
+  console.log("useLocation", navLocation);
+
   return (
     <>
-      <div
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          zIndex: 2,
-        }}
-      >
-        <Header />
-      </div>
+      {navLocation.pathname !== "/" ? <Header /> : <HeaderTransparent />}
       <main>
         <Outlet />
       </main>
