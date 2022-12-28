@@ -1,7 +1,9 @@
-.nav {
-  &-area {
-    // background: $basePrimary;
-    padding: 0.75rem 0;
+.header-background {
+  .nav {
+    &-area {
+      // background: $basePrimary;
+      padding: 0.75rem 0;
+    }
   }
 }
 
@@ -66,9 +68,13 @@
   background-color: $light;
   border-radius: 0.2rem 0.22rem 0.5rem 0.5rem;
   border-top: 3px solid $primary;
-  display: none;
+  // display: none;
+  visibility: hidden;
+  opacity: 0;
   &.show {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    // display: block;
   }
   .dropdown-submenu {
     position: absolute;
@@ -94,5 +100,15 @@
 @media (max-width: 991px) {
   .menu {
     flex-direction: column;
+  }
+}
+
+// transparent header
+.header-transparent {
+  .nav {
+    &-area {
+      background: transparent;
+      padding: 0.75rem 0;
+    }
   }
 }

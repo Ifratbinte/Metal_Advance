@@ -31,7 +31,6 @@ const Management = () => {
                       name={team.attributes.name}
                       designation={team.attributes.designation}
                       bio={team.attributes.content}
-                      // button={team.attributes.btn_text}
                     />
                   </div>
                 );
