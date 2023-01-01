@@ -26,8 +26,13 @@
 }
 
 .employee {
-  width: 80%;
-  margin: 0 auto;
+  // background: url("/images/shape/mask.jpg") rgb(116 68 239 / 22%);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-blend-mode: multiply;
+  // background-attachment: fixed;
+  // width: 80%;
+  // margin: 0 auto;
   .employee-card {
     position: relative;
     max-width: 415px;
@@ -43,8 +48,12 @@
     border: transparent;
     cursor: pointer;
   }
-  .employee-card:hover {
-    max-height: 520px;
+  .employee-wrap {
+    & .employee-card {
+      &:hover {
+        max-height: 520px;
+      }
+    }
   }
 
   .employee-card .employee-info {
@@ -74,11 +83,23 @@
     transition-delay: 0.2s;
   }
   .employee-thumb {
-    height: 220px;
-    width: 200px;
+    height: 200px;
+    width: 180px;
     border-radius: 15px;
     margin-top: -100px;
     border: 1px solid #d5c8ff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.employee {
+  .section-parent {
+    width: 90%;
+    margin: 0 auto;
   }
 }
