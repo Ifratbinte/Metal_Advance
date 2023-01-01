@@ -1,4 +1,5 @@
 import About from "#components/pages/About";
+import ArticleDetails from "#components/pages/ArticleDetails";
 import BoardOfDirector from "#components/pages/BoardOfDirector";
 import Contact from "#components/pages/Contact";
 import Home from "#components/pages/Home";
@@ -18,6 +19,7 @@ const AppRoutes = () => {
           <Route path="/board-of-director" element={<BoardOfDirector />} />
           <Route path="/senior-management" element={<Management />} />
           <Route path="/service" element={<Service />} />
+          <Route path="/articles/:articleId" element={<ArticleDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Route>
