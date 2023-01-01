@@ -29,9 +29,6 @@ const HeaderMenu = () => {
   return (
     <header
       style={{
-        border: "1px solid #ffffff40",
-        borderLeftColor: "transparent",
-        borderRightColor: "transparent",
         background: "#ffffff10",
         position: "sticky",
         top: 0,
@@ -51,7 +48,7 @@ const HeaderMenu = () => {
         <div className="container d-flex align-items-center justify-content-between">
           <div className="nav-left">
             <Link to="/" className="header-logo">
-              <img src="images/benemoy-securities.png" alt="" />
+              <img src="/images/benemoy-securities.png" alt="" />
             </Link>
           </div>
           <div className="nav-right" ref={navRef}>

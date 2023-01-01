@@ -15,7 +15,7 @@ function Footer() {
           <div className="row">
             <div className="col-md-4">
               <div className="footer-info">
-                <img className="logo footer-logo" src="images/benemoy-securities.png" alt="Benemoy Securities" />
+                <img className="logo footer-logo" src="/images/benemoy-securities.png" alt="Benemoy Securities" />
                 <ul className="footer-info-content">
                   <li>
                     <PhoneContact />
