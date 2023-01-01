@@ -1,4 +1,10 @@
 .article {
+  &-subtitle {
+    color: #777777;
+  }
+  &-details {
+    padding-right: 50px;
+  }
   .card-img-top {
     max-height: 220px;
     min-height: 220px;
@@ -28,5 +34,36 @@
         overflow: hidden;
       }
     }
+  }
+}
+
+.related-article {
+  &-inner {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid $gray-200;
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 1px solid $primary;
+      .related-article{
+        &-title{
+          color: $primary;
+        }
+        &-desc{
+          color: $primary;
+        }
+      }
+    }
+  }
+  &-thumb {
+    // height: 95px;
+    // width: 130px;
+    width: 20%;
+  }
+  &-desc {
+    height: 70px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
   }
 }

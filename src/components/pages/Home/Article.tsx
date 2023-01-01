@@ -52,6 +52,8 @@ const ArticleContent = () => {
 
   const articleTitle = articleData.article;
 
+  
+
   return (
     <>
       {articles?.data?.length ? (
@@ -71,7 +73,7 @@ const ArticleContent = () => {
                             date={article.attributes.createdAt.split("T")[0]}
                             title={article.attributes.title}
                             description={article.attributes.short_description}
-                            id={article.attributes.id}
+                            id={article.id}
                             link={article.attributes.link}
                             url={article.attributes.url}
                           />
