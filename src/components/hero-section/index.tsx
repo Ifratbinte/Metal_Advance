@@ -307,7 +307,7 @@ const HeroSection: React.FC<Props> = ({ children }) => {
         },
         random: false,
         size: false,
-        speed: 6,
+        speed: 3,
         spin: {
           acceleration: 0,
           enable: false,
