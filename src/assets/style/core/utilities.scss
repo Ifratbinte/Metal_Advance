@@ -25,6 +25,9 @@ p {
 .base-bg-white {
   background-color: $light;
 }
+.base-bg-lightPeo {
+  background-color: $bgPurpleLight;
+}
 
 // color
 .danger {
@@ -53,8 +56,17 @@ p {
 .h-100vh {
   height: 100vh;
 }
+.h-80vh {
+  height: 80vh;
+}
+.h-50vh {
+  height: 80vh;
+}
 .section-gap {
   padding: 80px 0;
+}
+.base-top-gap {
+  margin-top: 110px;
 }
 .section-gap-bottom {
   padding-bottom: 80px;
@@ -82,7 +94,7 @@ p {
 .fs-36 {
   font-size: $fs-36;
 }
-.fs-32{
+.fs-32 {
   font-size: $fs-32;
 }
 .fs-22 {
