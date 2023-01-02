@@ -21,7 +21,7 @@ var Slider = {
       },
     },
     {
-      breakpoint: 991,
+      breakpoint: 1199,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -34,15 +34,7 @@ var Slider = {
         slidesToShow: 1,
         slidesToScroll: 1,
       },
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-      },
-    },
+    }
   ],
 };
 

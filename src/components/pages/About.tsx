@@ -85,28 +85,28 @@ const About = () => {
         className="about-ideas section-gap base-bg-light"
       >
         <div className="container">
-          <div className="row">
-            <div className="col-md-6">
+          <div className="row m-auto">
+            <div className="col-xl-6">
               <div
                 className="about-ideas-thumb"
                 data-aos="fade-up-right"
                 data-aos-duration="1500"
               >
                 <img
-                  className="about-ideas-thumb-lg"
+                  className="about-ideas-thumb-lg img-fluid"
                   src={about.about_ideas.about_ideas_img_lg}
                   alt="Benemoy securities"
                 />
                 <img
-                  className="about-ideas-thumb-sm"
+                  className="about-ideas-thumb-sm img-fluid"
                   src={about.about_ideas.about_ideas_img_sm}
                   alt="Benemoy securities"
                 />
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-xl-6 mt-5 mt-xl-0">
               <div
-                className="about-ideas-inner"
+                className="about-ideas-inner mt-5 mt-xl-0"
                 data-aos="fade-down-left"
                 data-aos-duration="1500"
               >
