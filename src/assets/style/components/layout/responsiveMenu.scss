@@ -6,7 +6,7 @@
     border: none;
     outline: none;
     color: $light;
-    // visibility: hidden; // using visibility it keeps area after hidden. use display instead of visibility 
+    // visibility: hidden; // using visibility it keeps area after hidden. use display instead of visibility
     display: none;
     opacity: 0;
     font-size: 20px;
@@ -23,7 +23,7 @@
   }
   .nav-area {
     .nav-btn {
-      // visibility: visible; 
+      // visibility: visible;
       display: block;
       opacity: 1;
     }
@@ -45,8 +45,13 @@
     }
     .responsive-nav {
       transform: none;
-      background: $basePrimary;
-      opacity: 0.9;
+      opacity: 1;
+      background: $light;
+      box-shadow: 0px 2px 15px rgb(116 68 239 / 22%);
+      .menu-links {
+        color: $dark;
+        font-weight: 500;
+      }
     }
     .nav-close-btn {
       position: absolute;
@@ -54,11 +59,11 @@
       right: 2rem;
       height: 2rem;
       width: 2rem;
-      border: 1px solid $light;
+      border: 1px solid $primary;
       line-height: 0.675rem;
       border-radius: 50%;
-      background: $light;
-      color: $primary;
+      background: #6142df;
+      color: $light;
     }
   }
 }
