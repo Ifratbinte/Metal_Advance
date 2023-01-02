@@ -71,6 +71,12 @@ p {
 .section-gap-bottom {
   padding-bottom: 80px;
 }
+.section-block {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
 
 // badge
 .badge {
