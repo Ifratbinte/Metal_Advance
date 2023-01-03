@@ -5,9 +5,9 @@ import type {
   ISourceOptions,
   Container,
 } from 'tsparticles-engine';
-// import { loadTrianglesPreset, loadFull } from 'tsparticles-preset-triangles';
 import { loadFull } from 'tsparticles';
 import './style.css';
+// import { heroContent } from '#mocks/jsonData/home.json';
 
 interface Props {
   children?: JSX.Element;

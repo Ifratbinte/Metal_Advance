@@ -1,0 +1,98 @@
+.service {
+  &-content {
+    width: 95%;
+    margin: 0 auto;
+  }
+  &-content:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+    .service {
+      &-inner-text {
+        padding-right: 3rem;
+      }
+      &-thumb {
+        position: relative;
+        &::before {
+          position: absolute;
+          height: 100px;
+          width: 120px;
+          content: "";
+          background-size: 10px 10px;
+          background-image: linear-gradient(to bottom, transparent 0, transparent 2px, #fff 0px, #fff 3px),
+            linear-gradient(to right, #8a73dd 0, #8444a5 2px, #fff 2px, #fff 2px);
+          opacity: 0.6;
+          z-index: 1;
+          bottom: -30px;
+          left: -30px;
+        }
+        &::after {
+          position: absolute;
+          height: 150px;
+          width: 120px;
+          content: "";
+          background-image: linear-gradient(to right, #f6f1f8, #c5b2ff);
+          opacity: 0.6;
+          z-index: 1;
+          top: -30px;
+          right: -30px;
+          border-radius: 0px 10px 0px 0px;
+        }
+        img {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+  }
+  &-content:nth-child(even) {
+    .service-inner-text {
+      padding-left: 2rem;
+    }
+    .service {
+      &-thumb {
+        position: relative;
+        &::before {
+          position: absolute;
+          height: 100px;
+          width: 120px;
+          content: "";
+          background-size: 10px 10px;
+          background-image: linear-gradient(to bottom, transparent 0, transparent 2px, #fff 0px, #fff 3px),
+            linear-gradient(to right, #6a2dda 0, #8444a5 2px, #fff 2px, #fff 2px);
+          opacity: 0.6;
+          z-index: 1;
+          top: -30px;
+          right: -30px;
+        }
+        &::after {
+          position: absolute;
+          height: 150px;
+          width: 120px;
+          content: "";
+          background-image: linear-gradient(to right, #f6f1f8, #c5b2ff);
+          opacity: 0.6;
+          z-index: 1;
+          bottom: -30px;
+          left: -30px;
+          border-radius: 0px 0px 0px 10px;
+        }
+        img {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+  }
+  &-title {
+    font-size: 2.75rem;
+    border-bottom: 1px solid $primary;
+  }
+  &-thumb {
+    img {
+      max-height: 370px;
+      width: 100%;
+      box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+    }
+  }
+}
+

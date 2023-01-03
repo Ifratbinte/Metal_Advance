@@ -17,18 +17,18 @@
     }
     &-thumb {
       position: relative;
-      &::after {
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 93.5%;
-        content: "";
-        background-color: #979797;
-        z-index: 1;
-        opacity: 0.34;
-        border-radius: 0.75rem;
-      }
+      // &::after {
+      //   position: absolute;
+      //   left: 0;
+      //   top: 0;
+      //   height: 100%;
+      //   width: 93.5%;
+      //   content: "";
+      //   background-color: #979797;
+      //   z-index: 1;
+      //   opacity: 0.34;
+      //   border-radius: 0.75rem;
+      // }
       &-lg {
         border-radius: 0.75rem;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;

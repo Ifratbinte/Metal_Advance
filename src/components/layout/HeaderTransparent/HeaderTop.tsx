@@ -1,6 +1,6 @@
 import PhoneContact from "#components/common/PhoneContact";
 import SocialIcon from "#components/common/SocialIcon";
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 
 function HeaderTop() {
   // sticky header hide show
@@ -14,9 +14,10 @@ function HeaderTop() {
       window.removeEventListener("scroll", listenScrollEvent);
     };
   }, []);
+
   return (
     <>
-      <section id="topBar" className="topBar text-white" style={{display: display}}>
+      <section id="topBar" className="isTransparent topBar text-white" style={{ display: display }}>
         <div className="container d-flex justify-content-between align-items-center">
           <div className="contact-info d-flex align-items-center">
             <PhoneContact />

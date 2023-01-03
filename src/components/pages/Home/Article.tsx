@@ -1,4 +1,5 @@
 import ArticleCard from "#components/common/ArticleCard";
+import LinkRedirect from "#components/common/LinkRedirect";
 import SectionHeading from "#components/common/SectionHeading";
 import CONFIGS from "#configs/index";
 import articleData from "#mocks/jsonData/article.json";
@@ -45,11 +46,13 @@ var Slider = {
   ],
 };
 
-const Article = () => {
+const ArticleContent = () => {
   const { data: articles, isLoading, isError, error } = useGetArticlesQuery(null);
   console.log("articles", articles);
 
   const articleTitle = articleData.article;
+
+  
 
   return (
     <>
@@ -63,14 +66,18 @@ const Article = () => {
                   articles.data.map((article: any, i: any) => {
                     return (
                       <div className="col-lg-3" key={i}>
-                        <ArticleCard
-                          image={CONFIGS.CMS_URL + article.attributes.image.data.attributes.formats.thumbnail.url}
-                          alt={article.attributes.title}
-                          date={article.attributes.createdAt.split("T")[0]}
-                          title={article.attributes.title}
-                          description={article.attributes.short_description}
-                          link={article.attributes.btn_text}
-                        />
+                        <LinkRedirect id={article.id} url={article.attributes.url}>
+                          <ArticleCard
+                            image={CONFIGS.CMS_URL + article.attributes.image.data.attributes.formats.thumbnail.url}
+                            alt={article.attributes.title}
+                            date={article.attributes.createdAt.split("T")[0]}
+                            title={article.attributes.title}
+                            description={article.attributes.short_description}
+                            id={article.id}
+                            link={article.attributes.link}
+                            url={article.attributes.url}
+                          />
+                        </LinkRedirect>
                       </div>
                     );
                   })}
@@ -83,39 +90,4 @@ const Article = () => {
   );
 };
 
-export default Article;
-// import ArticleCard from "#components/common/ArticleCard";
-// import SectionHeading from "#components/common/SectionHeading";
-// import articleData from "#mocks/jsonData/article.json";
-
-// const Article = () => {
-//   const articles = articleData.article;
-//   return (
-//     <>
-//       <section id="article" className="article section-gap base-bg-light">
-//         <div className="container">
-//           <SectionHeading title={articles.title} short_title={articles.short_title} />
-//           <div className="row gy-3 section-card">
-//             {articles.card &&
-//               articles.card.map((article: any, i: any) => {
-//                 return (
-//                   <div className="col-lg-4" key={i}>
-//                     <ArticleCard
-//                       image={article.article_img}
-//                       alt={article.image_alt}
-//                       date={article.article_date}
-//                       title={article.article_title}
-//                       description={article.article_desc}
-//                       link={article.article_link}
-//                     />
-//                   </div>
-//                 );
-//               })}
-//           </div>
-//         </div>
-//       </section>
-//     </>
-//   );
-// };
-
-// export default Article;
+export default ArticleContent;

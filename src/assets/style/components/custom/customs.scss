@@ -67,9 +67,16 @@
   font-size: $fs-14;
 }
 .long-arrow {
-  margin-left:4px;
+  margin-left: 4px;
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: scale(1.1);
   }
 }
+
+// .section-parent:nth-child(odd) {
+//   position: relative;
+//   top: 220px
+// }
+// .section-parent:nth-child(even) {
+// }

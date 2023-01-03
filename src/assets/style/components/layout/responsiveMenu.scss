@@ -45,6 +45,8 @@
     }
     .responsive-nav {
       transform: none;
+      background: $basePrimary;
+      opacity: 0.9;
     }
     .nav-close-btn {
       position: absolute;

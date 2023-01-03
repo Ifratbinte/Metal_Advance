@@ -1,5 +1,5 @@
-import CardComponent from "#components/common/Card";
 import SectionHeading from "#components/common/SectionHeading";
+import ServiceComponent from "#components/common/ServiceCard";
 import CONFIGS from "#configs/index";
 import serviceData from "#mocks/jsonData/service.json";
 import { useGetServicesQuery } from "#store/api/service";
@@ -22,19 +22,16 @@ const Service = () => {
       <section id="service" className="service section-gap">
         <div className="container">
           <SectionHeading subtitle={services.subtitle} title={services.title} />
-          <div className="row gy-4 section-card">
+          <div className="service-inner">
             {serviceInfo &&
               serviceInfo.data.map((service: any, i: number) => {
                 return (
-                  <div className="col-lg-4" key={i}>
-                    <CardComponent
-                      image={CONFIGS.CMS_URL + service.attributes.image.data.attributes.formats.thumbnail.url}
-                      alt={service.attributes.title}
-                      title={service.attributes.title}
-                      description={service.attributes.content}
-                      button={service.attributes.btn_text}
-                    />
-                  </div>
+                  <ServiceComponent
+                    image={CONFIGS.CMS_URL + service.attributes.image.data.attributes.formats.thumbnail.url}
+                    alt={service.attributes.title}
+                    title={service.attributes.title}
+                    description={service.attributes.content}
+                  />
                 );
               })}
           </div>

@@ -20,6 +20,9 @@
       }
       li a {
         color: $light;
+        &:hover{
+          color: $warning;
+        }
       }
     }
   }
