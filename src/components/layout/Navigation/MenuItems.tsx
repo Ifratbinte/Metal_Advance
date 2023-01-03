@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { FaAngleDown } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
@@ -40,7 +41,7 @@ const MenuItems = ({ items, depthLevel }: any) => {
             onClick={() => setDropdown((prev) => !prev)}
           >
             {items.title}
-            {depthLevel > 0 ? <span>&darr;</span> : <span className="arrow" />}
+            {depthLevel > 0 ? <span>&darr;</span> : <span className="arrow"><FaAngleDown/></span>}
           </button>
           <Dropdown submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />
         </>
