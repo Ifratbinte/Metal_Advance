@@ -7,6 +7,9 @@ header {
   background: #4f35a1;
   padding: 7px;
 }
+#topBar{
+  display: none;
+}
 
 // header-bottom
 .header-logo img {
@@ -15,6 +18,9 @@ header {
 }
 
 @media (min-width: 576px) {
+  #topBar{
+    display: block;
+  }
   .header-logo img {
     max-width: 12.5rem;
   }
