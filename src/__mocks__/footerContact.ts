@@ -13,7 +13,7 @@ const footerContact: FooterContactInterface[] = [
   {
     id: 2,
     name: "Blog",
-    url: "/blog",
+    url: "/articles",
   },
   {
     id: 3,

@@ -17,7 +17,7 @@ const HeaderMenu = () => {
   const listenScrollEvent = () => {
     window.scrollY > 20 ? setNavColor("rgba(88, 70, 249, 0.9)") : setNavColor("transparent");
     window.scrollY > 20 ? setNavSize("5rem") : setNavSize("4.5rem");
-    window.scrollY > 20 ? setShadow("0px 2px 15px rgb(116 68 239 / 22%)") : setShadow("none");
+    window.scrollY > 20 ? setShadow("$shadowPrimary") : setShadow("none");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);

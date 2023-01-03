@@ -1,7 +1,10 @@
 import About from "#components/pages/About";
 import ArticleDetails from "#components/pages/ArticleDetails";
+import Articles from "#components/pages/Articles";
 import BoardOfDirector from "#components/pages/BoardOfDirector";
-import Contact from "#components/pages/Contact";
+// import Contact from "#components/pages/Contact";
+import Contact from "#components/pages/ContactPage";
+import Downloads from "#components/pages/Downloads";
 import Home from "#components/pages/Home";
 import Management from "#components/pages/Management";
 import PrivacyPolicy from "#components/pages/PrivacyPolicy";
@@ -19,6 +22,8 @@ const AppRoutes = () => {
           <Route path="/board-of-director" element={<BoardOfDirector />} />
           <Route path="/senior-management" element={<Management />} />
           <Route path="/service" element={<Service />} />
+          <Route path="/download" element={<Downloads />} />
+          <Route path="/articles" element={<Articles />} />
           <Route path="/articles/:articleId" element={<ArticleDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

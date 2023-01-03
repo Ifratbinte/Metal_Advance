@@ -28,7 +28,6 @@ const Service = () => {
                         alt={service.image_alt}
                         title={service.service_title}
                         description={service.service_desc}
-                        button={service.service_btn}
                       />
                     </div>
                   );

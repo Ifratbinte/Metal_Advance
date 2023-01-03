@@ -10,8 +10,9 @@
 $sectionBgDark: #f6ebff;
 $sectionBgLight: #f9f4fd;
 $basePrimary: linear-gradient(to right, #0c0f72, #252885, #090fb3);
+$basePrimaryReverse: linear-gradient(to right, #090fb3, #252885, #0c0f72);
 $baseSecondary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
-$baseWarning: #FFCA2C;
+$baseWarning: #ffca2c;
 
 // btn
 $btnBgPrimary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
@@ -26,7 +27,9 @@ $light-100: #f2f2f2;
 $primary: #090fb3;
 $primary-100: #070a5a;
 $danger: #f50e16;
-$warning: #FFCA2C;
+$warning: #ffca2c;
+$purple: #4f35a1;
+$purple-100: rgba(88, 70, 249, 0.9);
 $danger-100: #d70c13;
 
 $gray: #666666;
@@ -35,7 +38,8 @@ $gray-200: #e7e7e7;
 $seaBlue: #16cabd;
 
 // body-background
-$bgLight: #f4f4ff;
+$bgLight: #f8f8fc;
+$bgPurpleLight: #dbd3f8;
 
 // border
 $borderColor: #dfdfdf;
@@ -46,6 +50,8 @@ $headingChild: #4e4e4e;
 $paragraph: #777777;
 
 $h-100vh: 100vh;
+
+$shadowPrimary: 0px 2px 15px rgb(116 68 239 / 22%);
 
 // *----------- Font -----------*
 

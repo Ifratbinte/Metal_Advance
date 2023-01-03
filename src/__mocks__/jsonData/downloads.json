@@ -1,0 +1,37 @@
+{
+  "download": {
+    "id": 1,
+    "title": "Download Documents",
+    "subtitle": "Download the whitepaper and learn about ICO Token, the unique ICO Crypto approach and the team/advisors",
+    "downloadItem": [
+      {
+        "id": 1,
+        "image": "/images/docs/docs-1.jpg",
+        "title": "Trade Finance",
+        "year": "2022",
+        "lang": "English"
+      },
+      {
+        "id": 2,
+        "image": "/images/docs/docs-2.jpg",
+        "title": "International Trade",
+        "year": "2022",
+        "lang": "English"
+      },
+      {
+        "id": 3,
+        "image": "/images/docs/docs-3.jpg",
+        "title": "Laws of Trading",
+        "year": "2022",
+        "lang": "English"
+      },
+      {
+        "id": 4,
+        "image": "/images/docs/docs-4.jpg",
+        "title": "Trading Education",
+        "year": "2022",
+        "lang": "English"
+      }
+    ]
+  }
+}

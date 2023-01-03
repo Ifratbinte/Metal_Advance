@@ -57,7 +57,7 @@ const ArticleContent = () => {
   return (
     <>
       {articles?.data?.length ? (
-        <section id="article" className="article section-gap base-bg-white">
+        <section id="article" className="article section-gap base-bg-light">
           <div className="container">
             <SectionHeading title={articleTitle.title} short_title={articleTitle.short_title} />
             <div className="row gy-3 section-card">
