@@ -5,6 +5,7 @@ import BoardOfDirector from "#components/pages/BoardOfDirector";
 // import Contact from "#components/pages/Contact";
 import Contact from "#components/pages/ContactPage";
 import Downloads from "#components/pages/Downloads";
+import FAQ from "#components/pages/FAQ";
 import Home from "#components/pages/Home";
 import Management from "#components/pages/Management";
 import PrivacyPolicy from "#components/pages/PrivacyPolicy";
@@ -27,6 +28,7 @@ const AppRoutes = () => {
           <Route path="/articles/:articleId" element={<ArticleDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/faq" element={<FAQ />} />
         </Route>
       </Routes>
     </BrowserRouter>

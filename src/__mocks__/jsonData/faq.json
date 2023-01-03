@@ -1,0 +1,38 @@
+{
+  "faq": {
+    "id": 1,
+    "title": "Frequently Asked Question",
+    "faqItem": [
+      {
+        "id": 0,
+        "qus": "What is an export and an import?",
+        "ans": "From the UK, an export is currently something shipped to a destination outside the EU and an import is something brought in from outside the EU. The IOE&IT run training courses on Importing and Exporting"
+      },
+      {
+        "id": 1,
+        "qus": "What is an export and an import?",
+        "ans": "From the UK, an export is currently something shipped to a destination outside the EU and an import is something brought in from outside the EU. The IOE&IT run training courses on Importing and Exporting"
+      },
+      {
+        "id": 2,
+        "qus": "What is international trade working capital?",
+        "ans": "It is the capital of a business which is used in its day-to-day trading operations, calculated as the current assets less the current liabilities. From an international point of view it would be the capital exporters require to purchase supplies, components, to produce or resell products for sale to international markets."
+      },
+      {
+        "id": 3,
+        "qus": "What is TARIC?",
+        "ans": "The TARIC code (TARif Intégré Communautaire; Integrated Tariff of the European Communities) is designed to show the various rules applying to specific products when imported into the EU."
+      },
+      {
+        "id": 4,
+        "qus": "What is the Union Customs Code?",
+        "ans": "The Union Customs Code is the EU legislation which provides the legal basis and generic requirements of EU (including UK) customs formalities. Introduced on 1st May 2016, the Union Customs Code also covers special procedures including Customs Warehousing (CW),Temporary Admission (TA), Inward and Outward Processing."
+      },
+      {
+        "id": 5,
+        "qus": "What are the benefits of being an Authorised Economic Operator, or AEO?",
+        "ans": "There are many benefits of AEO approval including the following:Recognised status across the EUAn industry “kite mark” and useful marketing toolA lower risk score used to determine the frequency of Customs’ physical and documentary checks consignments may be fast tracked through customs controls. If selected for examination priority will be given over non-AEO consignmentsPotential for future reciprocal arrangements and mutual recognition with countries outside the EU, for example the USA"
+      }
+    ]
+  }
+}
