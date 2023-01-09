@@ -1,7 +1,6 @@
 .header-background {
   .nav {
     &-area {
-      // background: $basePrimary;
       padding: 0.75rem 0;
     }
   }
@@ -96,7 +95,7 @@
       font-weight: $fw-normal;
       border-bottom: 1px solid #f2f2f2;
       &:hover {
-        background: $basePrimary;
+        background: $basePrimaryGradient;
       }
     }
   }
@@ -106,7 +105,6 @@
     flex-direction: column;
   }
 }
-
 
 // transparent header
 .header-transparent {

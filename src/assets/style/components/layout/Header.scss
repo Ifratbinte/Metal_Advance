@@ -7,7 +7,7 @@ header {
   background: #4f35a1;
   padding: 7px;
 }
-#topBar{
+#topBar {
   display: none;
 }
 
@@ -18,7 +18,7 @@ header {
 }
 
 @media (min-width: 576px) {
-  #topBar{
+  #topBar {
     display: block;
   }
   .header-logo img {
@@ -33,15 +33,16 @@ header {
     padding: 7px;
   }
 }
-.header-transparent, .header-background {
+.header-transparent,
+.header-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
 }
-.header-background{
-  .nav-area{
-    background: $basePrimary !important ;
+.header-background {
+  .nav-area {
+    background: $basePrimaryGradient !important ;
   }
 }
