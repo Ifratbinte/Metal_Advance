@@ -1,13 +1,40 @@
-import CardComponent from "#components/common/Card";
 import SectionHeading from "#components/common/SectionHeading";
 import serviceData from "#mocks/jsonData/service.json";
 import ServiceSlider from "react-slick";
 var Slider = {
-  autoplay: true,
+  // autoplay: true,
   infinite: true,
-  arrows: true,
+  arrows: false,
+  dots: true,
   slidesToShow: 3,
   slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      },
+    },
+  ],
 };
 
 const Service = () => {
@@ -22,13 +49,16 @@ const Service = () => {
               {services.card &&
                 services.card.map((service: any, i: number) => {
                   return (
-                    <div className="col-lg-4 " key={i}>
-                      <CardComponent
-                        image={service.image}
-                        alt={service.image_alt}
-                        title={service.service_title}
-                        description={service.service_desc}
-                      />
+                    <div className="col-lg-4" key={i}>
+                      <div className="wrapper">
+                        <div className="panel animated slideInDown">
+                          <img src={service.image} alt={service.image_alt} />
+                          <h5>{service.service_title}</h5>
+                          <div className="slide">
+                            <p>{service.service_desc}</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   );
                 })}
