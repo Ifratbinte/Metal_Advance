@@ -13,6 +13,14 @@ import Service from "#components/pages/Service";
 import MasterLayout from "#container/layout/MasterLayout";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import Digital from "#components/pages/DigitalService";
+import DseNews from "#components/pages/DseNews";
+import Group from "#components/pages/GroupConcern";
+import IPO from "#components/pages/IpoService";
+import MobileApp from "#components/pages/MobileApps";
+import NotifyInvestors from "#components/pages/NotifyInvestors";
+import DailyNews from "./../components/pages/DailyNews";
+
 const AppRoutes = () => {
   return (
     <BrowserRouter>
@@ -29,6 +37,14 @@ const AppRoutes = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/faq" element={<FAQ />} />
+
+          <Route path="/group-concern" element={<Group />} />
+          <Route path="/digital-services" element={<Digital />} />
+          <Route path="/mobile-apps" element={<MobileApp />} />
+          <Route path="/ipo-service" element={<IPO />} />
+          <Route path="/notify" element={<NotifyInvestors />} />
+          <Route path="/daily-news" element={<DailyNews />} />
+          <Route path="/dse-news" element={<DseNews />} />
         </Route>
       </Routes>
     </BrowserRouter>
