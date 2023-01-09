@@ -21,7 +21,7 @@ const ArticleCard: React.FC<Props> = ({ image, alt, date, title, description, id
         <h5 className="card-title font-Inter primary fw-bold fs-20">{title}</h5>
         <p className="card-text fs-16 fw-normal">{description}</p>
         <LinkRedirect id={id} url={url}>
-          <a href={link} className="card-link primary fw-semibold fs-20">See full Story</a>
+          <a href={link} className="card-link primary fw-semibold fs-18">See full Story</a>
         </LinkRedirect>
       </div>
     </div>

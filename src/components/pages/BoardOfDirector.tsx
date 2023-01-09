@@ -26,7 +26,7 @@ const BoardOfDirector = () => {
                       name={member.author_name}
                       designation={member.author_deg}
                       bio={member.author_bio}
-                      button={member.author_link}
+                      // button={member.author_link}
                     />
                   </div>
                 );

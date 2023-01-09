@@ -58,8 +58,8 @@ function Footer() {
               </div>
             </div>
             <div className="col-lg-3 col-12">
-              <div className="newsletter">
-                <h4 className="newsletter-title font-Ubuntu fw-medium text-uppercase fs-20">Newsletter SignUp Form</h4>
+              <div className="footer-links newsletter">
+                <h4 className="footer-title font-Ubuntu fw-medium fs-20">Newsletter SignUp Form</h4>
                 <p className="newsletter-text text-white sf-14">
                   To get updated news, smart decision making, exclusive offers & opportunities, subscribe to Benemoy’s newsletter.
                 </p>

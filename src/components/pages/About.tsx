@@ -56,10 +56,10 @@ const About = () => {
                 data-aos-duration="1000"
               >
                 <p>{about.description}</p>
-                <Link to={about.link} className="link fw-bold">
+                {/* <Link to={about.link} className="link fw-bold">
                   {about.link_text}
                   <FiArrowRight className="ps-2 icon" />
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

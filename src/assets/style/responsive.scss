@@ -11,16 +11,11 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .container {
-    // width: 90%;
-    max-width: 1440px;
-  }
   .hero {
     &-video {
       width: 100%;
     }
     .banner-gfx {
-      // margin: 0 -80px 0 0;
     }
   }
   .width-md {

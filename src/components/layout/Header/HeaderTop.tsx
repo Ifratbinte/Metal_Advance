@@ -16,7 +16,7 @@ function HeaderTop() {
   }, []);
   return (
     <>
-      <section id="topBar" className="topBar text-white" style={{display: display}}>
+      <section id="topBar" className="topBar text-white d-none d-md-block" style={{display: display}}>
         <div className="container d-flex justify-content-between align-items-center">
           <div className="contact-info d-flex align-items-center">
             <PhoneContact />
