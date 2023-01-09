@@ -1,45 +1,54 @@
 // *-------color--------*
 
-// :root {
-//   --basePrimary : linear-gradient(to right, #0c0f72, #252885, #090fb3);
-//   --baseSecondary : linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
-//   --textDanger : #f50e16;
-// }
+:root {
+  --basePrimaryGradient: linear-gradient(to right, #0c0f72, #252885, #090fb3);
+  --basePrimaryReverse: linear-gradient(to right, #090fb3, #252885, #0c0f72);
+  --baseSecondary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
+  --basePrimary: #090fb3;
+  --baseDanger: #f50e16;
+  --baseWarning: #ffca2c;
+  --basePurple: #4f35a1;
+  --baseLight: #ffffff;
+  --baseDark: #000;
+  --baseGray: #666666;
+  --baseSeaBlue: #16cabd;
+  --baseShadow: #dbd3f8;
+}
 
 // Base
 $sectionBgDark: #f6ebff;
 $sectionBgLight: #f9f4fd;
-$basePrimary: linear-gradient(to right, #0c0f72, #252885, #090fb3);
-$basePrimaryReverse: linear-gradient(to right, #090fb3, #252885, #0c0f72);
-$baseSecondary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
-$baseWarning: #ffca2c;
+$basePrimaryGradient: var(--basePrimaryGradient);
+$basePrimaryReverse: var(--basePrimaryReverse);
+$baseSecondary: var(--baseSecondary);
+$baseWarning: var(--baseWarning);
 
 // btn
-$btnBgPrimary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
+$btnBgPrimary: var(--baseSecondary);
 $btnBgSecondary: #5a5a5a;
-$btnColor: #ffffff;
+$btnColor: var(--baseLight);
 
 // global-color
-$dark: #000;
+$dark: var(--baseDark);
 $dark-100: #3d3d3d;
-$light: #ffffff;
+$light: var(--baseLight);
 $light-100: #f2f2f2;
-$primary: #090fb3;
+$primary: var(--basePrimary);
 $primary-100: #070a5a;
-$danger: #f50e16;
-$warning: #ffca2c;
-$purple: #4f35a1;
+$danger: var(--baseDanger);
+$warning: (--baseWarning);
+$purple: var(--basePurple);
 $purple-100: rgba(88, 70, 249, 0.9);
 $danger-100: #d70c13;
 
-$gray: #666666;
+$gray: var(--baseGray);
 $gray-100: #ababab;
 $gray-200: #e7e7e7;
-$seaBlue: #16cabd;
+$seaBlue: var(--baseSeaBlue);
 
 // body-background
 $bgLight: #f8f8fc;
-$bgPurpleLight: #dbd3f8;
+$bgPurpleLight: var(--baseShadow);
 
 // border
 $borderColor: #dfdfdf;

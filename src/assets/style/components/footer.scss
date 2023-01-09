@@ -1,6 +1,6 @@
 @import "../variables//variable.scss";
 .footer {
-  background: $basePrimary;
+  background: $basePrimaryGradient;
   padding: 3.75rem;
   &-logo {
     height: 100%;
@@ -11,6 +11,7 @@
     padding-bottom: 0.675rem;
   }
   &-links {
+    margin-top: 12px;
     ul {
       li:not(:first-child) {
         padding: 0.5rem 0;
@@ -20,7 +21,7 @@
       }
       li a {
         color: $light;
-        &:hover{
+        &:hover {
           color: $warning;
         }
       }
