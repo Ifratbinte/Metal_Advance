@@ -66,7 +66,7 @@
     text-align: center;
     color: #fff;
     background: $primary;
-    box-shadow: $shadowPrimary;
+    box-shadow: $baseShadow;
     border-radius: 50%;
     margin-right: 15px;
     flex-shrink: 0;
@@ -153,7 +153,6 @@
 
   .contact-block-text-head p {
     color: $primary-100;
-    
   }
 
   @media (min-width: 992px) {
@@ -167,26 +166,48 @@
     .contact-block-contact-s1 {
       padding: 180px 0;
     }
-    .contact-circle-animation.small {
-      height: 480px;
-      width: 480px;
-    }
     .contact-circle-animation {
       height: 500px;
       width: 500px;
       overflow: hidden;
-    }
-    .contact-circle-animation.small:after {
-      top: 35px;
-      left: 35px;
-      bottom: 35px;
-      right: 35px;
-    }
-    .contact-circle-animation:after {
-      top: 45px;
-      left: 45px;
-      bottom: 45px;
-      right: 45px;
+      &.small {
+        height: 480px;
+        width: 480px;
+        .contact-circle-animation:after {
+          top: 45px;
+          left: 45px;
+          bottom: 45px;
+          right: 45px;
+        }
+        &:after {
+          top: 35px;
+          left: 35px;
+          bottom: 35px;
+          right: 35px;
+        }
+      }
     }
   }
+}
+
+//
+.contact-list {
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 6px 10px 0 #d9171a09;
+
+  padding: 30px;
+  border: 1px solid #6963891f;
+  height: 100%;
+  width: 100%;
+}
+.contact-list-title h4 {
+  border: 1px solid #720ef7;
+  padding: 8px;
+  font-size: 22px;
+  width: 78%;
+  margin: 0 auto;
+  background: #720ef7;
+  color: #fff;
+  border-radius: 8px;
 }
