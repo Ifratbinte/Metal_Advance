@@ -4,7 +4,7 @@
   --basePrimaryGradient: linear-gradient(to right, #0c0f72, #252885, #090fb3);
   --basePrimaryReverse: linear-gradient(to right, #090fb3, #252885, #0c0f72);
   --baseSecondary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
-  --baseBody : #EFF5FE;
+  --baseBody: #eff5fe;
   --basePrimary: #090fb3;
   --baseDanger: #f50e16;
   --baseWarning: #ffca2c;
@@ -14,8 +14,8 @@
   --baseGray: #666666;
   --baseSeaBlue: #16cabd;
   --baseBgPurpleLight: #dbd3f8;
-
-  --baseShadow : 0px 2px 15px rgb(116 68 239 / 22%)
+  --baseShadow: 0px 2px 15px rgb(116 68 239 / 22%);
+  --baeShadowLight: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 // Base
@@ -64,6 +64,7 @@ $paragraph: #777777;
 $h-100vh: 100vh;
 
 $baseShadow: var(--baseShadow);
+$baeShadowLight: var(--baeShadowLight);
 
 // *----------- Font -----------*
 

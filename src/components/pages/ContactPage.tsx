@@ -1,27 +1,29 @@
 // import "#components/pages/customStyle/theme.css";
-import ContactTitle from "#mocks/jsonData/contact.json";
+import ContactInfo from "#components/common/contact";
+import ContactData from "#mocks/jsonData/contact.json";
 import { FiMail, FiMapPin, FiPhoneCall } from "react-icons/fi";
+
 const Contact = () => {
-  const contact = ContactTitle.contact;
+  const contact = ContactData.contact;
+  console.log({ contact });
+
   return (
     <>
-      {/* <section className="sub-header base-top-gap">
+      <section className="sub-header base-top-gap">
         <div className="container">
           <div className="sub-header-inner d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
             <h2 className="sub-header-title font-Poppins fs-45 fw-bold">{contact.title}</h2>
           </div>
         </div>
-      </section> */}
-      <section className="bn section base-top-gap" id="contact">
+      </section>
+      <section className="bn section" id="contact">
         <div className="container">
           <div className="contact-block contact-block-about">
             <div className="row justify-content-between align-items-center">
-              <div className="col-lg-6">
+              <div className="col-lg-7 offset-1">
                 <div className="contact-block-text">
                   <div className="contact-block-text-head">
-                    <h2 className="title">
-                      Get In Touch
-                    </h2>
+                    {/* <h2 className="title">Get In Touch</h2> */}
                     <p className="fw-medium">
                       We are always open and we welcome and questions you have for our team. If you wish to get in touch, please fill out the form below.
                     </p>
@@ -68,7 +70,7 @@ const Contact = () => {
                   </form>
                 </div>
               </div>
-              <div className="col-lg-5 text-center order-lg-first">
+              <div className="col-lg-4 text-center order-lg-first">
                 <div className="contact-block-contact contact-block-contact-s1">
                   <ul className="contact-list">
                     <li>
@@ -97,6 +99,27 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <section className="section-bg section-gap">
+        <div className="container">
+          <div className="row">
+            {contact.contactPage &&
+              contact.contactPage.map((contact: any, i: number) => {
+                return (
+                  <ContactInfo
+                    title={contact.title}
+                    icon={contact.icon}
+                    phone={contact.phone}
+                    telephone={contact.telephone}
+                    phone2={contact.phone2}
+                    phone3={contact.phone3}
+                    email={contact.email}
+                  />
+                );
+              })}
+          </div>
+        </div>
+      </section>
+
       <section className="section-map">
         <div className="contact-wrap w-100">
           <iframe
