@@ -9,7 +9,7 @@
       border: 1px solid #e7f1ff;
       margin: 20px 0;
     }
-    &-button{
+    &-button {
       background-color: rgb(88 70 249 / 6%);
       font-weight: 600;
       &:focus {
@@ -17,11 +17,25 @@
         border: 1px solid #c8ddfa;
       }
     }
+    &-icon {
+      color: #fff;
+      height: 1rem;
+      width: 1rem;
+      border: 1px solid $purple;
+      border-radius: 50%;
+      background: $purple;
+      font-weight: 700;
+      padding: 1px;
+      margin-right: 2px;
+    }
+    &-inner-list li {
+      line-height: 30px;
+    }
   }
 }
-.accordion-flush .accordion-item:first-child{
+.accordion-flush .accordion-item:first-child {
   border-top: 1px solid #e7f1ff;
 }
-.accordion-flush .accordion-item:last-child{
+.accordion-flush .accordion-item:last-child {
   border-bottom: 1px solid #e7f1ff;
 }

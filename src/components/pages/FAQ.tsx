@@ -1,8 +1,10 @@
 import accordionData from "#mocks/jsonData/faq.json";
 import Accordion from "react-bootstrap/Accordion";
+import { FiCheck } from "react-icons/fi";
 
 const FAQ = () => {
   const accordions = accordionData.faq.faqItem;
+  console.log({ accordions });
 
   return (
     <>
@@ -22,7 +24,23 @@ const FAQ = () => {
                 accordions?.map((accordion: any, i: number) => (
                   <Accordion.Item key={accordion.id} eventKey={String(accordion.id)}>
                     <Accordion.Header>{accordion.qus}</Accordion.Header>
-                    <Accordion.Body>{accordion.ans}</Accordion.Body>
+                    <Accordion.Body>
+                      {accordion.ans}
+                      {accordion.list && (
+                        <div className="accordion-inner-list mt-3">
+                          <h6 className="fw-bold">{accordion.list.title}</h6>
+                          <ul>
+                            {accordion.list.list_items.map((accordionItem: any, i: number) => {
+                              return (
+                                <li key={i}>
+                                  <FiCheck className="accordion-icon" /> {accordionItem.item}
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                      )}
+                    </Accordion.Body>
                   </Accordion.Item>
                 ))}
             </Accordion>
