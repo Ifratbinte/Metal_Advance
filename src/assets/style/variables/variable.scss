@@ -5,7 +5,8 @@
   --basePrimaryReverse: linear-gradient(to right, #090fb3, #252885, #0c0f72);
   --baseSecondary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
   --baseBody: #eff5fe;
-  --basePrimary: #090fb3;
+  --basePrimary: #0d3255;
+  --baseSecondary: #00abe0;
   --baseDanger: #f50e16;
   --baseWarning: #ffca2c;
   --basePurple: #4f35a1;
@@ -17,6 +18,8 @@
   --baseShadow: 0px 2px 15px rgb(116 68 239 / 22%);
   --baeShadowLight: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
+
+// $btn_Hover : linear-gradient(to right, #16a3fe 0%, #23c99d 100%);
 
 // Base
 $sectionBgDark: #f6ebff;
