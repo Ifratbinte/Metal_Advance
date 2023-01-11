@@ -18,10 +18,8 @@ function HeaderTop() {
   return (
     <>
       <section id="topBar" className="isTransparent topBar text-white" style={{ display: display }}>
-        <div className="container d-flex justify-content-between align-items-center">
-          <div className="contact-info d-flex align-items-center">
-            <PhoneContact />
-          </div>
+        <div className="d-flex align-items-center justify-content-between">
+          <PhoneContact />
           <SocialIcon />
         </div>
       </section>

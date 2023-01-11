@@ -4,11 +4,36 @@ header {
   color: #212529;
 }
 .topBar {
-  background: #4f35a1;
-  padding: 7px;
+  &-left {
+    background-color: var(--baseSecondary);
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 36px solid var(--baseSecondary);
+      border-right: 36px solid transparent;
+      border-left: 5px solid transparent;
+      position: absolute;
+      right: calc(0% - 40px);
+      transform: skew(-103deg, 106deg);
+    }
+  }
+  &-right {
+    background-color: var(--baseLight);
+    display: flex;
+    align-items: center;
+    .ticker {
+      color: var(--baseDark);
+      margin-left: 3rem;
+    }
+  }
 }
 #topBar {
   display: none;
+  line-height: 60px;
 }
 
 // header-bottom
@@ -45,4 +70,8 @@ header {
   .nav-area {
     background: $basePrimaryGradient !important ;
   }
+}
+
+.section-topContact {
+  margin-left: 300px;
 }

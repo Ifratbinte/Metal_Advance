@@ -1,6 +1,5 @@
 import PhoneContact from "#components/common/PhoneContact";
-import SocialIcon from "#components/common/SocialIcon";
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 
 function HeaderTop() {
   // sticky header hide show
@@ -16,13 +15,20 @@ function HeaderTop() {
   }, []);
   return (
     <>
-      <section id="topBar" className="topBar text-white d-none d-md-block" style={{display: display}}>
-        <div className="container d-flex justify-content-between align-items-center">
-          <div className="contact-info d-flex align-items-center">
+      <section id="topBar" className="topBar text-white" style={{ display: display }}>
+        <div className="row ">
+          <div className="col-md-4 topBar-left">
             <PhoneContact />
           </div>
-          <SocialIcon />
+          <div className="col-md-8 topBar-right">
+            <marquee className="ticker fw-semibold fs-18">Benemoy Securities Ltd</marquee>
+            {/* <SocialIcon /> */}
+          </div>
         </div>
+        {/* <div className="d-flex align-items-center justify-content-between">
+          
+          
+        </div> */}
       </section>
     </>
   );

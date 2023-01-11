@@ -9,7 +9,8 @@ const MasterLayout = () => {
 
   return (
     <>
-      {navLocation.pathname !== "/" ? <Header /> : <HeaderTransparent />}
+      {/* {navLocation.pathname !== "/" ? <Header /> : <HeaderTransparent />} */}
+      <Header/>
       <main>
         <Outlet />
       </main>

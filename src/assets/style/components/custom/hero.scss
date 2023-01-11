@@ -1,4 +1,10 @@
-.hero-container{
+#hero {
+  height: 100vh;
+  background: #0d3255;
+  display: flex;
+  align-items: center;
+}
+.hero-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9,7 +15,6 @@
 .banner {
   &-title {
     font-size: 2rem;
-    // line-height: 3.75rem;
     padding-top: 0.675rem;
   }
   width: 100%;
@@ -23,7 +28,7 @@
 }
 
 @media (min-width: 576px) {
-  .hero-container{
+  .hero-container {
     width: 50%;
   }
   .banner {
@@ -31,7 +36,6 @@
       font-size: 3.5rem;
       line-height: 4rem;
     }
-    // height: 700px;
     width: 100%;
     &-desc {
       line-height: 1.875rem;
@@ -42,10 +46,3 @@
     }
   }
 }
-// #tsparticles{
-//   min-height: 800px;
-// }
-// .hero {
-//   margin-top: 3rem;
-//   min-height: 90vh;
-// }
