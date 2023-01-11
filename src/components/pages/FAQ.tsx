@@ -1,8 +1,51 @@
+import Tabs from "#components/Tab/components/Tabs";
+import "#components/Tab/styles.css";
 import accordionData from "#mocks/jsonData/faq.json";
-import Accordion from "react-bootstrap/Accordion";
-import { FiCheck } from "react-icons/fi";
+import React, { useState } from "react";
+// Tabs components
+import BoAccounts from "#components/Tab/components/BoAccounts";
+import General from "#components/Tab/components/General";
+import Trading from "#components/Tab/components/Trading";
+import MobileTrading from "#components/Tab/components/MobileTrading";
+import ChargesFees from "#components/Tab/components/ChargesFees";
+
+type TabsType = {
+  label: string;
+  index: number;
+  Component: React.FC<{}>;
+}[];
+
+// Tabs Array
+const tabs: TabsType = [
+  {
+    label: "BO Accounts",
+    index: 1,
+    Component: BoAccounts,
+  },
+  {
+    label: "General",
+    index: 2,
+    Component: General,
+  },
+  {
+    label: "Trading",
+    index: 3,
+    Component: Trading,
+  },
+  {
+    label: "Mobile Trading",
+    index: 4,
+    Component: MobileTrading,
+  },
+  {
+    label: "Charges & Fees",
+    index: 5,
+    Component: ChargesFees,
+  },
+];
 
 const FAQ = () => {
+  const [selectedTab, setSelectedTab] = useState<number>(tabs[0].index);
   const accordions = accordionData.faq.faqItem;
   console.log({ accordions });
 
@@ -18,32 +61,7 @@ const FAQ = () => {
       <section id="faq" className="faq section-gap base-bg-white">
         <div className="container">
           <div className="row gy-3 section-card">
-            {/* <pre>{JSON.stringify(accordions, null, 4)}</pre>; */}
-            <Accordion defaultActiveKey="0" flush>
-              {accordions &&
-                accordions?.map((accordion: any, i: number) => (
-                  <Accordion.Item key={accordion.id} eventKey={String(accordion.id)}>
-                    <Accordion.Header>{accordion.qus}</Accordion.Header>
-                    <Accordion.Body>
-                      {accordion.ans}
-                      {accordion.list && (
-                        <div className="accordion-inner-list mt-3">
-                          <h6 className="fw-bold">{accordion.list.title}</h6>
-                          <ul>
-                            {accordion.list.list_items.map((accordionItem: any, i: number) => {
-                              return (
-                                <li key={i}>
-                                  <FiCheck className="accordion-icon" /> {accordionItem.item}
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-                      )}
-                    </Accordion.Body>
-                  </Accordion.Item>
-                ))}
-            </Accordion>
+            <Tabs selectedTab={selectedTab} onClick={setSelectedTab} tabs={tabs} />
           </div>
         </div>
       </section>
