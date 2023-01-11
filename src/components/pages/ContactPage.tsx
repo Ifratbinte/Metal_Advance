@@ -23,7 +23,6 @@ const Contact = () => {
               <div className="col-lg-7 offset-1">
                 <div className="contact-block-text">
                   <div className="contact-block-text-head">
-                    {/* <h2 className="title">Get In Touch</h2> */}
                     <p className="fw-medium">
                       We are always open and we welcome and questions you have for our team. If you wish to get in touch, please fill out the form below.
                     </p>
@@ -120,8 +119,9 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="section-map">
-        <div className="contact-wrap w-100">
+      <section className="section-map section-gap">
+        <div className="contact-wrap w-70 m-auto">
+          <h3 className="title text-center">Get Direction</h3>
           <iframe
             className="contact-location w-100"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4343.850171106826!2d90.42163829074954!3d23.72140413726657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b851efbfffff%3A0xec8d1a110f0764fe!2sBenemoy%20Securities!5e0!3m2!1sen!2sus!4v1671532758268!5m2!1sen!2sus"
