@@ -13,6 +13,16 @@
   max-width: 100vw;
   &-card {
     cursor: pointer;
+    padding: 6px;
+    background: #fff;
+    box-shadow: rgb(100 100 111 / 7%) 0px 7px 29px 0px;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    border: 1px solid transparent;
+    margin: 20px 6px;
+    border-radius: 13px !important;
+    overflow: hidden;
+
     .card {
       &-body {
         padding-left: 1.25rem;
@@ -45,11 +55,11 @@
     cursor: pointer;
     &:hover {
       border-bottom: 1px solid $primary;
-      .related-article{
-        &-title{
+      .related-article {
+        &-title {
           color: $primary;
         }
-        &-desc{
+        &-desc {
           color: $primary;
         }
       }

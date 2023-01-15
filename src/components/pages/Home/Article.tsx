@@ -60,12 +60,12 @@ const ArticleContent = () => {
         <section id="article" className="article section-gap base-bg-light">
           <div className="container">
             <SectionHeading title={articleTitle.title} short_title={articleTitle.short_title} />
-            <div className="row gy-3 section-card">
+            <div className="gy-3 section-card">
               <ArticleSlider {...Slider}>
                 {articles &&
                   articles.data.map((article: any, i: any) => {
                     return (
-                      <div className="col-lg-3" key={i}>
+                     
                         <LinkRedirect id={article.id} url={article.attributes.url}>
                           <ArticleCard
                             image={CONFIGS.CMS_URL + article.attributes.image.data.attributes.formats.thumbnail.url}
@@ -78,7 +78,7 @@ const ArticleContent = () => {
                             url={article.attributes.url}
                           />
                         </LinkRedirect>
-                      </div>
+                     
                     );
                   })}
               </ArticleSlider>
