@@ -19,13 +19,10 @@
     flex-shrink: 0;
   }
   &-content {
-    flex-grow: 1;
-    display: inline-block;
     font-size: $fs-14;
-    color: $gray-200;
     cursor: pointer;
     &:hover {
-      color: $baseWarning;
+      color: var(--baseSecondary);
     }
   }
 }
@@ -41,7 +38,7 @@
 }
 @media (min-width: 768px) {
   #footer .row > div {
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
   }
   .footer-title {
     margin-bottom: 1.75rem;
@@ -72,19 +69,18 @@
     &-link {
       color: #fff;
       &:hover {
-        color: $baseWarning;
+        color: var(--baseSecondary);
       }
     }
   }
 }
 
 .list-border {
+  // position: relative;
   li:first-child {
-    position: relative;
     &:after {
-      top: 4px;
-      left: 0;
-      right: -18px;
+      top: 75px;
+      left: 185px;
       bottom: 0;
       position: absolute;
       content: "";

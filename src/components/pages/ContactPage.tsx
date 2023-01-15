@@ -58,7 +58,7 @@ const Contact = () => {
                     </div>
                     <div className="row">
                       <div className="col-sm-5 text-end">
-                        <button type="submit" className="btn button-base-primary font-Poppins">
+                        <button type="submit" className="btn button-gradient-primary font-Poppins">
                           SEND
                         </button>
                       </div>
