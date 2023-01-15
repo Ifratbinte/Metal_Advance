@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  font-family: $fontPoppins;
 }
 ul {
   margin: 0;
@@ -15,7 +16,7 @@ p {
   font-family: $fontPoppins;
   color: $paragraph;
   font-weight: $fw-normal;
-  font-size: $fs-14;
+  font-size: 0.9375rem;
   line-height: 1.875rem;
 }
 
@@ -49,7 +50,7 @@ p {
 //bg
 .primary-bg {
   color: $light;
-  background: $primary;
+  background: $primary-100;
 }
 .danger-bg {
   color: $light;

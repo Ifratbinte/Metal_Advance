@@ -7,8 +7,8 @@ const Hero = () => {
   return (
     <section id="hero" className="hero">
       <div className="container">
-        <div className="gradient-shadow-top"></div>
-        <div className="row align-items-center banner-gfx">
+        <div className="gradient-shadow-top d-none d-lg-block"></div>
+        <div className="row align-items-center banner-gfx mt-5 mt-lg-0">
           <div className="col-lg-5">
             <div className="d-flex flex-column">
               <h1 className="banner-title fs-45 font-Poppins fw-semibold text-light">

@@ -37,7 +37,7 @@
   }
 }
 
-.section-head {
+.section-border {
   position: relative;
   margin-bottom: 2.675rem;
   &:after {
@@ -46,7 +46,7 @@
     display: block;
     width: 74px;
     height: 3px;
-    background: $primary;
+    background-image: var(--baseSecondaryGradient);
     left: 0;
     right: 0;
     bottom: 0;
