@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 function HeaderTop() {
   // sticky header hide show
-  const [display, setDisplay] = useState("");
+  const [display, setDisplay] = useState("block");
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setDisplay("none") : setDisplay("block");
   };
@@ -29,7 +29,7 @@ function HeaderTop() {
           </div>
           <div className="col-lg-8 topBar-right">
             <Marquee className="marquee-overlay" speed={50} style={{ width: "100%" }}>
-              <ul className="list">
+              <ul className="list d-flex align-items-center">
                 {tickerData.ticker &&
                   tickerData.ticker.map((ticker: any, i: number) => (
                     <li key={i}>

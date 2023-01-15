@@ -10,7 +10,7 @@ header {
     background-color: var(--baseSecondary);
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     position: relative;
     &:after {
       content: "";
@@ -56,12 +56,26 @@ header {
   max-width: 9.5rem;
 }
 
+#topBar {
+  // display: none !important;
+}
 @media (min-width: 576px) {
+  .header-logo img {
+    max-width: 12.5rem;
+  }
+}
+
+@media (min-width: 992px) {
   #topBar {
-    display: block;
+    // display: block !important;
   }
   .header-logo img {
     max-width: 12.5rem;
+  }
+  .topBar {
+    &-left {
+      justify-content: end;
+    }
   }
 }
 
