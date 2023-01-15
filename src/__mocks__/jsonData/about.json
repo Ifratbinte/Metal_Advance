@@ -1,44 +1,71 @@
 {
-  "id" : 1,
-  "title_main" : "About Benemoy Security",
-  "pathname" : "About",
-  "about" : {
-    "id" : 1,
-    "subtitle" : "About Benemoy",
-    "title" : "We Create Great Ideas For Your Products &",
-    "title_span" : "Services",
-    "year_base" : "20",
-    "year_content" : "Years’ Experience investment",
-    "description" : "Benemoy Securities Limited was incorporated with the Registrar of Joint Stock Companies and Firms (RJSC) vide registration no.C-169369/2021 with effect from 2nd March 2021 as a private limited company limited by shares having its registered office at Swantex Bhaban (5th Floor), 9/i Motijheel Commercial Area, Dhaka-1000 under the Companies Act 1994",
-    "link" : "#",
+  "id": 1,
+  "title_main": "About Benemoy Security",
+  "pathname": "About",
+  "about": {
+    "id": 1,
+    "subtitle": "About Benemoy",
+    "title": "We Create Great Ideas For Your Products &",
+    "title_span": "Services",
+    "year_base": "20",
+    "image": "images/gfx/gfx-2.png",
+    "year_content": "Years’ Experience investment",
+    "description": "Benemoy Securities Limited was incorporated with the Registrar of Joint Stock Companies and Firms (RJSC) vide registration no.C-169369/2021 with effect from 2nd March 2021 as a private limited company limited by shares having its registered office at 56, Shantinagar, Monihar Classic (5th Floor), Dhaka-1217 under the Companies Act 1994. The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favour of any person as may be required to be admitted for the purpose of running the business of the exchange and to deal as stock or broker business in accordance BSEC (Trading Right Entitlement Certificate) Rules, 2020 and Dhaka Stock Exchange (Administration of Trading Right Entitlement Certificate) Regulations, 2020 and relevant laws, rules & regulations issued by respective authorities. Our DSE TREC No is 291 & DP Code is 65000.",
+    "link": "#",
     "link_text": "Discover Now",
-    "card" : [
+    "card": [
       {
-      "id" : 1,
-      "image" : "images/thumb/about/about-1.png",
-      "image_alt" : "Safe and Security",
-      "about_title" : "Safe and Security",
-      "about_desc" : "Benemoy Securities Limited always tries to ensure safe & secure trading for their valuable clients."
+        "id": 1,
+        "image": "images/thumb/about/about-1.png",
+        "image_alt": "Safe and Security",
+        "about_title": "Safe and Security",
+        "about_desc": "Benemoy Securities Limited always tries to ensure safe & secure trading for their valuable clients."
       },
       {
-      "id" : 2,
-      "image" : "images/thumb/about/about-4.png",
-      "about_title" : "Instant Exchange",
-      "about_desc" : "Benemoy Securities team is always concerned to solve any kind of stock market-related problem for their clients."
+        "id": 2,
+        "image": "images/thumb/about/about-4.png",
+        "about_title": "Instant Exchange",
+        "about_desc": "Benemoy Securities team is always concerned to solve any kind of stock market-related problem for their clients."
       },
       {
-      "id" : 3,
-      "image" : "images/thumb/about/about-3.png",
-      "about_title" : "Experts Support",
-      "about_desc" : "Benemoy Securities team is always concerned to solve any kind of stock market-related problem for their clients."
+        "id": 3,
+        "image": "images/thumb/about/about-3.png",
+        "about_title": "Experts Support",
+        "about_desc": "Benemoy Securities team is always concerned to solve any kind of stock market-related problem for their clients."
       }
     ],
-    "about_ideas" : {
-      "about_ideas_img_lg" : "images/thumb/about/about-5.png",
-      "about_ideas_img_sm" : "images/thumb/about/about-6.png",
-      "about_ideas_title" : "We Create Great Ideas For Your Products & Services",
-      "about_ideas_desc" : "Benemoy Securities Limited was incorporated with the Registrar of Joint Stock Companies and Firms (RJSC) vide registration no.C-169369/2021 with effect from 2nd March 2021 as a private limited company limited by shares having its registered office at Swantex Bhaban (5th Floor), 9/i Motijheel Commercial Area, Dhaka-1000 under the Companies Act 1994.",
-      "about_ideas_desc_2": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor of any person as may be required to be admitted for the purpose of running the business of the exchange and to deal as stock or broker business in accordance BSEC (Trading Right Entitlement Certificate)Rules, 2020 and Dhaka Stock Exchange (Administration of Trading Right Entitlement Certificate) Regulations, 2020 and relevant laws, rules & regulations issued by respective authorities."
+    "about_ideas": {
+      "subtitle": "Our Objectives",
+      "about_ideas_img_lg": "images/thumb/about/about-5.png",
+      "about_ideas_img_sm": "images/thumb/about/about-6.png",
+      "about_ideas_title": "We help our clients build a",
+      "about_ideas_title_span": "Sustainable",
+      "about_ideas_titleEnd": "Future",
+      "about_ideas_desc": "Our aim to create a better investment pathway for our valued clients in the Bangladesh Stock Market has made us become the leading TREC in the country. Benemoy Securities Limitedis an innovative financial services company offering a range of brokerage and investing solutions which to be obtained TREC license from Dhaka Stock Exchange Limited as per BSEC (Trading Right Entitlement Certificate) Rule, 2020. We believe in being committed to going the extra mile for our customers and using our intuitive research to help clients take informed investing decisions. To continuously improve our clients’ trading and investing experiences, we rely on their input, integrating what they need into our trading tools and services."
+    },
+    "mission_vision": {
+      "title": "Our Mission & vision",
+      "subtitle": "Let us help prepare for your future",
+      "mission_item": [
+        {
+          "id": 1,
+          "icon": "/images/thumicon/mission.jpg",
+          "title": "Our Mission",
+          "description": "To be the trusted TREC holder of Bangladesh Capital Market for all investors by offering an outstanding level of investment expertise and quality customer services."
+        },
+        {
+          "id": 2,
+          "icon": "/images/thumicon/vision.jpg",
+          "title": "Our Vision",
+          "description": "We strive to develop a sustainable growth model that will guide us to market leadership through advanced technology and superior client service as leading TREC holder of Bangladesh."
+        },
+        {
+          "id": 3,
+          "icon": "/images/thumicon/obj.jpg",
+          "title": "Benemoy Ownership",
+          "description": "Bitcoin is changing the way people think about money. Educate yourself about this ground-breaking payment system."
+        }
+      ]
     }
   }
 }

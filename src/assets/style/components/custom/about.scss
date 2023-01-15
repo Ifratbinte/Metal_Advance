@@ -3,7 +3,6 @@
     p {
       line-height: 1.875rem;
       letter-spacing: 0.15px;
-      padding-right: 75px;
     }
   }
   &-ideas {
@@ -33,6 +32,7 @@
         border-radius: 0.75rem;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
         position: relative;
+        width: 90%;
       }
       &-sm {
         position: absolute;
@@ -55,4 +55,26 @@
   color: $gray-100;
   letter-spacing: -0.065rem;
   line-height: 1.25rem;
+}
+.single {
+  &-item {
+    border: 1px solid transparent;
+    padding: 36px;
+    transition: all 0.3s ease-in-out;
+    min-height: 380px;
+    max-height: 380px;
+    &-img{
+      img{
+        height: 100px;
+      }
+    }
+    &:hover {
+      border: 1px solid #f2f2f2;
+      padding: 36px;
+      background: #fff;
+      box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+  }
 }
