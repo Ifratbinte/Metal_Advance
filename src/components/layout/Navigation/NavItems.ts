@@ -33,6 +33,23 @@ const NavItems = [
   },
   {
     id: 3,
+    title: "IPO",
+    url: "/#",
+    submenu: [
+      {
+        id: 1,
+        title: "Online IPO Application",
+        url: "/online-ipo-application",
+      },
+      {
+        id: 2,
+        title: "Forecast IPO",
+        url: "/forecast-ipo",
+      }
+    ],
+  },
+  {
+    id: 4,
     title: "Service",
     url: "/#",
     submenu: [
@@ -64,7 +81,29 @@ const NavItems = [
     ],
   },
   {
-    id: 4,
+    id: 5,
+    title: "R & D",
+    url: "/#",
+    submenu: [
+      {
+        id: 1,
+        title: "Daily Market Update",
+        url: "/daily-market",
+      },
+      {
+        id: 1,
+        title: "IPO Notes",
+        url: "/ipo-notes",
+      },
+      {
+        id: 1,
+        title: "Technical Chart",
+        url: "/technical-chart",
+      },
+    ],
+  },
+  {
+    id: 6,
     title: "News & Updates",
     url: "/news-updates",
     submenu: [
@@ -95,30 +134,9 @@ const NavItems = [
       },
     ],
   },
+  
   {
-    id: 5,
-    title: "R & D",
-    url: "/#",
-    submenu: [
-      {
-        id: 1,
-        title: "Daily Market Update",
-        url: "/daily-market",
-      },
-      {
-        id: 1,
-        title: "IPO Notes",
-        url: "/ipo-notes",
-      },
-      {
-        id: 1,
-        title: "Technical Chart",
-        url: "/technical-chart",
-      },
-    ],
-  },
-  {
-    id: 6,
+    id: 7,
     title: "Contact",
     url: "/contact",
   },
