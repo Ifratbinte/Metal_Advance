@@ -36,7 +36,7 @@ const MenuItems = ({ items, depthLevel }: any) => {
       {items.submenu ? (
         <>
           <button
-            className="menu-links border-0 cursor-pointer bg-transparent w-100 fs-18"
+            className="menu-links border-0 cursor-pointer bg-transparent w-100 fs-16"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
           >
@@ -46,7 +46,7 @@ const MenuItems = ({ items, depthLevel }: any) => {
           <Dropdown submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />
         </>
       ) : (
-        <NavLink className="menu-links d-block fs-18" to={items.url}>
+        <NavLink className="menu-links d-block fs-16" to={items.url}>
           {items.title}
         </NavLink>
       )}

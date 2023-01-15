@@ -2,6 +2,7 @@
 import Email from "#components/common/Email";
 import Location from "#components/common/Location";
 import PhoneContact from "#components/common/PhoneContact";
+import SocialIcon from "#components/common/SocialIcon";
 
 import footerContact, { FooterContactInterface } from "#mocks/footerContact";
 import footerLinks, { FooterLinksInterface } from "#mocks/footerLinks";
@@ -10,9 +11,9 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <footer id="footer" className="footer text-white">
-        <div className="container">
-          <div className="row">
+      <footer id="footer" className="footer footer-gfx text-white">
+        <div className="container footer-inner-content">
+          <div className="row footer-top">
             <div className="col-lg-4">
               <div className="footer-info">
                 <img className="logo footer-logo" src="/images/benemoy-securities.png" alt="Benemoy Securities" />
@@ -33,13 +34,11 @@ function Footer() {
               <div className="footer-links">
                 <h4 className="footer-title">Get In Touch</h4>
                 <ul className="list-unstyled">
-                  {footerContact.map((item: FooterContactInterface, i: number) => {
-                    return (
-                      <li key={i}>
-                        <Link to={item.url}>{item.name}</Link>
-                      </li>
-                    );
-                  })}
+                  {footerContact.map((item: FooterContactInterface, i: number) => (
+                    <li key={i}>
+                      <Link to={item.url}>{item.name}</Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -47,13 +46,11 @@ function Footer() {
               <div className="footer-links">
                 <h4 className="footer-title">Important Link</h4>
                 <ul className="list-unstyled">
-                  {footerLinks.map((item: FooterLinksInterface, i: number) => {
-                    return (
-                      <li key={i}>
-                        <a href={item.url}>{item.name}</a>
-                      </li>
-                    );
-                  })}
+                  {footerLinks.map((item: FooterLinksInterface, i: number) => (
+                    <li key={i}>
+                      <a href={item.url}>{item.name}</a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -65,10 +62,32 @@ function Footer() {
                 </p>
                 <div className="newsletter-form input-group">
                   <input type="text" className="form-control" placeholder="Your Email..." />
-                  <button className="btn btn-warning submit-btn" type="submit" id="newsletterSubmit">
+                  <button className="btn button-solid-primary submit-btn" type="submit" id="newsletterSubmit">
                     Submit
                   </button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="gradient-shadow-bottom"></div> */}
+      </footer>
+      <footer className="footer-bottom">
+        <div className="container">
+          <div className="row justify-content-between align-items-center">
+            <div className="col-lg-5">
+              <div className="copyright">
+                <span className="fs-16">
+                  All rights reserved by &copy;
+                  <span className="fw-bold" style={{ color: "var(--baseSecondary)" }}>
+                    2023
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div className="col-lg-7">
+              <div className="footer-social">
+                <SocialIcon />
               </div>
             </div>
           </div>

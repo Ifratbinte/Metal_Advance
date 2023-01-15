@@ -11,12 +11,12 @@ const HeaderMenu = () => {
   };
 
   // sticky nav bg & size
-  const [navSize, setNavSize] = useState("4.5rem");
+  const [navSize, setNavSize] = useState("4rem");
   const [navColor, setNavColor] = useState("transparent");
   const [shadow, setShadow] = useState("none");
   const listenScrollEvent = () => {
-    window.scrollY > 20 ? setNavColor("rgba(88, 70, 249, 0.9)") : setNavColor("transparent");
-    window.scrollY > 20 ? setNavSize("5rem") : setNavSize("4.5rem");
+    window.scrollY > 20 ? setNavColor("#fff") : setNavColor("transparent");
+    window.scrollY > 20 ? setNavSize("4rem") : setNavSize("4rem");
     window.scrollY > 20 ? setShadow("$baseShadow") : setShadow("none");
   };
   useEffect(() => {
@@ -53,7 +53,7 @@ const HeaderMenu = () => {
           </div>
           <div className="nav-right" ref={navRef}>
             <Navbar />
-            <button className="btn button-login button-base-warning-outline">Login</button>
+            <button className="btn button-login button-gradient-primary-outline">Login</button>
             <button className="nav-btn nav-close-btn" onClick={showNavBar}>
               <FaTimes />
             </button>

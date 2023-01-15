@@ -1,7 +1,7 @@
 .header-background {
   .nav {
     &-area {
-      padding: 0.75rem 0;
+      // padding: 0.75rem 0;
     }
   }
 }
@@ -17,17 +17,17 @@
       padding: 0.7rem 1rem;
     }
     &:hover:after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 70%;
-      height: 2px;
-      background: rgb(72, 67, 139);
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      border: none;
+      // content: "";
+      // position: absolute;
+      // display: block;
+      // width: 70%;
+      // height: 2px;
+      // background: rgb(72, 67, 139);
+      // left: 0;
+      // right: 0;
+      // bottom: 0;
+      // margin: auto;
+      // border: none;
     }
   }
   &-links {
@@ -69,7 +69,7 @@
   z-index: 9999;
   background-color: $light;
   border-radius: 0.2rem 0.22rem 0.5rem 0.5rem;
-  border-top: 3px solid $primary;
+  // border-top: 3px solid $primary;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -77,6 +77,7 @@
     visibility: visible;
     opacity: 1;
     transition-delay: 0.2s;
+    margin-top: 8px;
   }
   .dropdown-submenu {
     position: absolute;
@@ -95,7 +96,7 @@
       font-weight: $fw-normal;
       border-bottom: 1px solid #f2f2f2;
       &:hover {
-        background: $basePrimaryGradient;
+        background: var(--baseSecondaryGradient);
       }
     }
   }
