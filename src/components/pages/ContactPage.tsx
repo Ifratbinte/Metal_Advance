@@ -1,5 +1,6 @@
 // import "#components/pages/customStyle/theme.css";
 import ContactInfo from "#components/common/contact";
+import Title from "#components/common/Title";
 import ContactData from "#mocks/jsonData/contact.json";
 import { FiMail, FiMapPin, FiPhoneCall } from "react-icons/fi";
 
@@ -100,9 +101,11 @@ const Contact = () => {
       </section>
       <section className="section-bg section-gap">
         <div className="container">
+          {/* <Title title={contact.contactPage.title} /> */}
+          <h2 className="font-Poppins fw-bold fs-24 text-center mb-5 primary">Request for a Call</h2>
           <div className="row">
-            {contact.contactPage &&
-              contact.contactPage.map((contact: any, i: number) => {
+            {contact.contactPage.contact_info &&
+              contact.contactPage.contact_info.map((contact: any, i: number) => {
                 return (
                   <ContactInfo
                     title={contact.title}

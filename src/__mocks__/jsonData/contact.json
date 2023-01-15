@@ -25,47 +25,50 @@
         "location": "Swantex Bhaban (5th Floor), 9/I, Motijheel Commercial Area, "
       }
     ],
-    "contactPage": [
-      {
-        "id": 1,
-        "title": "Customer Service",
-        "icon": "/images/icon/customer-service.png",
-        "phone": "+8801404428804",
-        "telephone": "+880247120687",
-        "email": "contact@benemoysecurities.com"
-      },
-      {
-        "id": 2,
-        "title": "Trade Service",
-        "icon": "/images/icon/trade-service.png",
-        "phone": "+880 195815 7814",
-        "phone2": "+880 195815 7810",
-        "phone3": "+880 195815 7805"
-      },
-      {
-        "id": 3,
-        "icon": "/images/icon/mobile-app.png",
-        "title": "IT/Mobile App Support",
-        "phone": "+880 195815 7802"
-      },
-      {
-        "id": 4,
-        "title": "IPO Service",
-        "icon": "/images/icon/ipo-service.png",
-        "phone": "+880 194066 0088"
-      },
-      {
-        "id": 5,
-        "icon": "/images/icon/op-com-service.png",
-        "title": "Operation & Compliance",
-        "phone": "+880 195815 7807"
-      },
-      {
-        "id": 6,
-        "title": "CBDL Service",
-        "icon": "/images/icon/cdbl-service.png",
-        "phone": "+880 195815 7806"
-      }
-    ]
+    "contactPage": {
+      "title": "Request for a call",
+      "contact_info": [
+        {
+          "id": 1,
+          "title": "Customer Service",
+          "icon": "/images/icon/customer-service.png",
+          "phone": "+8801404428804",
+          "telephone": "+880247120687",
+          "email": "contact@benemoysecurities.com"
+        },
+        {
+          "id": 2,
+          "title": "Trade Service",
+          "icon": "/images/icon/trade-service.png",
+          "phone": "+880 195815 7814",
+          "phone2": "+880 195815 7810",
+          "phone3": "+880 195815 7805"
+        },
+        {
+          "id": 3,
+          "icon": "/images/icon/mobile-app.png",
+          "title": "IT/Mobile App Support",
+          "phone": "+880 195815 7802"
+        },
+        {
+          "id": 4,
+          "title": "IPO Service",
+          "icon": "/images/icon/ipo-service.png",
+          "phone": "+880 194066 0088"
+        },
+        {
+          "id": 5,
+          "icon": "/images/icon/op-com-service.png",
+          "title": "Operation & Compliance",
+          "phone": "+880 195815 7807"
+        },
+        {
+          "id": 6,
+          "title": "CBDL Service",
+          "icon": "/images/icon/cdbl-service.png",
+          "phone": "+880 195815 7806"
+        }
+      ]
+    }
   }
 }
