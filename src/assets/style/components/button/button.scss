@@ -8,27 +8,34 @@
   border-radius: 6px;
   color: $light;
   padding: 0.75rem 1.875rem;
-  &.button-base-primary {
-    background: $basePrimaryGradient;
+  transition: all 0.5s ease-in-out;
+  &.button-gradient-primary {
+    background-image: $btnPrimary;
     &:hover {
       color: $light-100;
+      background-image: $btnPrimaryReverse;
+    }
+    &-outline {
+      background: transparent;
+      border: 2px solid $baseSecondary;
+      color: $baseSecondary !important;
+      &:hover {
+        color: $light-100 !important;
+        background: $btnPrimaryReverse;
+      }
     }
   }
-  &.button-base-warning {
-    background: $baseWarning;
-    &:hover {
-      color: $light-100;
-    }
+  &.button-solid-primary{
+    background-color: var(--baseSecondary);
   }
-  &.button-base-warning-outline {
-    background: transparent;
-    border: 2px solid $baseWarning;
-    color: $baseWarning !important;
-    &:hover {
-      color: $light-100 !important;
-      background: $baseWarning;
-    }
-  }
+
+  // &.button-base-warning {
+  //   background: $baseWarning;
+  //   &:hover {
+  //     color: $light-100;
+  //   }
+  // }
+
   &.button-base-secondary {
     background: $btnBgSecondary;
     &:hover {
@@ -39,6 +46,7 @@
     padding: 0.5rem 1.75rem !important;
   }
 }
+
 .submit-btn {
   padding: 0px 24px;
 }

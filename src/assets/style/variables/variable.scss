@@ -4,9 +4,12 @@
   --basePrimaryGradient: linear-gradient(to right, #0c0f72, #252885, #090fb3);
   --basePrimaryReverse: linear-gradient(to right, #090fb3, #252885, #0c0f72);
   --baseSecondary: linear-gradient(180deg, #f3222a 0%, #c71c22 44.27%, #c21c21 49.48%, #c11b21 49.49%, #be1b20 53.65%, #bd1b20 53.66%, #af1618 100%);
+  --baseSecondaryGradient: linear-gradient(to right, #16a3fe 0%, #23c99d 100%);
+  --baseSecondaryGradientReverse: linear-gradient(to left, #16a3fe 0%, #23c99d 100%);
   --baseBody: #eff5fe;
-  --basePrimary: #0d3255;
-  --baseSecondary: #00abe0;
+  --basePrimary: #0C234F;
+  --basePrimaryDark: #0f3c62;
+  --baseSecondary: #02c3ff;
   --baseDanger: #f50e16;
   --baseWarning: #ffca2c;
   --basePurple: #4f35a1;
@@ -34,12 +37,17 @@ $btnBgPrimary: var(--baseSecondary);
 $btnBgSecondary: #5a5a5a;
 $btnColor: var(--baseLight);
 
+//new style
+$btnPrimary: var(--baseSecondaryGradient);
+$btnPrimaryReverse: var(--baseSecondaryGradientReverse);
+
 // global-color
 $dark: var(--baseDark);
 $dark-100: #3d3d3d;
 $light: var(--baseLight);
 $light-100: #f2f2f2;
 $primary: var(--basePrimary);
+$secondary: var(--baseSecondary);
 $primary-100: #070a5a;
 $danger: var(--baseDanger);
 $warning: (--baseWarning);
