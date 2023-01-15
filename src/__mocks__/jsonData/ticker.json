@@ -1,0 +1,59 @@
+{
+  "ticker": [
+    {
+      "id": 1,
+      "item": "34.85",
+      "title": "AB BANK"
+    },
+    {
+      "id": 2,
+      "item": "56.25",
+      "title": "AL TEXt"
+    },
+    {
+      "id": 3,
+      "item": "94.86",
+      "title": "BATA"
+    },
+    {
+      "id": 4,
+      "item": "90.15",
+      "title": "APEX"
+    },
+    {
+      "id": 5,
+      "item": "78.05",
+      "title": "CITY"
+    },
+    {
+      "id": 6,
+      "item": "10.45",
+      "title": "ALIF"
+    },
+    {
+      "id": 7,
+      "item": "34.65",
+      "title": "JANATA"
+    },
+    {
+      "id": 8,
+      "item": "4.85",
+      "title": "TEER"
+    },
+    {
+      "id": 9,
+      "item": "10.45",
+      "title": "ALIF"
+    },
+    {
+      "id": 10,
+      "item": "34.65",
+      "title": "JANATA"
+    },
+    {
+      "id": 11,
+      "item": "4.85",
+      "title": "TEER"
+    }
+  ]
+}
