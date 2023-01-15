@@ -1,27 +1,29 @@
 {
-
-  "work" : {
-    "id" : 1,
-    "title" : "How It Work",
-    "short_title" : "What We Are Offering To Customers", 
-    "item" : [
+  "work": {
+    "id": 1,
+    "title": "How It Work",
+    "short_title": "What We Are Offering To Customers",
+    "item": [
       {
-        "id" : 1,
-        "icon" : "images/icon/support.svg",
-        "alt" : "Support",
-        "title" : "Best support for 24th daily."
+        "id": 1,
+        "icon": "images/icon/support.svg",
+        "alt": "Support",
+        "title": "Best support for 24th daily.",
+        "arrow_top": "images/shape/arrow-top.png"
       },
       {
-        "id" : 2,
-        "icon" : "images/icon/update.svg",
-        "alt" : "Update",
-        "title" : "High-End diagnostic equipment and continuously update."
+        "id": 2,
+        "icon": "images/icon/update.svg",
+        "alt": "Update",
+        "title": "High-End diagnostic equipment and continuously update.",
+        "arrow_bottom": "images/shape/arrow-bottom.png"
       },
       {
-        "id" : 3,
-        "icon" : "images/icon/employee.svg",
-        "alt" : "Employee",
-        "title" : "Best employees in the industry."
+        "id": 3,
+        "icon": "images/icon/employee.svg",
+        "alt": "Employee",
+        "title": "Best employees in the industry.",
+        "arrow_top": "images/shape/arrow-top.png"
       }
     ]
   }

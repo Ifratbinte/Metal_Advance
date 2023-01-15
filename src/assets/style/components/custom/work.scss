@@ -1,3 +1,12 @@
+@keyframes rotatecw {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .work {
   &-item {
     & .work-single-item:nth-child(1) {
@@ -33,11 +42,9 @@
       border-radius: 50%;
       background: #fff;
       content: "";
-      // top: 50%;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      // right: 5px;
       margin: auto;
       border: 2px solid $gray-100;
     }
@@ -45,8 +52,6 @@
     &:not(:last-child):before {
       position: absolute;
       display: block;
-      // height: 2px;
-      // width: 35px;
       width: 2px;
       height: 35px;
       background: $gray-100;
@@ -54,8 +59,6 @@
       top: 100%;
       left: 50%;
       transform: translate(-50%, 20%);
-      // top: 18px;
-      // right: -29px;
       bottom: 0;
       margin: auto;
     }
@@ -66,10 +69,27 @@
       margin-left: 10px;
     }
   }
+  .arrow {
+    img {
+      position: absolute;
+      margin-left: 12px;
+    }
+    &-top {
+      img {
+        margin-top: -40px;
+      }
+    }
+    &-bottom {
+      img {
+        margin-top: -10px;
+      }
+    }
+  }
 
   &-icon {
     height: 35px;
     width: 100%;
+    // animation: rotatecw 30s linear infinite 0s;
   }
   &-title {
     line-height: 28px;
@@ -89,7 +109,6 @@
   border: 2px solid $gray-100;
   border-radius: 50%;
 }
-
 
 @media (min-width: 576px) {
   .work-single-item {
@@ -111,7 +130,7 @@
     }
   }
   .items-status.is-outline {
-   top: 50%;
+    top: 50%;
     left: 0;
     transform: translate(0, -50%);
   }
