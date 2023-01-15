@@ -9,21 +9,7 @@ const Management = () => {
   const managements = employeeData.management.management_card;
 
   const teamComponentArray = useMemo(() => {
-    /**
-     * i = 0
-     * j = 0
-     * i % 5 == 0 ? i = 0 : null
-     *
-     * col1 = []
-     * col2 = []
-     * col3 = []
-     *
-     * i == 0 && priority === 1 ? col2.push(jsx) : col1.push(jxs)
-     * i < 4
-     *      ? { j == 0 ? col1.push(index > 5 && j === 0 ? <emptyCard /> : jsx): col2.push(jsx); j++;}
-     *       : col3.push(jsx); i = 0; j= 0
-     */
-
+   
     let i = 0;
     let j = 0;
     let components: any[] = [];
@@ -155,60 +141,3 @@ const Management = () => {
 };
 
 export default Management;
-
-// if (i === 0) {
-//   console.log("First Section", i);
-
-//   components.push(
-//     <div className="col author-card" key={i}>
-//       <div className="row">
-//         <EmployeeCard
-//           image={CONFIGS.CMS_URL + team.attributes.image.data.attributes.formats.thumbnail.url}
-//           alt={team.attributes.name}
-//           name={team.attributes.name}
-//           designation={team.attributes.designation}
-//           bio={team.attributes.content}
-//         />
-//       </div>
-//     </div>
-//   );
-// } else if (i <= 3 && i > 0) {
-//   console.log("Second Section", i);
-//   rows.push(
-//     <div className="row" key={i}>
-//       <EmployeeCard
-//         image={CONFIGS.CMS_URL + team.attributes.image.data.attributes.formats.thumbnail.url}
-//         alt={team.attributes.name}
-//         name={team.attributes.name}
-//         designation={team.attributes.designation}
-//         bio={team.attributes.content}
-//       />
-//     </div>
-//   );
-// } else {
-//   console.log("Last Section", i);
-//   components.push(
-//     <>
-//       <div className="col author-card" key={i - 1}>
-//         {rows}
-//       </div>
-//       <div className="col author-card" key={i}>
-//         <div className="row">
-//           <EmployeeCard
-//             image={CONFIGS.CMS_URL + team.attributes.image.data.attributes.formats.thumbnail.url}
-//             alt={team.attributes.name}
-//             name={team.attributes.name}
-//             designation={team.attributes.designation}
-//             bio={team.attributes.content}
-//           />
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-// });
-// console.log({
-// data: teams?.data,
-// components,
-// rows,
-// });
