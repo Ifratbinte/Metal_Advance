@@ -1,61 +1,59 @@
 {
-  
-  "id" : 1,
-  "title_main" : "Our Services",
-  "pathname" : "Services",
-  "service" : {
-    "id" : 1,
-    "subtitle" : "Our Service",
-    "title" : "Discover The Services We Offer",
-    "card" : [
+  "id": 1,
+  "title_main": "Our Services",
+  "pathname": "Services",
+  "service": {
+    "id": 1,
+    "subtitle": "Our Service",
+    "title": "Discover The Services We Offer",
+    "card": [
       {
-        "id" : 1,
-        "image" : "images/thumb/service/service-1.png",
-        "image_alt" : "BO Account Opening",
-        "service_title" : "BO Account Opening",
-        "service_desc" : "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
-        "service_btn" : "Read More"
+        "id": 1,
+        "image": "images/thumb/service/thumb-sm-1.jpg",
+        "icon": "/images/banner/bo.png",
+        "service_title": "Online BO",
+        "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
+        "service_btn": "Read More"
       },
       {
-        "id" : 2,
-        "image" : "images/thumb/service/service-2.png",
-        "image_alt" : "Institutional & VIP Trade",
-        "service_title" : "Institutional & VIP Trade",
-        "service_desc" : "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
-        "service_btn" : "Read More"
+        "id": 2,
+        "image": "images/thumb/service/thumb-sm-2.jpg",
+        "icon": "/images/banner/ipo.png",
+        "service_title": "IPO Service",
+        "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
+        "service_btn": "Read More"
       },
       {
-        "id" : 3,
-        "image" : "images/thumb/service/service-3.png",
-        "image_alt" : "Online Share Trading",
-        "service_title" : "Online Share Trading",
-        "service_desc" : "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
-        "service_btn" : "Read More"
-      },
-
-      {
-        "id" : 4,
-        "image" : "images/thumb/service/service-1.png",
-        "image_alt" : "Institutional & VIP Trade",
-        "service_title" : "Institutional & VIP Trade",
-        "service_desc" : "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
-        "service_btn" : "Read More"
+        "id": 3,
+        "image": "images/thumb/service/thumb-sm-3.jpg",
+        "icon": "/images/banner/bo.png",
+        "service_title": "Online Trading",
+        "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
+        "service_btn": "Read More"
       },
       {
-        "id" : 5,
-        "image" : "images/thumb/service/service-3.png",
-        "image_alt" : "Institutional & VIP Trade",
-        "service_title" : "Institutional & VIP Trade",
-        "service_desc" : "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
-        "service_btn" : "Read More"
+        "id": 4,
+        "image": "images/thumb/service/thumb-sm-4.jpg",
+        "icon": "/images/banner/bo.png",
+        "service_title": "Mobile Trading",
+        "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
+        "service_btn": "Read More"
       },
       {
-        "id" : 6,
-        "image" : "images/thumb/service/service-2.png",
-        "image_alt" : "Institutional & VIP Trade",
-        "service_title" : "Institutional & VIP Trade",
-        "service_desc" : "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
-        "service_btn" : "Read More"
+        "id": 5,
+        "image": "images/thumb/service/thumb-sm-4.jpg",
+        "icon": "/images/banner/bo.png",
+        "service_title": "Digital Payments",
+        "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
+        "service_btn": "Read More"
+      },
+      {
+        "id": 4,
+        "image": "images/thumb/service/thumb-sm-4.jpg",
+        "icon": "/images/banner/bo.png",
+        "service_title": "Dedicated Support",
+        "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
+        "service_btn": "Read More"
       }
     ]
   }
