@@ -22,7 +22,7 @@ const About = () => {
       <section id="about" className="about section-gap base-bg-white">
         <div className="container">
           <div className="row align-items-center section-description about-content">
-            <div className="col-lg-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+            <div className="col-lg-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
               <div className="about-gfx">
                 <img src={about.image} alt={about.title} />
               </div>
@@ -36,6 +36,16 @@ const About = () => {
               </div>
             </div>
           </div>
+          <div className="row mt-5 section-card section-gap">
+            {about.card &&
+              about.card.map((about: any, i: number) => {
+                return (
+                  <div className="col-lg-4" key={i}>
+                    <CardComponent image={about.image} alt={about.image_alt} title={about.about_title} description={about.about_desc} />
+                  </div>
+                );
+              })}
+          </div>
         </div>
       </section>
 
@@ -47,7 +57,7 @@ const About = () => {
             {about.mission_vision.mission_item &&
               about.mission_vision.mission_item.map((item: any, i: number) => {
                 return (
-                  <div className="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000">
+                  <div className="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="500">
                     <div className="single-item d-flex flex-column align-items-center ">
                       <div className="single-item-img mb-4">
                         <img src={item.icon} alt={item.title} className="rounded-circle" />
@@ -64,28 +74,12 @@ const About = () => {
         </div>
       </section>
 
-      {/* about card */}
-      <section id="aboutCard" className="about-card section-gap">
-        <div className="container">
-          <div className="row gy-4 section-card pt-5">
-            {about.card &&
-              about.card.map((about: any, i: number) => {
-                return (
-                  <div className="col-lg-4" key={i}>
-                    <CardComponent image={about.image} alt={about.image_alt} title={about.about_title} description={about.about_desc} />
-                  </div>
-                );
-              })}
-          </div>
-        </div>
-      </section>
-
       {/* objectives */}
-      <section id="aboutIdeas" className="about-ideas section-gap base-bg-light">
+      <section id="aboutIdeas" className="about-ideas section-gap base-bg-white">
         <div className="container">
           <div className="row m-auto align-items-center">
             <div className="col-xl-6 mt-5 mt-xl-0">
-              <div className="about-ideas-inner mt-5 mt-xl-0 pe-5" data-aos="fade-down-left" data-aos-duration="1500">
+              <div className="about-ideas-inner mt-5 mt-xl-0 pe-5" data-aos="fade-down-left" data-aos-duration="500">
                 <h5 className="subtitle secondary text-uppercase font-Inter fw-bold fs-18">{about.about_ideas.subtitle}</h5>
                 <h2 className="about-ideas-title font-Inter fw-bold fs-45">
                   {about.about_ideas.about_ideas_title} <span className="secondary fw-normal">{about.about_ideas.about_ideas_title_span}</span>{" "}
