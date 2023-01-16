@@ -2,7 +2,7 @@ import SectionHeading from "#components/common/SectionHeading";
 import serviceData from "#mocks/jsonData/service.json";
 import ServiceSlider from "react-slick";
 var Slider = {
-  // autoplay: true,
+  autoplay: true,
   infinite: true,
   arrows: false,
   dots: true,
@@ -41,7 +41,7 @@ const Service = () => {
   const services = serviceData.service;
   return (
     <>
-      <section id="service" className="service section-gap">
+      <section id="service" className="service_area section-gap">
         <div className="container">
           <SectionHeading subtitle={services.subtitle} title={services.title} />
           <div className="row gy-4 section-card">
@@ -50,12 +50,14 @@ const Service = () => {
                 services.card.map((service: any, i: number) => {
                   return (
                     <div className="col-lg-4" key={i}>
-                      <div className="wrapper">
-                        <div className="panel animated slideInDown">
-                          <img src={service.image} alt={service.image_alt} />
-                          <h5>{service.service_title}</h5>
-                          <div className="slide">
-                            <p>{service.service_desc}</p>
+                      <div className="single_service rounded" style={{ background: `url(${service.image})` }}>
+                        <div className="service_hover position-relative d-flex flex-column align-items-center">
+                          <img src={service.icon} alt={service.title} className="service-icon rounded-circle border border-0 bg-light mb-3" />
+                          <h3 className="service-item-title text-white fs-22">{service.service_title}</h3>
+                          <div className="hover_content">
+                            <div className="hover_content_inner text-center">
+                              <p className="text-light">{service.service_desc}</p>
+                            </div>
                           </div>
                         </div>
                       </div>

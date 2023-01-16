@@ -1,51 +1,34 @@
 .card {
   max-width: 100vw;
-  cursor: pointer;
-  padding: 6px;
-  background: #fff;
-  box-shadow: rgb(100 100 111 / 7%) 0px 7px 29px 0px;
   transition: all 0.5s ease-in-out;
   z-index: 1;
-  border: 1px solid transparent;
   margin: 20px 6px;
-  border-radius: 13px !important;
-  overflow: hidden;
-  &-body {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
+  
   &-title {
     letter-spacing: -0.045em !important;
-    padding-top: 1.25rem;
     text-overflow: ellipsis;
-    overflow: hidden;
     white-space: nowrap;
   }
   &-text {
     letter-spacing: -0.045em;
-    padding-top: 0.25rem;
     max-height: 54px;
     min-height: 54px;
     text-overflow: ellipsis;
-    overflow: hidden;
   }
   &-date {
     margin-top: -1.875rem;
   }
   &-title {
-    font-style: medium;
     line-height: 1.875rem;
     color: $headingChild;
-
     letter-spacing: -0.045rem;
   }
   &-text {
-    font-style: normal;
     line-height: 1.75rem;
     letter-spacing: 0.35px;
   }
   &:hover {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
   }
 }
 .service {
@@ -53,24 +36,4 @@
     border-bottom: 7px solid $btnBgSecondary;
   }
 }
-// .custom-card {
-//   cursor: pointer;
 
-//   &:hover {
-//     .card {
-//       &-title {
-//         color: $danger;
-//       }
-//       &-btn {
-//         background: $btnBgPrimary;
-//         color: $light;
-//         border: 1px solid $btnBgPrimary;
-//       }
-//     }
-//   }
-//   .card {
-//     &-body {
-//       padding: 28px 38px;
-//     }
-//   }
-// }

@@ -23,7 +23,7 @@ const PortfolioIsotop = () => {
     <>
       {portfolioCategory?.data?.length && portfolioItem?.data?.length ? (
         <section id="portfolio" className="portfolio section-gap base-bg-light">
-          <div className="container px-lg-5">
+          <div className="container">
             <SectionHeading subtitle={portfolio.subtitle} title={portfolio.title} />
 
             {/* <pre>{JSON.stringify(portfolioCategory, null, 4)}</pre> */}

@@ -1,8 +1,8 @@
 .sub-header {
-  // background: url("/images/shape/shape-1.png"), linear-gradient(360deg, rgba(29, 100, 150, 0.9388130252) 5%, rgb(29, 65, 116) 41%,  rgb(12, 35, 79) 100%),rgb(20, 50, 91) 63%;
-  // background-position: right;
-  background: url("/images/shape/bg-gfx.jpg");
-  background-position: center;
+  background: url(/images/shape/shape-1.png), linear-gradient(360deg, rgb(28 80 116 / 94%) 5%, rgb(27 54 92) 41%, rgb(12, 35, 79) 100%), rgb(20, 50, 91) 63%;
+  background-position: right;
+  // background: url("/images/shape/bg-gfx.jpg");
+  // background-position: center;
   background-repeat: no-repeat;
   height: 260px;
   margin-top: 110px;
@@ -18,7 +18,7 @@
   .sub-header-title {
     text-align: center;
   }
-  .title{
+  .title {
     font-size: 1.75rem;
   }
 }

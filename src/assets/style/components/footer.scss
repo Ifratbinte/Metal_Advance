@@ -2,8 +2,7 @@
 .footer {
   padding: 5rem;
   &-gfx {
-    background: url(/images/shape/dot-map.png),
-      linear-gradient(360deg, rgba(29, 100, 150, 0.938813025210084) 5%, rgba(29, 65, 116, 1) 41%, rgba(20, 50, 91, 1) 63%, rgba(12, 35, 79, 1) 100%);
+    background: url(/images/shape/dot-map.png), linear-gradient(360deg, rgb(23 76 112 / 94%) 5%, rgb(26 55 96) 41%, rgb(18 45 82) 63%, rgb(8 23 50) 100%);
     background-repeat: no-repeat;
     background-position: center;
   }
