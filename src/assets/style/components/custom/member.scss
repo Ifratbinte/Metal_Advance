@@ -1,29 +1,29 @@
-.author {
-  &-content-bottom {
-    height: 200px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    p {
-      color: $dark-100;
-      line-height: 28px;
-    }
-  }
-  &-thumb {
-    height: 175px;
-    width: 155px;
-    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.125));
-    border: 1px solid transparent;
-    border-radius: 16px;
-  }
-  &-wrap {
-    background: url("/images/shape/shape-2.png");
-    background-color: $bgLight;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    padding: 50px 40px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0 2px;
-  }
-}
+// .author {
+//   &-content-bottom {
+//     height: 200px;
+//     text-overflow: ellipsis;
+//     overflow: hidden;
+//     p {
+//       color: $dark-100;
+//       line-height: 28px;
+//     }
+//   }
+//   &-thumb {
+//     height: 175px;
+//     width: 155px;
+//     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.125));
+//     border: 1px solid transparent;
+//     border-radius: 16px;
+//   }
+//   &-wrap {
+//     background: url("/images/shape/shape-2.png");
+//     background-color: $bgLight;
+//     background-position: bottom right;
+//     background-repeat: no-repeat;
+//     padding: 50px 40px;
+//     box-shadow: rgba(0, 0, 0, 0.1) 0px 0 2px;
+//   }
+// }
 
 .employee {
   // background: url("/images/shape/mask.jpg") rgb(116 68 239 / 22%);
@@ -101,5 +101,78 @@
   .section-parent {
     width: 90%;
     margin: 0 auto;
+  }
+}
+
+.team {
+  &-thumb {
+    height: 215px;
+  }
+  .member {
+    margin-bottom: 80px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    .social {
+      margin-top: 15px;
+      a {
+        transition: color 0.3s;
+        color: #52869d;
+      }
+      
+    }
+    &-social-icon {
+      margin: 0 8px;
+    }
+    span {
+      font-style: italic;
+      display: block;
+      font-size: 13px;
+    }
+    h4 {
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #2f4d5a;
+      position: relative;
+      padding-bottom: 10px;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 1px;
+        background: #b1cbd7;
+        bottom: 0;
+        left: calc(50% - 25px);
+      }
+    }
+    &:hover {
+      .member-info {
+        max-height: 300px;
+      }
+    }
+    &-info {
+      position: absolute;
+      top: 75%;
+      left: 20px;
+      right: 20px;
+      background: #fff;
+      padding: 20px 0;
+      color: #2f4d5a;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      max-height: 95px;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+    }
+    .pic {
+      overflow: hidden;
+      height: 290px;
+      padding: 20px 0;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .team .member {
+    margin-bottom: 110px;
   }
 }

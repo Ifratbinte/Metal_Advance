@@ -23,13 +23,13 @@ const Card: React.FC<Props> = ({ image, alt, title, description, button, date, i
         {date && <span className="card-date date-base secondary-bg position-absolute">{date}</span>}
         <h5 className="card-title fw-medium pb-3 fs-20">{title}</h5>
         <p className="card-text fs-16">{description}</p>
-        {isRedirect && (
+        {/* {isRedirect && (
           <LinkRedirect id={id} url={url}>
             <a href={link} className="card-link primary fw-semibold fs-18">
               See full Story
             </a>
           </LinkRedirect>
-        )}
+        )} */}
         {button && (
           <Link to="#" className="btn button-base-secondary card-btn">
             {button}
