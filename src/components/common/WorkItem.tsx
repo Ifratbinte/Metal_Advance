@@ -12,7 +12,7 @@ const WorkItem: React.FC<Props> = ({ svgIcon, alt, title, arrowTop, arrowBottom 
       <div className="items-status is-outline"></div>
       <div>
         {arrowTop && (
-          <div className="arrow arrow-top">
+          <div className="arrow arrow-top d-none d-md-block">
             <img src={arrowTop} alt={title} />
           </div>
         )}
@@ -23,7 +23,7 @@ const WorkItem: React.FC<Props> = ({ svgIcon, alt, title, arrowTop, arrowBottom 
           </div>
         </div>
         {arrowBottom && (
-          <div className="arrow arrow-bottom">
+          <div className="arrow arrow-bottom d-none d-md-block">
             <img src={arrowBottom} alt={title} />
           </div>
         )}

@@ -18,7 +18,7 @@ const footerContact: FooterContactInterface[] = [
   {
     id: 3,
     name: "FAQ",
-    url: "/faq",
+    url: "/news/faq",
   },
   {
     id: 4,

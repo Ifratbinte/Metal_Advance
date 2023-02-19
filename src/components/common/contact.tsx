@@ -12,18 +12,18 @@ interface Props {
 const Contact: React.FC<Props> = ({ title, phone, telephone, phone2, phone3, email, icon }) => {
   return (
     <>
-      <div className="col-md-4 contact-service">
+      <div className="col-xl-4 col-md-6 contact-service">
         <div className="contact-service-list">
           <div className="contact-gfx d-flex justify-content-center">
             <img src={icon} alt={title} className="icon" />
           </div>
           <div className="d-flex align-items-center justify-content-center mb-3">
             <div className="contact-list-title text-center">
-              <h4>{title}</h4>
+              <h4 className="fs-18 text-white rounded">{title}</h4>
             </div>
           </div>
           <div className="text-center p-3">
-            <div className="contact-service-list-item">
+            <div className="contact-service-list-item fs-16 font-Poppins fw-medium">
               <span className="me-2">
                 <FiPhoneCall />
               </span>
@@ -31,7 +31,7 @@ const Contact: React.FC<Props> = ({ title, phone, telephone, phone2, phone3, ema
             </div>
 
             {telephone && (
-              <div className="contact-service-list-item">
+              <div className="contact-service-list-item fs-16 font-Poppins fw-medium">
                 <span className="me-2">
                   <FiPhoneCall />
                 </span>
@@ -40,7 +40,7 @@ const Contact: React.FC<Props> = ({ title, phone, telephone, phone2, phone3, ema
             )}
 
             {phone2 && (
-              <div className="contact-service-list-item">
+              <div className="contact-service-list-item fs-16 font-Poppins fw-medium">
                 <span className="me-2">
                   <FiPhoneCall />
                 </span>
@@ -49,7 +49,7 @@ const Contact: React.FC<Props> = ({ title, phone, telephone, phone2, phone3, ema
             )}
 
             {phone3 && (
-              <div className="contact-service-list-item">
+              <div className="contact-service-list-item fs-16 font-Poppins fw-medium">
                 <span className="me-2">
                   <FiPhoneCall />
                 </span>
@@ -57,7 +57,7 @@ const Contact: React.FC<Props> = ({ title, phone, telephone, phone2, phone3, ema
               </div>
             )}
             {email && (
-              <div className="contact-service-list-item">
+              <div className="contact-service-list-item fs-16 font-Poppins fw-medium">
                 <span className="me-2">
                   <FiMail />
                 </span>

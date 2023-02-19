@@ -8,11 +8,7 @@ interface Props {
 }
 const sectionHeading: React.FC<Props> = ({ subtitle, title, span, short_title, isNotCenter = true, isDimBg = false }) => {
   return (
-    <div
-      className={!isNotCenter ? "section-head width-md" : "section-head section-border text-center width-md mx-auto"}
-      data-aos="fade-down"
-      data-aos-easing="linear" data-aos-duration="1000"
-    >
+    <div className={!isNotCenter ? "section-head width-md" : "section-head section-border text-center width-md mx-auto"}>
       {subtitle && (
         <h5
           className={

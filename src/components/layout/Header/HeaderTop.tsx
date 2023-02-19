@@ -21,19 +21,17 @@ function HeaderTop() {
         <div className="row ">
           <div className="col-lg-4 topBar-left">
             <div className="section-topContact">
-              {/* <FiPhoneCall className="icon me-2" /> */}
               <img src="/gif/phone-icon.gif" alt="" className="icon" />
-              {/* <video loop src="/gif/phone-icon.gif"></video> */}
               <span className="fw-semibold font-Poppins"> Call Now : {contactItem[0].phone}</span>
             </div>
           </div>
-          <div className="col-lg-8 topBar-right">
+          <div className="col-lg-8 topBar-right animatedBg">
             <Marquee className="marquee-overlay" speed={50} style={{ width: "100%" }}>
               <ul className="list d-flex align-items-center">
                 {tickerData.ticker &&
                   tickerData.ticker.map((ticker: any, i: number) => (
-                    <li key={i}>
-                      <span className="fw-medium me-2">{ticker.title}</span> <span className="danger fw-medium">{ticker.item}</span>
+                    <li key={i} className="fs-14">
+                      <span className="fw-medium me-2 primary">{ticker.title}</span> <span className="danger fw-medium">{ticker.item}</span>
                     </li>
                   ))}
               </ul>

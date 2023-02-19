@@ -1,10 +1,13 @@
+import LinkComponent from "#components/common/LinkComponent";
 import { useEffect, useRef, useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
 const MenuItems = ({ items, depthLevel }: any) => {
-  const [dropdown, setDropdown] = useState(false);
+  const location = useLocation();
+
+  const [dropdown, setDropdown] = useState<boolean>(false);
 
   // close dropdown on outside click
   let ref = useRef(null);
@@ -25,14 +28,19 @@ const MenuItems = ({ items, depthLevel }: any) => {
 
   // open dropdown on hover
   const onMouseEnter = () => {
-    window.innerWidth > 991 && setDropdown(true);
+    window.innerWidth > 1200 && setDropdown(true);
   };
   const onMouseLeave = () => {
-    window.innerWidth > 991 && setDropdown(false);
+    window.innerWidth > 1200 && setDropdown(false);
   };
 
   return (
-    <li className="menu-items position-relative text-white fs-14" ref={ref} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+    <li
+      className={`menu-items position-relative text-white fs-16 ${items.url.split("/")[1] === location.pathname.split("/")[1] ? "active" : ""}`}
+      ref={ref}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       {items.submenu ? (
         <>
           <button
@@ -41,14 +49,20 @@ const MenuItems = ({ items, depthLevel }: any) => {
             onClick={() => setDropdown((prev) => !prev)}
           >
             {items.title}
-            {depthLevel > 0 ? <span>&darr;</span> : <span className="arrow"><FaAngleDown/></span>}
+            {depthLevel > 0 ? (
+              <span>&darr;</span>
+            ) : (
+              <span className="arrow">
+                <FaAngleDown />
+              </span>
+            )}
           </button>
           <Dropdown submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />
         </>
       ) : (
-        <NavLink className="menu-links d-block fs-16" to={items.url}>
+        <LinkComponent url={items.url} className="menu-links d-block fw-medium">
           {items.title}
-        </NavLink>
+        </LinkComponent>
       )}
     </li>
   );

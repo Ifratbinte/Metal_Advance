@@ -1,0 +1,540 @@
+{
+  "data": [
+    {
+      "id": 3,
+      "attributes": {
+        "title": "FlexTP",
+        "createdAt": "2022-12-26T05:07:32.902Z",
+        "updatedAt": "2022-12-26T12:24:14.220Z",
+        "publishedAt": "2022-12-26T05:07:35.148Z",
+        "image": {
+          "data": {
+            "id": 24,
+            "attributes": {
+              "name": "Capture1.PNG",
+              "alternativeText": null,
+              "caption": null,
+              "width": 1899,
+              "height": 1029,
+              "formats": {
+                "large": {
+                  "ext": ".PNG",
+                  "url": "/uploads/large_Capture1_8ff599bb1d.PNG",
+                  "hash": "large_Capture1_8ff599bb1d",
+                  "mime": "image/png",
+                  "name": "large_Capture1.PNG",
+                  "path": null,
+                  "size": 439.12,
+                  "width": 1000,
+                  "height": 542
+                },
+                "small": {
+                  "ext": ".PNG",
+                  "url": "/uploads/small_Capture1_8ff599bb1d.PNG",
+                  "hash": "small_Capture1_8ff599bb1d",
+                  "mime": "image/png",
+                  "name": "small_Capture1.PNG",
+                  "path": null,
+                  "size": 151.32,
+                  "width": 500,
+                  "height": 271
+                },
+                "medium": {
+                  "ext": ".PNG",
+                  "url": "/uploads/medium_Capture1_8ff599bb1d.PNG",
+                  "hash": "medium_Capture1_8ff599bb1d",
+                  "mime": "image/png",
+                  "name": "medium_Capture1.PNG",
+                  "path": null,
+                  "size": 288.95,
+                  "width": 750,
+                  "height": 406
+                },
+                "thumbnail": {
+                  "ext": ".PNG",
+                  "url": "/uploads/thumbnail_Capture1_8ff599bb1d.PNG",
+                  "hash": "thumbnail_Capture1_8ff599bb1d",
+                  "mime": "image/png",
+                  "name": "thumbnail_Capture1.PNG",
+                  "path": null,
+                  "size": 51.01,
+                  "width": 245,
+                  "height": 133
+                }
+              },
+              "hash": "Capture1_8ff599bb1d",
+              "ext": ".PNG",
+              "mime": "image/png",
+              "size": 112.7,
+              "url": "/uploads/Capture1_8ff599bb1d.PNG",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2022-12-26T10:10:50.197Z",
+              "updatedAt": "2022-12-26T10:10:50.197Z"
+            }
+          }
+        },
+        "portfolio_category": {
+          "data": {
+            "id": 4,
+            "attributes": {
+              "createdAt": "2022-12-26T04:25:48.262Z",
+              "updatedAt": "2022-12-26T08:03:48.476Z",
+              "publishedAt": "2022-12-26T04:25:51.015Z",
+              "title": "Business"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "title": "Mobile App",
+        "createdAt": "2022-12-26T05:06:47.748Z",
+        "updatedAt": "2022-12-27T07:27:01.011Z",
+        "publishedAt": "2022-12-26T05:06:50.844Z",
+        "image": {
+          "data": {
+            "id": 30,
+            "attributes": {
+              "name": "Screenshot 2022-12-27 132503.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 1898,
+              "height": 902,
+              "formats": {
+                "large": {
+                  "ext": ".png",
+                  "url": "/uploads/large_Screenshot_2022_12_27_132503_58e4a5a8c9.png",
+                  "hash": "large_Screenshot_2022_12_27_132503_58e4a5a8c9",
+                  "mime": "image/png",
+                  "name": "large_Screenshot 2022-12-27 132503.png",
+                  "path": null,
+                  "size": 129.55,
+                  "width": 1000,
+                  "height": 475
+                },
+                "small": {
+                  "ext": ".png",
+                  "url": "/uploads/small_Screenshot_2022_12_27_132503_58e4a5a8c9.png",
+                  "hash": "small_Screenshot_2022_12_27_132503_58e4a5a8c9",
+                  "mime": "image/png",
+                  "name": "small_Screenshot 2022-12-27 132503.png",
+                  "path": null,
+                  "size": 47.32,
+                  "width": 500,
+                  "height": 238
+                },
+                "medium": {
+                  "ext": ".png",
+                  "url": "/uploads/medium_Screenshot_2022_12_27_132503_58e4a5a8c9.png",
+                  "hash": "medium_Screenshot_2022_12_27_132503_58e4a5a8c9",
+                  "mime": "image/png",
+                  "name": "medium_Screenshot 2022-12-27 132503.png",
+                  "path": null,
+                  "size": 84.95,
+                  "width": 750,
+                  "height": 356
+                },
+                "thumbnail": {
+                  "ext": ".png",
+                  "url": "/uploads/thumbnail_Screenshot_2022_12_27_132503_58e4a5a8c9.png",
+                  "hash": "thumbnail_Screenshot_2022_12_27_132503_58e4a5a8c9",
+                  "mime": "image/png",
+                  "name": "thumbnail_Screenshot 2022-12-27 132503.png",
+                  "path": null,
+                  "size": 17.06,
+                  "width": 245,
+                  "height": 116
+                }
+              },
+              "hash": "Screenshot_2022_12_27_132503_58e4a5a8c9",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 58.58,
+              "url": "/uploads/Screenshot_2022_12_27_132503_58e4a5a8c9.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2022-12-27T07:26:36.443Z",
+              "updatedAt": "2022-12-27T07:26:36.443Z"
+            }
+          }
+        },
+        "portfolio_category": {
+          "data": {
+            "id": 3,
+            "attributes": {
+              "createdAt": "2022-12-26T04:25:18.074Z",
+              "updatedAt": "2022-12-26T05:50:57.923Z",
+              "publishedAt": "2022-12-26T04:25:21.235Z",
+              "title": "Apps"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 1,
+      "attributes": {
+        "title": "Digital Service",
+        "createdAt": "2022-12-26T05:01:09.862Z",
+        "updatedAt": "2022-12-27T07:29:32.853Z",
+        "publishedAt": "2022-12-26T05:01:11.991Z",
+        "image": {
+          "data": {
+            "id": 31,
+            "attributes": {
+              "name": "IMG_20221226_145500_990.jpg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 4080,
+              "height": 3060,
+              "formats": {
+                "large": {
+                  "ext": ".jpg",
+                  "url": "/uploads/large_IMG_20221226_145500_990_a4d57c6317.jpg",
+                  "hash": "large_IMG_20221226_145500_990_a4d57c6317",
+                  "mime": "image/jpeg",
+                  "name": "large_IMG_20221226_145500_990.jpg",
+                  "path": null,
+                  "size": 143.29,
+                  "width": 1000,
+                  "height": 750
+                },
+                "small": {
+                  "ext": ".jpg",
+                  "url": "/uploads/small_IMG_20221226_145500_990_a4d57c6317.jpg",
+                  "hash": "small_IMG_20221226_145500_990_a4d57c6317",
+                  "mime": "image/jpeg",
+                  "name": "small_IMG_20221226_145500_990.jpg",
+                  "path": null,
+                  "size": 37.33,
+                  "width": 500,
+                  "height": 375
+                },
+                "medium": {
+                  "ext": ".jpg",
+                  "url": "/uploads/medium_IMG_20221226_145500_990_a4d57c6317.jpg",
+                  "hash": "medium_IMG_20221226_145500_990_a4d57c6317",
+                  "mime": "image/jpeg",
+                  "name": "medium_IMG_20221226_145500_990.jpg",
+                  "path": null,
+                  "size": 81.15,
+                  "width": 750,
+                  "height": 563
+                },
+                "thumbnail": {
+                  "ext": ".jpg",
+                  "url": "/uploads/thumbnail_IMG_20221226_145500_990_a4d57c6317.jpg",
+                  "hash": "thumbnail_IMG_20221226_145500_990_a4d57c6317",
+                  "mime": "image/jpeg",
+                  "name": "thumbnail_IMG_20221226_145500_990.jpg",
+                  "path": null,
+                  "size": 7.82,
+                  "width": 208,
+                  "height": 156
+                }
+              },
+              "hash": "IMG_20221226_145500_990_a4d57c6317",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "size": 1516.82,
+              "url": "/uploads/IMG_20221226_145500_990_a4d57c6317.jpg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2022-12-27T07:29:25.621Z",
+              "updatedAt": "2022-12-27T07:29:25.621Z"
+            }
+          }
+        },
+        "portfolio_category": {
+          "data": {
+            "id": 4,
+            "attributes": {
+              "createdAt": "2022-12-26T04:25:48.262Z",
+              "updatedAt": "2022-12-26T08:03:48.476Z",
+              "publishedAt": "2022-12-26T04:25:51.015Z",
+              "title": "Business"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "title": "Benemoy News",
+        "createdAt": "2022-12-26T09:57:01.797Z",
+        "updatedAt": "2022-12-27T07:32:20.353Z",
+        "publishedAt": "2022-12-26T09:57:11.512Z",
+        "image": {
+          "data": {
+            "id": 32,
+            "attributes": {
+              "name": "WhatsApp Image 2022-11-15 at 11.43.18 AM.jpeg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 1600,
+              "height": 1200,
+              "formats": {
+                "large": {
+                  "ext": ".jpeg",
+                  "url": "/uploads/large_Whats_App_Image_2022_11_15_at_11_43_18_AM_cbb20b0440.jpeg",
+                  "hash": "large_Whats_App_Image_2022_11_15_at_11_43_18_AM_cbb20b0440",
+                  "mime": "image/jpeg",
+                  "name": "large_WhatsApp Image 2022-11-15 at 11.43.18 AM.jpeg",
+                  "path": null,
+                  "size": 128.76,
+                  "width": 1000,
+                  "height": 750
+                },
+                "small": {
+                  "ext": ".jpeg",
+                  "url": "/uploads/small_Whats_App_Image_2022_11_15_at_11_43_18_AM_cbb20b0440.jpeg",
+                  "hash": "small_Whats_App_Image_2022_11_15_at_11_43_18_AM_cbb20b0440",
+                  "mime": "image/jpeg",
+                  "name": "small_WhatsApp Image 2022-11-15 at 11.43.18 AM.jpeg",
+                  "path": null,
+                  "size": 37.68,
+                  "width": 500,
+                  "height": 375
+                },
+                "medium": {
+                  "ext": ".jpeg",
+                  "url": "/uploads/medium_Whats_App_Image_2022_11_15_at_11_43_18_AM_cbb20b0440.jpeg",
+                  "hash": "medium_Whats_App_Image_2022_11_15_at_11_43_18_AM_cbb20b0440",
+                  "mime": "image/jpeg",
+                  "name": "medium_WhatsApp Image 2022-11-15 at 11.43.18 AM.jpeg",
+                  "path": null,
+                  "size": 77.41,
+                  "width": 750,
+                  "height": 563
+                },
+                "thumbnail": {
+                  "ext": ".jpeg",
+                  "url": "/uploads/thumbnail_Whats_App_Image_2022_11_15_at_11_43_18_AM_cbb20b0440.jpeg",
+                  "hash": "thumbnail_Whats_App_Image_2022_11_15_at_11_43_18_AM_cbb20b0440",
+                  "mime": "image/jpeg",
+                  "name": "thumbnail_WhatsApp Image 2022-11-15 at 11.43.18 AM.jpeg",
+                  "path": null,
+                  "size": 8.65,
+                  "width": 208,
+                  "height": 156
+                }
+              },
+              "hash": "Whats_App_Image_2022_11_15_at_11_43_18_AM_cbb20b0440",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "size": 243.97,
+              "url": "/uploads/Whats_App_Image_2022_11_15_at_11_43_18_AM_cbb20b0440.jpeg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2022-12-27T07:32:10.383Z",
+              "updatedAt": "2022-12-27T07:32:10.383Z"
+            }
+          }
+        },
+        "portfolio_category": {
+          "data": {
+            "id": 4,
+            "attributes": {
+              "createdAt": "2022-12-26T04:25:48.262Z",
+              "updatedAt": "2022-12-26T08:03:48.476Z",
+              "publishedAt": "2022-12-26T04:25:51.015Z",
+              "title": "Business"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "title": "Work Station",
+        "createdAt": "2022-12-26T09:38:43.045Z",
+        "updatedAt": "2022-12-27T07:34:15.882Z",
+        "publishedAt": "2022-12-26T09:39:39.693Z",
+        "image": {
+          "data": {
+            "id": 33,
+            "attributes": {
+              "name": "IMG_1803.JPG",
+              "alternativeText": null,
+              "caption": null,
+              "width": 5184,
+              "height": 3456,
+              "formats": {
+                "large": {
+                  "ext": ".JPG",
+                  "url": "/uploads/large_IMG_1803_1707b80930.JPG",
+                  "hash": "large_IMG_1803_1707b80930",
+                  "mime": "image/jpeg",
+                  "name": "large_IMG_1803.JPG",
+                  "path": null,
+                  "size": 62.78,
+                  "width": 1000,
+                  "height": 667
+                },
+                "small": {
+                  "ext": ".JPG",
+                  "url": "/uploads/small_IMG_1803_1707b80930.JPG",
+                  "hash": "small_IMG_1803_1707b80930",
+                  "mime": "image/jpeg",
+                  "name": "small_IMG_1803.JPG",
+                  "path": null,
+                  "size": 19.65,
+                  "width": 500,
+                  "height": 333
+                },
+                "medium": {
+                  "ext": ".JPG",
+                  "url": "/uploads/medium_IMG_1803_1707b80930.JPG",
+                  "hash": "medium_IMG_1803_1707b80930",
+                  "mime": "image/jpeg",
+                  "name": "medium_IMG_1803.JPG",
+                  "path": null,
+                  "size": 39.6,
+                  "width": 750,
+                  "height": 500
+                },
+                "thumbnail": {
+                  "ext": ".JPG",
+                  "url": "/uploads/thumbnail_IMG_1803_1707b80930.JPG",
+                  "hash": "thumbnail_IMG_1803_1707b80930",
+                  "mime": "image/jpeg",
+                  "name": "thumbnail_IMG_1803.JPG",
+                  "path": null,
+                  "size": 6.36,
+                  "width": 234,
+                  "height": 156
+                }
+              },
+              "hash": "IMG_1803_1707b80930",
+              "ext": ".JPG",
+              "mime": "image/jpeg",
+              "size": 1327.54,
+              "url": "/uploads/IMG_1803_1707b80930.JPG",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2022-12-27T07:33:04.106Z",
+              "updatedAt": "2022-12-27T07:33:04.106Z"
+            }
+          }
+        },
+        "portfolio_category": {
+          "data": {
+            "id": 2,
+            "attributes": {
+              "createdAt": "2022-12-26T04:24:57.496Z",
+              "updatedAt": "2023-01-02T07:14:20.681Z",
+              "publishedAt": "2022-12-26T04:25:00.031Z",
+              "title": "Conference"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "title": "Trade from Home",
+        "createdAt": "2022-12-26T09:39:31.835Z",
+        "updatedAt": "2022-12-27T07:36:26.117Z",
+        "publishedAt": "2022-12-26T09:39:34.309Z",
+        "image": {
+          "data": {
+            "id": 15,
+            "attributes": {
+              "name": "gallery-2.jpg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 1920,
+              "height": 1280,
+              "formats": {
+                "large": {
+                  "ext": ".jpg",
+                  "url": "/uploads/large_gallery_2_f0302cd962.jpg",
+                  "hash": "large_gallery_2_f0302cd962",
+                  "mime": "image/jpeg",
+                  "name": "large_gallery-2.jpg",
+                  "path": null,
+                  "size": 97.92,
+                  "width": 1000,
+                  "height": 667
+                },
+                "small": {
+                  "ext": ".jpg",
+                  "url": "/uploads/small_gallery_2_f0302cd962.jpg",
+                  "hash": "small_gallery_2_f0302cd962",
+                  "mime": "image/jpeg",
+                  "name": "small_gallery-2.jpg",
+                  "path": null,
+                  "size": 35.16,
+                  "width": 500,
+                  "height": 333
+                },
+                "medium": {
+                  "ext": ".jpg",
+                  "url": "/uploads/medium_gallery_2_f0302cd962.jpg",
+                  "hash": "medium_gallery_2_f0302cd962",
+                  "mime": "image/jpeg",
+                  "name": "medium_gallery-2.jpg",
+                  "path": null,
+                  "size": 64.83,
+                  "width": 750,
+                  "height": 500
+                },
+                "thumbnail": {
+                  "ext": ".jpg",
+                  "url": "/uploads/thumbnail_gallery_2_f0302cd962.jpg",
+                  "hash": "thumbnail_gallery_2_f0302cd962",
+                  "mime": "image/jpeg",
+                  "name": "thumbnail_gallery-2.jpg",
+                  "path": null,
+                  "size": 10.23,
+                  "width": 234,
+                  "height": 156
+                }
+              },
+              "hash": "gallery_2_f0302cd962",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "size": 241.89,
+              "url": "/uploads/gallery_2_f0302cd962.jpg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2022-12-26T05:00:23.921Z",
+              "updatedAt": "2022-12-26T05:00:23.921Z"
+            }
+          }
+        },
+        "portfolio_category": {
+          "data": {
+            "id": 3,
+            "attributes": {
+              "createdAt": "2022-12-26T04:25:18.074Z",
+              "updatedAt": "2022-12-26T05:50:57.923Z",
+              "publishedAt": "2022-12-26T04:25:21.235Z",
+              "title": "Apps"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 100,
+      "pageCount": 1,
+      "total": 6
+    }
+  }
+}

@@ -4,7 +4,7 @@ import HeaderBottom from './HeaderBottom';
 import HeaderTop from './HeaderTop';
 function HeaderMain() {
   return (
-    <div className='header-background'>
+    <div className="header-background">
       <HeaderTop />
       <HeaderBottom />
     </div>

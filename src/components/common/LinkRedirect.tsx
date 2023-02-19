@@ -8,11 +8,9 @@ interface Props {
 }
 
 const ArticleCard: React.FC<Props> = ({ children, url, id }) => {
-  console.log({url});
   return (
     <>
       {url ? (
-        
         <a href={url} className="card-link primary fw-semibold fs-20">
           {children}
         </a>

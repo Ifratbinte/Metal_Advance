@@ -1,3 +1,4 @@
+import Output from "editorjs-react-renderer";
 interface Props {
   image: string;
   alt: any;
@@ -8,16 +9,16 @@ interface Props {
 const Card: React.FC<Props> = ({ image, alt, title, description }) => {
   return (
     <>
-      <div className="row section-gap service-content">
-        <div className="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-          <div className="service-thumb">
-            <img src={image} alt={alt} />
-          </div>
+      <div className="col-lg-5">
+        <div className="service-thumb">
+          <img src={image} alt={alt} className="img-fluid" />
         </div>
-        <div className="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
-          <div className="service-inner-text">
-            <h1 className="service-title font-Poppins fw-bold pb-3">{title}</h1>
-            <p className="font-Poppins fs-16 pt-3">{description}</p>
+      </div>
+      <div className="col-lg-7">
+        <div className="service-inner-text pt-4 pt-md-0">
+          <h1 className="service-title font-Poppins fw-bold pb-3">{title}</h1>
+          <div className="service-inner-list">
+            <Output data={JSON.parse(description)} />
           </div>
         </div>
       </div>

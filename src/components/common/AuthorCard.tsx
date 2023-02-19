@@ -1,37 +1,48 @@
+import { DirectorInterface } from "#interfaces/index";
 import React from "react";
-import { Link } from "react-router-dom";
+import { FiFacebook, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
 interface Props {
+  index: number;
   image: string;
-  alt: string;
   name: string;
   designation: string;
-  bio: string;
-  button?: string;
+  content: string;
+  handleShow: (data: DirectorInterface) => void;
+  director: DirectorInterface;
 }
 
-const EmployeeCard: React.FC<Props> = ({ image, alt, name, designation, bio, button }) => {
+const EmployeeCard: React.FC<Props> = ({ index, image, name, designation, content, handleShow, director }) => {
   return (
-    <>
-      <div className="author-wrap rounded-4 h-100">
-        <div className="author-content-top d-flex align-items-center">
-          <img src={image} alt={alt} className="author-thumb flex-shrink-0" data-aos="zoom-in" data-aos-duration="1000" />
-          <div className="author-info ms-4" data-aos="fade-down" data-aos-duration="1000">
-            <h4 className="font-Poppins fw-bold fs-24">{name}</h4>
-            <h5 className="font-Poppins font-normal danger fs-20">{designation}</h5>
+    <div
+      className={`${index === 0 || index === 1 ? "custom-team-card" : "col-md-4"} ${index === 0 && "d-xl-flex justify-content-xl-end"} ${
+        index === 1 && "d-xl-flex justify-content-xl-start"
+      } col-sm-6`}
+      onClick={() => handleShow(director)}
+    >
+      <div className={`${index === 0 || index === 1 ? "w-xl-70" : "w-sm-100"} member text-center position-relative base-bg-white rounded`}>
+        <div className="pic">
+          <img src={image} className="img-fluid team-thumb" alt={name} />
+        </div>
+        <div className="member-info">
+          <h4>{name}</h4>
+          <span>{designation}</span>
+          <div className="social">
+            <a href="">
+              <FiTwitter className="member-social-icon" />
+            </a>
+            <a href="">
+              <FiFacebook className="member-social-icon" />
+            </a>
+            <a href="">
+              <FiInstagram className="member-social-icon" />
+            </a>
+            <a href="">
+              <FiLinkedin className="member-social-icon" />
+            </a>
           </div>
         </div>
-        <div className="author-content-bottom pt-4" data-aos="fade-up" data-aos-duration="1500">
-          <p className="font-Poppins fs-16 fw-normal">{bio}</p>
-        </div>
-        {button && (
-          <div className="author-link">
-            <Link to="" className="danger font-Poppins fw-medium fs-18 p-0">
-              {button}
-            </Link>
-          </div>
-        )}
       </div>
-    </>
+    </div>
   );
 };
 

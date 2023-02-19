@@ -6,10 +6,10 @@ const Work = () => {
   const works = workData.work;
   return (
     <>
-      <section id="work" className="work section-gap base-bg-white">
+      <section id="work" className="work section-gap">
         <div className="container">
           <SectionHeading title={works.title} short_title={works.short_title} />
-          <div className="work-shape-wrap pt-5">
+          <div className="work-shape-wrap">
             <div className="work-item gap-4 d-flex flex-column flex-md-row align-items-center justify-content-center">
               {works.item &&
                 works.item.map((work: any, i: any) => {

@@ -12,8 +12,8 @@ export const service = createApi({
   }),
   endpoints: (builder) => ({
     getServices: builder.query({
-      query: () => ({
-        url: "/v1/services?populate=*",
+      query: (url: string = "/v1/services?populate=*") => ({
+        url,
         method: "GET",
       }),
     }),

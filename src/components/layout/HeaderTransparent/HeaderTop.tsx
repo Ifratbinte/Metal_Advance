@@ -1,5 +1,4 @@
 import PhoneContact from "#components/common/PhoneContact";
-import SocialIcon from "#components/common/SocialIcon";
 import { useEffect, useState } from "react";
 
 function HeaderTop() {
@@ -20,7 +19,6 @@ function HeaderTop() {
       <section id="topBar" className="isTransparent topBar text-white" style={{ display: display }}>
         <div className="d-flex align-items-center justify-content-between">
           <PhoneContact />
-          <SocialIcon />
         </div>
       </section>
     </>

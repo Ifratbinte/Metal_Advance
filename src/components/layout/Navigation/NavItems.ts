@@ -1,144 +1,124 @@
 const NavItems = [
   {
     id: 1,
-    title: "Home",
-    url: "/",
+    title: 'Home',
+    url: '/',
   },
   {
     id: 2,
-    title: "About",
-    url: "/#",
+    title: 'About',
+    url: '/about',
     submenu: [
       {
         id: 1,
-        title: "Corporate Profile",
-        url: "/about-benemoy",
+        title: 'Corporate Profile',
+        url: '/about/benemoy',
       },
       {
         id: 2,
-        title: "Board of Director",
-        url: "/board-of-director",
+        title: 'Board of Directors',
+        url: '/about/board-of-director',
       },
       {
         id: 3,
-        title: "Senior Management",
-        url: "/senior-management",
+        title: 'Management Team',
+        url: '/about/management',
       },
       {
         id: 4,
-        title: "Group Concern",
-        url: "/group-concern",
+        title: 'Sister Concerns',
+        url: '/about/benemoy#sisterConcern',
       },
     ],
   },
   {
     id: 3,
-    title: "IPO",
-    url: "/#",
+    title: 'IPO',
+    url: '/ipo',
     submenu: [
       {
         id: 1,
-        title: "Online IPO Application",
-        url: "/online-ipo-application",
+        title: 'Online IPO Application',
+        url: '/ipo/online-ipo-application',
       },
       {
         id: 2,
-        title: "Forecast IPO",
-        url: "/forecast-ipo",
-      }
+        title: 'Upcoming IPO',
+        url: 'https://sec.gov.bd/home/ipofixed',
+      },
     ],
   },
   {
     id: 4,
-    title: "Service",
-    url: "/#",
+    title: 'Service',
+    url: '/services',
     submenu: [
       {
         id: 1,
-        title: "Services",
-        url: "/service",
+        title: ' General Services',
+        url: '/services/general-service',
       },
       {
         id: 2,
-        title: "Digital Services",
-        url: "/digital-services",
+        title: 'Digital Services',
+        url: '/services/digital-services#digitalService',
       },
       {
         id: 3,
-        title: "Mobile Apps",
-        url: "/mobile-apps",
+        title: 'Mobile Trading',
+        url: 'https://play.google.com/store/apps/details?id=com.benemoy.ost',
       },
       {
         id: 4,
-        title: "IPO Service",
-        url: "/ipo-service",
-      },
-      {
-        id: 5,
-        title: "Downloads",
-        url: "/download",
+        title: 'Downloads',
+        url: '/services/download',
       },
     ],
   },
   {
     id: 5,
-    title: "R & D",
-    url: "/#",
+    title: 'R & D',
+    url: '/rnd',
     submenu: [
       {
         id: 1,
-        title: "Daily Market Update",
-        url: "/daily-market",
-      },
-      {
-        id: 1,
-        title: "IPO Notes",
-        url: "/ipo-notes",
-      },
-      {
-        id: 1,
-        title: "Technical Chart",
-        url: "/technical-chart",
+        title: 'Daily Market Update',
+        url: '/rnd/daily-market',
       },
     ],
   },
   {
     id: 6,
-    title: "News & Updates",
-    url: "/news-updates",
+    title: 'News & Updates',
+    url: '/news',
     submenu: [
       {
-        id: 1,
-        title: "Notify for Investors",
-        url: "/notify",
-      },
-      {
-        id: 2,
-        title: "Daily News",
-        url: "/daily-news",
-      },
-      {
         id: 3,
-        title: "DSE News",
-        url: "/dse-news",
+        title: 'DSE News',
+        url: 'https://www.dsebd.org/display_news.php',
       },
       {
         id: 4,
-        title: "BSEC News",
-        url: "/bsec-news",
+        title: 'BSEC News',
+        url: 'https://www.sec.gov.bd/home/press',
+      },
+      {
+        id: 2,
+        title: 'Company News',
+        url: '/articles',
       },
       {
         id: 5,
-        title: "FAQs",
-        url: "/faq",
+        title: 'FAQs',
+        url: '/news/faq',
       },
     ],
   },
-  
+
   {
     id: 7,
-    title: "Contact",
-    url: "/contact",
+    title: 'Contact',
+    url: '/contact',
   },
 ];
 export default NavItems;

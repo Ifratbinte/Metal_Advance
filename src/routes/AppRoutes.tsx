@@ -1,26 +1,22 @@
-import About from "#components/pages/About";
-import ArticleDetails from "#components/pages/ArticleDetails";
-import Articles from "#components/pages/Articles";
-import BoardOfDirector from "#components/pages/BoardOfDirector";
-// import Contact from "#components/pages/Contact";
-import Contact from "#components/pages/ContactPage";
-import Downloads from "#components/pages/Downloads";
-import FAQ from "#components/pages/FAQ";
-import Home from "#components/pages/Home";
-// import Management from "#components/pages/Management";
-import PrivacyPolicy from "#components/pages/PrivacyPolicy";
-import Management from "#components/pages/SeniorManagement";
-import Service from "#components/pages/Service";
-import MasterLayout from "#container/layout/MasterLayout";
+import BoardOfDirector from "#components/pages/About/BoardOfDirector";
+import ArticleDetails from "#components/pages/Article/ArticleDetails";
+import Articles from "#components/pages/Article/Articles";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Contact from "#components/pages/Contact/ContactPage";
+import Home from "#components/pages/Home/Home";
+import FAQ from "#components/pages/NewsUpdates/FAQ";
+import Downloads from "#components/pages/Service/Downloads";
+import Management from "#components/pages/About/SeniorManagement";
+import PrivacyPolicy from "#components/pages/PrivacyPolicy";
+import Service from "#components/pages/Service/Service";
+import MasterLayout from "#container/layout/MasterLayout";
 
-import Digital from "#components/pages/DigitalService";
-import DseNews from "#components/pages/DseNews";
-import Group from "#components/pages/GroupConcern";
-import IPO from "#components/pages/IpoService";
-import MobileApp from "#components/pages/MobileApps";
+import AboutPage from "#components/pages/About";
+import ForecastIpo from "#components/pages/ForecastIpo";
+import IpoApplication from "#components/pages/IPO/IpoApplication";
 import NotifyInvestors from "#components/pages/NotifyInvestors";
-import DailyNews from "./../components/pages/DailyNews";
+import Digital from "#components/pages/Service/DigitalService";
+import MobileApp from "#components/pages/Service/MobileApps";
 
 const AppRoutes = () => {
   return (
@@ -28,24 +24,27 @@ const AppRoutes = () => {
       <Routes>
         <Route element={<MasterLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/about-benemoy" element={<About />} />
-          <Route path="/board-of-director" element={<BoardOfDirector />} />
-          <Route path="/senior-management" element={<Management />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/download" element={<Downloads />} />
+
+          <Route path="/about/benemoy" element={<AboutPage />} />
+          <Route path="/about/board-of-director" element={<BoardOfDirector />} />
+          <Route path="/about/management" element={<Management />} />
+
+          <Route path="/services/general-service" element={<Service />} />
+          <Route path="/services/digital-services" element={<Digital />} />
+          <Route path="/services/mobile-trading" element={<MobileApp />} />
+          <Route path="/services/download" element={<Downloads />} />
+
+          <Route path="/ipo/online-ipo-application" element={<IpoApplication />} />
+          <Route path="/ipo/forecast-ipo" element={<ForecastIpo />} />
+
           <Route path="/articles" element={<Articles />} />
           <Route path="/articles/:articleId" element={<ArticleDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/faq" element={<FAQ />} />
+          <Route path="/news/faq" element={<FAQ />} />
 
-          <Route path="/group-concern" element={<Group />} />
-          <Route path="/digital-services" element={<Digital />} />
-          <Route path="/mobile-apps" element={<MobileApp />} />
-          <Route path="/ipo-service" element={<IPO />} />
           <Route path="/notify" element={<NotifyInvestors />} />
-          <Route path="/daily-news" element={<DailyNews />} />
-          <Route path="/dse-news" element={<DseNews />} />
+          <Route path="/articles" element={<Articles />} />
         </Route>
       </Routes>
     </BrowserRouter>

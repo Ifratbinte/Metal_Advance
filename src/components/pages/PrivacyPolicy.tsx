@@ -9,13 +9,13 @@ const TermsPrivacyPolicy = () => {
       <section className="sub-header" id="privacyPolicy">
         <div className="container">
           <div className="sub-header-inner d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
-            <h2 className="sub-header-title font-Poppins fs-45 fw-bold">{PrivacyPolicy.title}</h2>
+            <h2 className="sub-header-title font-Poppins fw-bold">{PrivacyPolicy.title}</h2>
           </div>
         </div>
       </section>
       <section className="section-gap privacy-policy">
         <div className="container">
-          <div className="privacy-policy">
+          <div className="policy p-sm-4 p-2">
             <div className="policy-content">
               <p>{PrivacyPolicy.content}</p>
             </div>

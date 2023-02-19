@@ -1,14 +1,17 @@
 import socialIcon, { SocialIconInterface } from "#mocks/socialIcon";
+interface Props {
+  team_social?: string;
+}
 
-function SocialIcon() {
+const SocialIcon: React.FC<Props> = ({ team_social }) => {
   return (
     <>
-      <ul className="list-unstyled list social-icon">
+      <ul className={team_social ? "social" : "list-unstyled list social-icon"}>
         {socialIcon.map((item: SocialIconInterface, i: number) => {
           return (
             <li key={i}>
-              <a href={item.url} className="social-icon-link">
-                {<item.Icon />}
+              <a href={item.url} className={team_social ? "" : "social-icon-link"}>
+                {<item.Icon className={team_social ? "member-social-icon" : ""} />}
               </a>
             </li>
           );
@@ -16,5 +19,5 @@ function SocialIcon() {
       </ul>
     </>
   );
-}
+};
 export default SocialIcon;

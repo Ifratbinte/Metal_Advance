@@ -1,45 +1,47 @@
-import TOKEN from "#store/token";
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-export interface PortfolioInterface {
-  data: { id: number; attributes: any }[];
-  meta: {};
-}
+import TOKEN from '#store/token';
+import {
+  createApi,
+  fetchBaseQuery,
+} from '@reduxjs/toolkit/query/react';
+import { PortfolioResInterface } from 'interfaces/portfolio-interface';
 
 export const portfolio = createApi({
-  reducerPath: "portfolio",
-  tagTypes: ["portfolios", "single-portfolio"],
+  reducerPath: 'portfolio',
+  tagTypes: ['portfolios', 'single-portfolio'],
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://api.binimoysecurities.com",
+    baseUrl: 'https://api.binimoysecurities.com',
     prepareHeaders: (headers, { getState }) => {
-      headers.set("authorization", `Bearer ${TOKEN}`);
+      headers.set('authorization', `Bearer ${TOKEN}`);
       return headers;
     },
   }),
   endpoints: (builder) => ({
-    getPortfolios: builder.query<PortfolioInterface, null>({
+    getPortfolios: builder.query<PortfolioResInterface, null>({
       query: () => ({
-        url: "/v1/portfolios?populate=*",
-        method: "GET",
+        url: '/v1/portfolios?populate=*',
+        method: 'GET',
       }),
-      providesTags: ["portfolios"],
+      providesTags: ['portfolios'],
     }),
     getPortfolio: builder.query({
       query: ({ id }) => ({
         url: `/v1/portfolios/${id}?populate=*`,
-        method: "GET",
+        method: 'GET',
       }),
-      providesTags: (result, error, id) => [{ type: "single-portfolio", id }],
+      providesTags: (result, error, id) => [
+        { type: 'single-portfolio', id },
+      ],
     }),
     updatePortfolio: builder.mutation({
       query: ({ id, data }) => ({
         url: `/v1/portfolios/${id}?populate=*`,
-        method: "PUT",
+        method: 'PUT',
         header: {
-          "Content Type": "application/json",
+          'Content Type': 'application/json',
         },
         body: data,
       }),
-      invalidatesTags: ["portfolios", "single-portfolio"],
+      invalidatesTags: ['portfolios', 'single-portfolio'],
     }),
   }),
 });

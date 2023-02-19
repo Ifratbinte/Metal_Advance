@@ -28,6 +28,7 @@
       "#utils/*" : ["./utils/*"],
       "#store/*" : ["./store/*"],
       "#configs/*" : ["./configs/*"],
+      "#interfaces/*" : ["./interfaces/*"],
     }
   },
   "include": ["src"],
