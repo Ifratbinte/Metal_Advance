@@ -6,31 +6,45 @@
     "downloadItem": [
       {
         "id": 1,
-        "image": "/images/docs/docs-1.jpg",
-        "title": "Trade Finance",
-        "year": "2022",
-        "lang": "English"
+        "image": "/images/docs/Benemoy Account Closing Form.png",
+        "title": "Benemoy Account Closing Form",
+        "fileName": "/Account-closing-Form.pdf"
       },
       {
         "id": 2,
-        "image": "/images/docs/docs-2.jpg",
-        "title": "International Trade",
-        "year": "2022",
-        "lang": "English"
+        "image": "/images/docs/Benemoy Account Opening Book.png",
+        "title": "Benemoy Account Opening Book",
+        "fileName": "/Benemoy Securities Account Opening Book.pdf"
       },
       {
         "id": 3,
-        "image": "/images/docs/docs-3.jpg",
-        "title": "Laws of Trading",
-        "year": "2022",
-        "lang": "English"
+        "image": "/images/docs/Benemoy Dematerialization Request Form.png",
+        "title": "Benemoy Dematerialization Request Form",
+        "fileName": "/Dematerialization-Request-Form.pdf"
       },
       {
         "id": 4,
-        "image": "/images/docs/docs-4.jpg",
-        "title": "Trading Education",
-        "year": "2022",
-        "lang": "English"
+        "image": "/images/docs/Benemoy OMS Mobile Registration.png",
+        "title": "BEN-OMS-Mobile Registration",
+        "fileName": "/BEN-OMS-MobileRegistration.pdf"
+      },
+      {
+        "id": 5,
+        "image": "/images/docs/Benemoy Transfer Request Form.png",
+        "title": "Benemoy Transfer Request Form",
+        "fileName": "/Transfer-Request-Form.pdf"
+      },
+      {
+        "id": 6,
+        "image": "/images/docs/Benemoy Transmission Form.png",
+        "title": "Benemoy Transmission Form",
+        "fileName": "/Transmission-Form.pdf"
+      },
+      {
+        "id": 7,
+        "image": "/images/docs/CDBL Account Modification Form.png",
+        "title": "CDBL Account Modification Form",
+        "fileName": "/CDBL Account Info Modification Form.pdf"
       }
     ]
   }
