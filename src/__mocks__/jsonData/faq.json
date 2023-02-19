@@ -1,7 +1,7 @@
 {
   "faq": {
     "id": 1,
-    "title": "Frequently Asked Question",
+    "title": "Frequently Asked Questions",
     "faqItem": [
       {
         "id": 0,
@@ -71,7 +71,7 @@
         "ans": "Benemoy Securities Limited provides a special training facility which is much helpful for the client for taking the right decision before investing in the share market."
       },
       {
-        "id": 8,
+        "id": 10,
         "qus": "Portfolio E-mail Service",
         "ans": "Benemoy Securities has a Portfolio E-mail Service opportunity. By using this service, clients can easily see their current portfolio situation through E-mail. Our high level of professional expertise team continuously maintains this service."
       }

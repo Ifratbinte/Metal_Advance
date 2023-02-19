@@ -1,28 +1,28 @@
 {
   "work": {
     "id": 1,
-    "title": "How It Work",
+    "title": "How It Works",
     "short_title": "What We Are Offering To Customers",
     "item": [
       {
         "id": 1,
         "icon": "images/icon/support.svg",
         "alt": "Support",
-        "title": "Best support for 24th daily.",
+        "title": "Dedicated customer support service",
         "arrow_top": "images/shape/arrow-top.png"
       },
       {
         "id": 2,
         "icon": "images/icon/update.svg",
         "alt": "Update",
-        "title": "High-End diagnostic equipment and continuously update.",
+        "title": "Finest trading experience with the hightest professional standards",
         "arrow_bottom": "images/shape/arrow-bottom.png"
       },
       {
         "id": 3,
         "icon": "images/icon/employee.svg",
         "alt": "Employee",
-        "title": "Best employees in the industry.",
+        "title": "Highly skilled traders in the  market",
         "arrow_top": "images/shape/arrow-top.png"
       }
     ]

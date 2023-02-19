@@ -7,34 +7,40 @@
       "img": "images/thumb/thumb-1.png",
       "banner_service": [
         {
-          "id": 1,
-          "icon": "/images/banner/bo.png",
-          "title": "Online BO"
+          "id": 2,
+          "icon": "IPO2Json",
+          "title": "IPO",
+          "url": "https://ipo.benemoysecurities.com"
         },
         {
-          "id": 2,
-          "icon": "/images/banner/ipo.png",
-          "title": "IPO"
+          "id": 1,
+          "icon": "OnlineBO2Json",
+          "title": "Online BO",
+          "url": "https://www.cdbl.com.bd/bo/bo_portal.php"
         },
         {
           "id": 3,
-          "icon": "/images/banner/pie-chart.png",
-          "title": "Online Trading"
+          "icon": "OnlineTrading2Json",
+          "title": "Online Trading",
+          "url": "https://oms.benemoysecurities.com"
         },
         {
           "id": 4,
-          "icon": "/images/banner/financial-profit.png",
-          "title": "Mobile Trading"
+          "icon": "MobileTrading4Json",
+          "title": "Mobile Trading",
+          "url": "https://play.google.com/store/apps/details?id=com.benemoy.ost"
         },
         {
           "id": 5,
-          "icon": "/images/banner/news.png",
-          "title": "Digital Payments"
+          "icon": "DigitalPaymentJson",
+          "title": "Digital Payments",
+          "url": "/services/digital-services#digitalService"
         },
         {
           "id": 6,
-          "icon": "/images/banner/customer-service.png",
-          "title": "Dedicated Support"
+          "icon": "SupportJson",
+          "title": "Dedicated Support",
+          "url": "/contact#supportContact"
         }
       ]
     },

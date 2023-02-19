@@ -1,6 +1,6 @@
 {
   "id": 1,
-  "title_main": "About Benemoy Security",
+  "title_main": "About Benemoy Securities Ltd",
   "pathname": "About",
   "about": {
     "id": 1,
@@ -8,36 +8,105 @@
     "title": "We Create Great Ideas For Your Products &",
     "title_span": "Services",
     "year_base": "20",
-    "image": "images/gfx/gfx-2.png",
+    "image": "/images/gfx/gfx-5.jpg",
     "year_content": "Years’ Experience investment",
     "description": "Benemoy Securities Limited was incorporated with the Registrar of Joint Stock Companies and Firms (RJSC) vide registration no.C-169369/2021 with effect from 2nd March 2021 as a private limited company limited by shares having its registered office at 56, Shantinagar, Monihar Classic (5th Floor), Dhaka-1217 under the Companies Act 1994. The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favour of any person as may be required to be admitted for the purpose of running the business of the exchange and to deal as stock or broker business in accordance BSEC (Trading Right Entitlement Certificate) Rules, 2020 and Dhaka Stock Exchange (Administration of Trading Right Entitlement Certificate) Regulations, 2020 and relevant laws, rules & regulations issued by respective authorities. Our DSE TREC No is 291 & DP Code is 65000.",
     "link": "#",
     "link_text": "Discover Now",
-    "card": [
-      {
-        "id": 1,
-        "image": "images/thumb/about/about-1.png",
-        "image_alt": "Safe and Security",
-        "about_title": "Safe and Security",
-        "about_desc": "Benemoy Securities Limited always tries to ensure safe & secure trading for their valuable clients."
-      },
-      {
-        "id": 2,
-        "image": "images/thumb/about/about-4.png",
-        "about_title": "Instant Exchange",
-        "about_desc": "Benemoy Securities team is always concerned to solve any kind of stock market-related problem for their clients."
-      },
-      {
-        "id": 3,
-        "image": "images/thumb/about/about-3.png",
-        "about_title": "Experts Support",
-        "about_desc": "Benemoy Securities team is always concerned to solve any kind of stock market-related problem for their clients."
-      }
-    ],
+    "card": {
+      "title": "Services we offer",
+      "subtitle": "Enjoy services",
+      "services": [
+        {
+          "id": 1,
+          "image": "/images/thumb/about/about-1.png",
+          "image_alt": "Safe and Security",
+          "about_title": "Safe and Security",
+          "about_desc": " Benemoy Securities Ltd. is your gateway to a secure Life. Our management team is a pool of talented and experienced professionals, who have tested their expertise and proven their leadership in various industries. "
+        },
+        {
+          "id": 2,
+          "image": "/images/thumb/about/about-4.png",
+          "image_alt": "Research and Analysis",
+          "about_title": "Research and Analysis",
+          "about_desc": " Learn how to beat the market? Deep insights based on research and analysis. Our role is to support your growth ambition. We make your dreams come true. Let us help prepare for your future."
+        },
+        {
+          "id": 3,
+          "image": "/images/thumb/about/about-3.png",
+          "image_alt": "Experts Support",
+          "about_title": "Experts Support",
+          "about_desc": "Our Expert Team is always ready to serve you. We believe that our clients are our key strength. We are a leading stock broker in the country and believe in continuously providing world-class services to all our customers. Hotline: +880 194066 0088",
+          "hotline": "+880 194066 0088"
+        }
+      ]
+    },
+    "certificate": {
+      "title": "License Details",
+      "cards": [
+        {
+          "id": 1,
+          "cr_title": "Dhaka Stock Exchange",
+          "info": [
+            {
+              "id": 1,
+              "title": "TREC-holder No",
+              "value": "007"
+            },
+            {
+              "id": 2,
+              "title": "SEC Reg.",
+              "value": "3.1/DSE-07/2011/461"
+            },
+            {
+              "id": 3,
+              "title": "DSE Broker Reg. No",
+              "value": "3.1/DSE-07/2011/461"
+            },
+            {
+              "id": 4,
+              "title": "DSE Dealer Reg No.",
+              "value": "3.1/DSE-07/2011/462"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "cr_title": "Full Service D.P. of CDBL",
+          "info": [
+            {
+              "id": 1,
+              "title": "CDBL Reg. No",
+              "value": "CDBL-DP-20200"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "cr_title": "Certificate of Incorporateion",
+          "info": [
+            {
+              "id": 1,
+              "title": "Registration No",
+              "value": "C-29861"
+            },
+            {
+              "id": 2,
+              "title": "Date",
+              "value": "December 10, 1995"
+            },
+            {
+              "id": 3,
+              "desc": "Under the Companies Act (Act XVIII) of 1994"
+            }
+          ]
+        }
+      ]
+    },
     "about_ideas": {
       "subtitle": "Our Objectives",
-      "about_ideas_img_lg": "images/thumb/about/about-5.png",
-      "about_ideas_img_sm": "images/thumb/about/about-6.png",
+      "about_ideas_img_lg": "/images/thumb/about/about-5.png",
+      "about_ideas_img_sm": "/images/thumb/about/about-6.png",
       "about_ideas_title": "We help our clients build a",
       "about_ideas_title_span": "Sustainable",
       "about_ideas_titleEnd": "Future",

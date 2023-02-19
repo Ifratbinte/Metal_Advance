@@ -9,7 +9,7 @@
     "card": [
       {
         "id": 1,
-        "image": "images/thumb/service/thumb-sm-1.jpg",
+        "image": "/images/thumb/service/thumb-sm-1.jpg",
         "icon": "/images/banner/bo.png",
         "service_title": "Online BO",
         "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
@@ -17,7 +17,7 @@
       },
       {
         "id": 2,
-        "image": "images/thumb/service/thumb-sm-2.jpg",
+        "image": "/images/thumb/service/thumb-sm-2.jpg",
         "icon": "/images/banner/ipo.png",
         "service_title": "IPO Service",
         "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
@@ -25,7 +25,7 @@
       },
       {
         "id": 3,
-        "image": "images/thumb/service/thumb-sm-3.jpg",
+        "image": "/images/thumb/service/thumb-sm-3.jpg",
         "icon": "/images/banner/bo.png",
         "service_title": "Online Trading",
         "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
@@ -33,7 +33,7 @@
       },
       {
         "id": 4,
-        "image": "images/thumb/service/thumb-sm-4.jpg",
+        "image": "/images/thumb/service/thumb-sm-4.jpg",
         "icon": "/images/banner/bo.png",
         "service_title": "Mobile Trading",
         "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
@@ -41,20 +41,57 @@
       },
       {
         "id": 5,
-        "image": "images/thumb/service/thumb-sm-4.jpg",
+        "image": "/images/thumb/service/thumb-sm-4.jpg",
         "icon": "/images/banner/bo.png",
         "service_title": "Digital Payments",
         "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
         "service_btn": "Read More"
       },
       {
-        "id": 4,
-        "image": "images/thumb/service/thumb-sm-4.jpg",
+        "id": 6,
+        "image": "/images/thumb/service/thumb-sm-4.jpg",
         "icon": "/images/banner/bo.png",
         "service_title": "Dedicated Support",
         "service_desc": "The Company is to be engaged with the business of Trading Right Entitlement Certificate (TREC) in favor.",
         "service_btn": "Read More"
       }
-    ]
+    ],
+    "digital_service": {
+      "subHeading": "Digital Services",
+      "services_title": "We Ensure Best Quality & Professional Services",
+      "about_dgService": "Digital Services in the",
+      "span": "Federal Government",
+      "about_dgContent": "The term Digital Services refers to the electronic delivery of information including data and content across multiple platforms and devices like web or mobile. Information is presented in a way that is easy to use and understand and typically involves transactional services such as submitting forms for processing and receiving benefits. Think of passport renewals, driver license renewals, immigration forms, parking tickets, hotel room reservations,  etc.",
+      "about_dgContent_2": "The term is more widely used in government circles in terms of making the overall interaction of citizens with the public sector a more pleasant and efficient experience.",
+      "about_dgImage": "/images/banner/dashboard.jpg",
+      "bank_details": {
+        "title": "Bank Details",
+        "subtitle": "Account Name : ",
+        "span": "Benemoy Securities Ltd",
+        "image": "/images/thumb/pubali-bank.png",
+        "info": [
+          {
+            "icon": "/images/icon/bank.png",
+            "title": "Bank Name",
+            "value": "Pubali Bank Limited"
+          },
+          {
+            "icon": "/images/icon/branch.png",
+            "title": "Branch",
+            "value": "Foreign Exchange Branch"
+          },
+          {
+            "icon": "/images/icon/acc.png",
+            "title": "Account Number",
+            "value": "2905102001503"
+          },
+          {
+            "icon": "/images/icon/routing.png",
+            "title": "Routing Number",
+            "value": "175272321"
+          }
+        ]
+      }
+    }
   }
 }
