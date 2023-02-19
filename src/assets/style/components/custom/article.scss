@@ -1,45 +1,120 @@
 .article {
   &-subtitle {
     color: #777777;
+    line-height: 30px;
+    & * {
+      font-size: 1.25rem;
+      line-height: inherit;
+    }
   }
   &-details {
-    padding-right: 50px;
+    &-inner {
+      padding-right: 0;
+    }
+    &-thumb img {
+      width: 600px;
+      max-height: 550px;
+    }
   }
-  .card-img-top {
-    max-height: 220px;
-    min-height: 220px;
-    width: 100%;
+  .card {
+    &-img-top {
+      max-height: 220px;
+      min-height: 220px;
+      width: 100%;
+    }
   }
- 
 }
 
 .related-article {
+  display: block;
+  height: 500px;
+  max-height: 500px;
+  overflow-y: scroll;
+  border: 1px solid #f2f2f2;
+  padding: 0 10px;
   &-inner {
-    padding: 1.25rem 0;
-    border-bottom: 1px solid $gray-200;
-    padding: 10px;
+    padding: 0.75rem 0.675rem;
+    border-bottom: 1px solid #e7e7e7;
     cursor: pointer;
+    margin: 0.25rem 0;
     &:hover {
-      border-bottom: 1px solid $primary;
+      background: var(--bgGradGreen);
       .related-article {
         &-title {
-          color: $primary;
-        }
-        &-desc {
           color: $primary;
         }
       }
     }
   }
   &-thumb {
-    // height: 95px;
-    // width: 130px;
-    width: 20%;
+    height: 55px;
+    width: 80px;
+  }
+  &-title {
+    font-size: 1rem;
   }
   &-desc {
     height: 70px;
     text-overflow: ellipsis;
     overflow: hidden;
     width: 80%;
+    margin-right: 1.25rem;
+    & * {
+      font-size: 15px;
+      line-height: 24px;
+      margin-top: 0 !important;
+      &::hover {
+        color: red;
+      }
+    }
+  }
+}
+.oms-checkout {
+  &-banner {
+    position: relative;
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(-45deg, #e4bd74, #fc8fb8, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      opacity: 0.5;
+      border-radius: 10px;
+      height: 100%;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      padding: 16px;
+      border: 1px solid #cec8e9;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .article {
+    &-details {
+      &-inner {
+        padding-right: 90px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .article {
+    &-details {
+      &-inner {
+        padding-right: 124px;
+      }
+    }
   }
 }

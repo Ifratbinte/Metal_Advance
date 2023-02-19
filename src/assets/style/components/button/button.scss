@@ -3,7 +3,7 @@
   font-style: normal;
   line-height: 17px;
   font-weight: $fw-medium;
-  font-size: 1rem;
+  font-size: 1.125rem;
   border: 2px solid transparent;
   border-radius: 6px;
   color: $light;
@@ -41,9 +41,6 @@
     &:hover {
       color: $light-100;
     }
-  }
-  &.button-login {
-    padding: 0.5rem 1.75rem !important;
   }
 }
 

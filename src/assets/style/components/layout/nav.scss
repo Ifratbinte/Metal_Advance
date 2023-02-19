@@ -1,37 +1,23 @@
-.header-background {
-  .nav {
-    &-area {
-      // padding: 0.75rem 0;
-    }
-  }
-}
-
 .menu {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin-right: 2.5rem;
+  & > .menu-items {
+    margin: 0 0.5rem;
+    &.active {
+      border-bottom: 2px solid var(--baseSeaBlue);
+    }
+  }
   &-items {
     & > a,
     & > button {
-      padding: 0.7rem 1rem;
-    }
-    &:hover:after {
-      // content: "";
-      // position: absolute;
-      // display: block;
-      // width: 70%;
-      // height: 2px;
-      // background: rgb(72, 67, 139);
-      // left: 0;
-      // right: 0;
-      // bottom: 0;
-      // margin: auto;
-      // border: none;
+      padding: 0.7rem 0.5rem;
     }
   }
   &-links {
     color: $light;
+    border: none;
     &:hover {
       color: #f2f2f2;
     }
@@ -49,15 +35,6 @@
   }
 }
 
-// .arrow::after {
-//   content: "";
-//   display: inline-block;
-//   margin-left: 0.28em;
-//   vertical-align: 0.09em;
-//   border-top: 0.42em solid;
-//   border-right: 0.32em solid transparent;
-//   border-left: 0.32em solid transparent;
-// }
 .arrow {
   padding-left: 4px;
 }
@@ -69,7 +46,6 @@
   z-index: 9999;
   background-color: $light;
   border-radius: 0.2rem 0.22rem 0.5rem 0.5rem;
-  // border-top: 3px solid $primary;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -86,27 +62,37 @@
   }
   .menu {
     &-items {
+      border-bottom: 1px solid #f2f2f2;
       &:hover > .menu-links {
         color: $light;
         border: none;
+      }
+      &:last-child {
+        border-bottom: none;
       }
     }
     &-links {
       color: $dark;
       font-weight: $fw-normal;
-      border-bottom: 1px solid #f2f2f2;
+      padding: 0.75rem 1.25rem;
       &:hover {
         background: var(--baseSecondaryGradient);
       }
     }
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .menu {
     flex-direction: column;
   }
 }
-
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .menu {
+    & > .menu-items {
+      margin: 0 0.25rem;
+    }
+  }
+}
 // transparent header
 .header-transparent {
   .nav {
@@ -115,4 +101,8 @@
       padding: 0.75rem 0;
     }
   }
+}
+
+.menu-links:hover {
+  color: var(--baseSeaBlue);
 }

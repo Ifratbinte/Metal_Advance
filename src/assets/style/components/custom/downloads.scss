@@ -20,7 +20,6 @@
 }
 
 .doc-photo {
-  max-width: 125px;
   margin-left: auto;
   margin-right: auto;
   transition: all 0.2s linear;
@@ -63,7 +62,7 @@
   content: "";
   background-image: url(/images/shape/shape-4-dark.png);
   clip-path: polygon(0 45%, 31% 2%, 100% 48%, 82% 99%, 23% 98%);
-  background-color:rgb(116 68 239 / 10%);
+  background-color: rgb(116 68 239 / 10%);
   width: 250px;
   height: 250px;
   z-index: -1;
@@ -156,7 +155,15 @@
   color: #f42f54 !important;
   background: #fff;
 }
-
+@media (min-width: 992px) {
+  
+.doc{
+  &-photo img {
+    height: 200px;
+    width: 155px;
+  }
+}
+}
 @media (min-width: 1200px) {
   .doc-shape:before {
     width: 255px;
@@ -165,5 +172,24 @@
 
   .doc-photo {
     max-width: 175px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .doc{
+    &-title{
+      font-size: 1rem;
+    }
+  }
+}
+@media (min-width: 1520px) {
+  .doc{
+    &-photo img {
+      height: 230px;
+      width: 180px;
+    }
+    &-title{
+      font-size: 1.25rem;
+    }
   }
 }

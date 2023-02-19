@@ -1,0 +1,230 @@
+@keyframes rotateacw {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotatecw {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-animate-block {
+  position: relative;
+  background: var(--bgGradBlue);
+  border-radius: 10px;
+  padding: 10px 0;
+}
+.circle-animation {
+  height: 300px;
+  width: 300px;
+  z-index: 1;
+  display: none;
+}
+.circle-animation.white:before {
+  border-top-color: #f2f2f2;
+  border-right-color: #f2f2f2;
+}
+
+.circle-animation:before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top-color: #f42f54;
+  border-right-color: #f42f54;
+  animation: rotatecw 30s linear infinite 0s;
+}
+.circle-animation.white:after {
+  border-top-color: #f2f2f2;
+  border-bottom-color: #f2f2f2;
+}
+.circle-animation:after {
+  top: 25px;
+  left: 25px;
+  bottom: 25px;
+  right: 25px;
+  border-top-color: #f42f54;
+  border-bottom-color: #f42f54;
+  animation: rotateacw 24s linear infinite 0s;
+}
+.circle-animation:before,
+.circle-animation:after {
+  position: absolute;
+  content: "";
+  border: 3px solid $secondary;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+@media (min-width: 576px) {
+  .circle-animation {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    display: block;
+    &.small {
+      height: 400px;
+      width: 400px;
+      .circle-animation:after {
+        top: 45px;
+        left: 45px;
+        bottom: 45px;
+        right: 45px;
+      }
+      &:after {
+        top: 35px;
+        left: 35px;
+        bottom: 35px;
+        right: 35px;
+      }
+    }
+  }
+}
+// ---------------- Digital Service ------------------
+.bn-block-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bn-block-ca {
+  padding: 50px 20px;
+}
+.bn-circle-animation {
+  z-index: 1;
+}
+.bn-circle-animation + * {
+  position: relative;
+  z-index: 1;
+}
+
+.bn-circle-animation:before,
+.bn-circle-animation:after {
+  position: absolute;
+  content: "";
+  border: 4px solid rgba(151, 175, 213, 0.3);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.bn-circle-animation:before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top-color: $secondary;
+  border-right-color: $secondary;
+  height: 320px;
+  width: 320px;
+  animation: rotatecw 30s linear infinite 0s;
+}
+
+.bn-circle-animation:after {
+  top: 35px;
+  left: 25px;
+  bottom: 25px;
+  right: 25px;
+  border-top-color: $secondary;
+  border-bottom-color: $secondary;
+  height: 250px;
+  width: 250px;
+  animation: rotateacw 24s linear infinite 0s;
+}
+
+.bn-circle-animation.small:before,
+.bn-circle-animation.small:after {
+  border-width: 2px;
+}
+
+.bn-circle-animation.circle:before {
+  animation: rotatecw 15s linear infinite 0s;
+}
+
+.bn-circle-animation.circle:after {
+  animation: rotateacw 10s linear infinite 0s;
+}
+
+@media (min-width: 576px) {
+  .bn-block-ca {
+    padding: 90px 20px;
+  }
+  .bn-circle-animation {
+    overflow: hidden;
+  }
+
+  .bn-circle-animation.small {
+    height: 400px;
+    width: 400px;
+  }
+
+  .bn-circle-animation.small:after {
+    top: 35px;
+    left: 35px;
+    bottom: 35px;
+    right: 35px;
+  }
+}
+
+@media (min-width: 576px) {
+  .bn-block-ca {
+    padding: 48px;
+  }
+}
+@media (min-width: 992px) {
+  .bn-block-ca {
+    padding: 60px;
+  }
+  .bn-circle-animation {
+    &::after {
+      top: 45px;
+      left: 45px;
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+  .bn-circle-animation {
+    &::before {
+      height: 490px !important;
+      width: 490px !important;
+    }
+    &::after {
+      top: 45px;
+      left: 45px;
+      height: 400px !important;
+      width: 400px !important;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .bn-circle-animation {
+    &::after {
+      left: 25px;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .bn-block-ca {
+    padding: 75px;
+  }
+  .bn-circle-animation {
+    &::before {
+      height: 520px;
+      width: 520px;
+    }
+    &::after {
+      left: 25px;
+      height: 430px;
+      width: 430px;
+    }
+  }
+}

@@ -1,39 +1,5 @@
-// .author {
-//   &-content-bottom {
-//     height: 200px;
-//     text-overflow: ellipsis;
-//     overflow: hidden;
-//     p {
-//       color: $dark-100;
-//       line-height: 28px;
-//     }
-//   }
-//   &-thumb {
-//     height: 175px;
-//     width: 155px;
-//     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.125));
-//     border: 1px solid transparent;
-//     border-radius: 16px;
-//   }
-//   &-wrap {
-//     background: url("/images/shape/shape-2.png");
-//     background-color: $bgLight;
-//     background-position: bottom right;
-//     background-repeat: no-repeat;
-//     padding: 50px 40px;
-//     box-shadow: rgba(0, 0, 0, 0.1) 0px 0 2px;
-//   }
-// }
-
 .employee {
-  // background: url("/images/shape/mask.jpg") rgb(116 68 239 / 22%);
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-blend-mode: multiply;
-  // background-attachment: fixed;
-  // width: 80%;
-  // margin: 0 auto;
-  .employee-card {
+  &-card {
     position: relative;
     max-width: 415px;
     max-height: 260px;
@@ -77,10 +43,17 @@
     max-width: 400px;
   }
 
-  .employee-card:hover .employee-content {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0.2s;
+  .employee-card:hover {
+    .employee-content {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0.2s;
+      p {
+        height: 230px;
+        max-height: 230px;
+        overflow-y: scroll;
+      }
+    }
   }
   .employee-thumb {
     height: 200px;
@@ -99,16 +72,18 @@
 
 .employee {
   .section-parent {
-    width: 90%;
+    // width: 90%;
     margin: 0 auto;
   }
 }
 
 .team {
+  // background-image: url(/images/gfx/gfx-3.png);
   &-thumb {
     height: 215px;
   }
   .member {
+    cursor: pointer;
     margin-bottom: 80px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     .social {
@@ -117,7 +92,6 @@
         transition: color 0.3s;
         color: #52869d;
       }
-      
     }
     &-social-icon {
       margin: 0 8px;
@@ -148,6 +122,7 @@
     &:hover {
       .member-info {
         max-height: 300px;
+        border: 1px solid rgba(2, 195, 255, 0.6);
       }
     }
     &-info {
@@ -156,6 +131,7 @@
       left: 20px;
       right: 20px;
       background: #fff;
+      border: 1px solid transparent;
       padding: 20px 0;
       color: #2f4d5a;
       box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -169,10 +145,32 @@
       padding: 20px 0;
     }
   }
+  &-modal {
+    &-thumb {
+      height: 60px;
+      width: 60px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    }
+  }
+}
+.modal-content {
+  margin-top: 45px;
 }
 
-@media (max-width: 992px) {
-  .team .member {
-    margin-bottom: 110px;
-  }
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 0.375rem;
+  height: 10px;
+}
+
+/* scrollbar-thumb */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #cbbef5;
+}
+
+/* scrollbar-track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f0edf7;
 }

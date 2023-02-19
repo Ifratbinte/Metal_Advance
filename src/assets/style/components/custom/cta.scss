@@ -1,0 +1,19 @@
+.rtf--mb,
+.rtf--ab {
+  background-image: var(--baseSecondaryGradient);
+}
+.rtf--mb:hover,
+.rtf--ab:hover {
+  background-image: var(--baseSecondaryGradientReverse);
+}
+.rtf--ab__c > span {
+  background-color: $primary;
+  padding: 2px 10px;
+}
+
+@media (max-width: 767px) {
+  // .rtf {
+  //   top: 45%;
+  //   right: -15px !important;
+  // }
+}

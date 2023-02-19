@@ -18,11 +18,9 @@
   }
 }
 #contact {
-  // background: $basePrimaryReverse;
   .form-control {
     border: 1px solid #d5d1d1;
     box-shadow: none;
-    // background: var(--baseBody);
     &:focus {
       border: 1px solid #8b8bd5;
     }
@@ -31,7 +29,7 @@
 .contact-location {
   height: 500px;
 }
-.bn {
+.contact {
   &.section {
     position: relative;
     overflow-x: hidden;
@@ -43,58 +41,40 @@
     width: 100%;
     position: relative;
     z-index: 1;
-    // padding: 100px 0;
-  }
-
-  .contact-block-contact-s1 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(/images/shape/dot-map-2.png) no-repeat;
-    background-size: contain;
-    background-position: 50% 50%;
   }
   .contact-block-contact-s1 .contact-list {
     position: relative;
     z-index: 2;
-    width: 50%;
+    width: 95%;
     margin: 0 auto;
     text-align: left;
   }
   .contact-icon {
-    height: 38px;
-    width: 38px;
-    font-size: 16px;
-    line-height: 38px;
+    height: 24px;
+    width: 24px;
     text-align: center;
     color: #fff;
-    background: $primary;
-    // box-shadow: $shadowPrimary;
+    background: var(--basePrimary);
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 9px;
     flex-shrink: 0;
-    padding: 10px;
+    padding: 5px;
     transition: all 0.5s ease-in-out;
+    margin-left: 20px;
+    margin-top: 0.5rem;
     &:hover {
       background: $purple-100;
     }
   }
   .contact-list li {
     display: flex;
-    padding-top: 7.5px;
-    padding-bottom: 7.5px;
+    padding: 0.25rem 0;
     font-size: 0.94rem;
   }
   .contact-text {
     padding-top: 7px;
-    // color: #b6bcc5;
   }
-  .contact-circle-animation {
-    height: 300px;
-    width: 300px;
-    z-index: 1;
-  }
+
   .contact-df-center,
   .abs-center,
   .contact-block-video-play {
@@ -103,44 +83,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .contact-circle-animation.white:before {
-    border-top-color: $gray-200;
-    border-right-color: $gray-200;
-  }
-  .contact-circle-animation.small:before,
-  .contact-circle-animation.small:after {
-    border-width: 2px;
-  }
-  .contact-circle-animation:before {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border-top-color: #f42f54;
-    border-right-color: #f42f54;
-    animation: rotatecw 30s linear infinite 0s;
-  }
-  .contact-circle-animation.white:after {
-    border-top-color: #fff;
-    border-bottom-color: #fff;
-  }
-  .contact-circle-animation:after {
-    top: 25px;
-    left: 25px;
-    bottom: 25px;
-    right: 25px;
-    border-top-color: #f42f54;
-    border-bottom-color: #f42f54;
-    animation: rotateacw 24s linear infinite 0s;
-  }
-  .contact-circle-animation:before,
-  .contact-circle-animation:after {
-    position: absolute;
-    content: "";
-    border: 4px solid $purple;
-    border-radius: 50%;
-    z-index: 100;
-  }
+
   .field {
     &-item {
       margin-bottom: 30px;
@@ -168,29 +111,18 @@
 
   @media (min-width: 576px) {
     .contact-block-contact-s1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url(/images/shape/dot-map-2.png) no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
       padding: 180px 0;
-    }
-    .contact-circle-animation {
-      height: 500px;
-      width: 500px;
-      overflow: hidden;
-      &.small {
-        height: 400px;
-        width: 400px;
-        .contact-circle-animation:after {
-          top: 45px;
-          left: 45px;
-          bottom: 45px;
-          right: 45px;
-        }
-        &:after {
-          top: 35px;
-          left: 35px;
-          bottom: 35px;
-          right: 35px;
-        }
+      .contact-list{
+        width: 50%;
       }
     }
+    
   }
 }
 
@@ -204,13 +136,19 @@
     height: 100%;
     width: 100%;
     border-radius: 1rem;
-    background-color: #fff;
+    background-color: $light;
     box-shadow: var(--baeShadowLight);
     position: relative;
+    transition: all 0.5s;
+    &:hover {
+      background-color: rgba(2, 195, 255, 0.12);
+      // background: var(--bgGradBlue);
+      border: 1px solid rgb(112, 121, 212, 0.4);
+    }
     .icon {
       height: 90px;
       width: auto;
-      background: #ffffff;
+      background: $light;
       border-radius: 50%;
       position: absolute;
       top: -48px;
@@ -219,12 +157,8 @@
       box-shadow: 0px -2px 9px 0px #ddd;
     }
     &-item {
-      font-size: 15px;
       letter-spacing: 0.5px;
-      font-family: "Poppins";
       line-height: 1.75rem;
-      font-weight: 500;
-      cursor: pointer;
       &:hover {
         columns: $primary;
       }
@@ -239,12 +173,8 @@
   h4 {
     border: 1px solid var(--basePrimary);
     padding: 0.35rem 1.5rem;
-    font-size: 20px;
     margin: 0 auto;
-    background: var(--basePrimary );
-    opacity: 0.9;
-    color: #fff;
-    border-radius: 8px;
+    background: var(--basePrimary);
   }
 }
 .contact-gfx2 {

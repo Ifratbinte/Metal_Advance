@@ -1,12 +1,27 @@
 // Small devices (landscape phones, 576px and up)
+
+@media (max-width: 575px) {
+  .w-xs-80{
+    width: 80%;
+  }
+}
 @media (min-width: 576px) {
   .portfolio .portfolio-box {
     width: 50%;
+  }
+  .w-sm-50{
+    width: 70%;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .w-md-40{
+    width: 50%;
+  }
+  .w-md-60{
+    width: 60%;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -15,8 +30,6 @@
     &-video {
       width: 100%;
     }
-    .banner-gfx {
-    }
   }
   .width-md {
     width: 543px;
@@ -24,12 +37,27 @@
   .portfolio .portfolio-box {
     width: 33.333333%;
   }
+  .w-lg-45{
+    width: 45%;
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .w-xl-70{
+    width: 70%;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
+@media (min-width: 1400px) and (max-width: 1519px) {
+  .container {
+    max-width: 1220px;
+  }
+}
+
+@media (min-width: 1520px) {
+  .container {
+    // max-width: 1320px;
+  }
 }

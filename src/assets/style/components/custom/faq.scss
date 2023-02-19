@@ -1,13 +1,37 @@
-#faq {
-  background: url(/images/gfx/gfx-1.svg);
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  min-height: 60vh;
-}
 .faq {
+  &-gfx {
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 66%;
+    img {
+      height: 70%;
+      width: auto;
+      opacity: 0.1;
+      margin-right: -250px;
+      margin-top: 23px;
+    }
+  }
+  .tabs-component {
+    margin-top: -8px;
+    button {
+      padding: 10px;
+    }
+  }
+  .tabs-component [role="tablist"] {
+    margin-bottom: 70px;
+  }
   .accordion {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
+    &-header{
+      button{
+        padding: 10px !important;
+      }
+    }
     &-body {
       padding: 30px 20px;
     }
@@ -44,4 +68,48 @@
 }
 .accordion-flush .accordion-item:last-child {
   border-bottom: 1px solid #e7f1ff;
+}
+
+@media (min-width: 768px) {
+  .faq {
+    .tabs-component {
+      button {
+        padding: 0.875rem 1.375rem;
+      }
+    }
+    .accordion{
+      width: 90%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .faq {
+    .tabs-component {
+      button {
+        padding: 0.875rem 1.375rem;
+      }
+    }
+    .accordion{
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .faq {
+    &-gfx {
+      top: 53%;
+    }
+  }
+}
+
+@media (min-width: 1520px) {
+  .faq {
+    &-gfx {
+      img {
+        margin-right: -100px;
+      }
+    }
+  }
 }

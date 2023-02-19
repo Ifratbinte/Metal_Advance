@@ -1,0 +1,52 @@
+.shape {
+  z-index: 1;
+  &::after,
+  &::before {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &-wave {
+    &::after {
+      background-image: url(/images/shape/shape-wave.png);
+    }
+  }
+  &-square{
+    &::after{
+      background-image: url(/images/shape/shape-sqr.png);
+    }
+  }
+}
+
+.footer {
+  &-ovm {
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      left: -1px;
+      top: 0;
+      right: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  }
+}
+.hero{
+  &-ovm{
+    &::after{
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      left: -1px;
+      top: 0;
+      right: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: -50%;
+    }
+  }
+}

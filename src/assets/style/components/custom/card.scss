@@ -2,18 +2,12 @@
   max-width: 100vw;
   transition: all 0.5s ease-in-out;
   z-index: 1;
-  margin: 20px 6px;
-  
+  border: 1px solid transparent !important;
+
   &-title {
     letter-spacing: -0.045em !important;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-  &-text {
-    letter-spacing: -0.045em;
-    max-height: 54px;
-    min-height: 54px;
-    text-overflow: ellipsis;
   }
   &-date {
     margin-top: -1.875rem;
@@ -24,16 +18,36 @@
     letter-spacing: -0.045rem;
   }
   &-text {
-    line-height: 1.75rem;
+    letter-spacing: -0.045em;
+    max-height: 54px;
+    min-height: 70px;
+    text-overflow: ellipsis;
+    line-height: 1.5rem;
     letter-spacing: 0.35px;
+    & * {
+      font-size: 16px;
+      line-height: inherit;
+    }
+  }
+  img {
+    transition: transform 0.3s, filter 1.5s ease-in-out;
   }
   &:hover {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
-  }
-}
-.service {
-  .card {
-    border-bottom: 7px solid $btnBgSecondary;
+    cursor: pointer;
+    box-shadow: 0 0 90px rgb(14 0 137 / 8%) !important;
+    border: 1px solid var(--baseSecondary) !important;
+    img{
+      transform:scale(1.1)
+    }
   }
 }
 
+.article {
+  .card {
+    &-text {
+      & * {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}

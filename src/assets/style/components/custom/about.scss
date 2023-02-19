@@ -1,33 +1,38 @@
 .about {
+  &-gfx {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
   .description {
     p {
       line-height: 1.875rem;
       letter-spacing: 0.15px;
     }
   }
+  &-service {
+    .card {
+      &-img-top {
+        max-height: 200px;
+        min-height: 200px;
+        padding: 0 20px;
+      }
+      &-text {
+        max-height: 150px;
+      }
+    }
+  }
   &-ideas {
     &-title {
       letter-spacing: -0.045em;
-      line-height: 53px;
-      padding: 0.5rem 0 1.25rem;
-    }
-    &-inner {
-      padding: 1.375rem 0.5rem;
+      line-height: 38px;
+      padding: 0.25rem 0 0.5rem;
+      font-size: 1.75rem;
     }
     &-thumb {
       position: relative;
-      // &::after {
-      //   position: absolute;
-      //   left: 0;
-      //   top: 0;
-      //   height: 100%;
-      //   width: 93.5%;
-      //   content: "";
-      //   background-color: #979797;
-      //   z-index: 1;
-      //   opacity: 0.34;
-      //   border-radius: 0.75rem;
-      // }
       &-lg {
         border-radius: 0.75rem;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -63,8 +68,8 @@
     transition: all 0.3s ease-in-out;
     min-height: 380px;
     max-height: 380px;
-    &-img{
-      img{
+    &-img {
+      img {
         height: 100px;
       }
     }
@@ -75,6 +80,137 @@
       box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
       cursor: pointer;
       border-radius: 10px;
+    }
+  }
+}
+.single-item,
+.card,
+.cr-card {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cr {
+  &-card {
+    padding: 40px 20px;
+    border: 1px solid transparent;
+    height: 100%;
+    background: var(--bgGradBlue);
+    border-radius: 10px;
+    position: relative;
+  }
+  &-header {
+    padding-bottom: 2rem;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      top: 30px;
+      height: 2px;
+      width: 36px;
+      background: dodgerblue;
+      left: 45%;
+    }
+  }
+  &-list {
+    li {
+      line-height: 2rem;
+      font-size: 15px;
+    }
+  }
+  &-bg {
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    position: absolute;
+    height: 100px;
+    width: auto;
+    img {
+      height: 110px;
+      width: auto;
+      opacity: 0.1;
+      margin-right: -0.675rem;
+      margin-top: -5px;
+    }
+  }
+}
+@media (min-width: 576px) {
+  .single-item,
+  .card,
+  .cr-card {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .about {
+    &-gfx {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 60%;
+      }
+    }
+    &-ideas {
+      &-thumb {
+        &-lg {
+          width: 50%;
+        }
+      }
+      &-title {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .about {
+    &-ideas {
+      &-thumb {
+        &-lg {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .single-item,
+  .card,
+  .cr-card {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .about {
+    &-ideas {
+      &-thumb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-sm {
+          right: 8rem;
+        }
+      }
+    }
+  }
+  .single {
+    &-item {
+      padding: 0.75rem;
+      background: var(--bgGradGreen);
+      box-shadow: rgb(0 0 0 / 20%) 0px 10px 50px;
+      border-radius: 10px;
+      color: #000;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    &-ideas {
+      &-title {
+        line-height: 53px;
+        padding: 0.5rem 0 1.25rem;
+        font-size: 2.5rem;
+      }
     }
   }
 }

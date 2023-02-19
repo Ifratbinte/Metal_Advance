@@ -1,4 +1,5 @@
 @import "overrideStyle.scss";
+@import "./mixin//mixin.scss";
 @import "responsive.scss";
 @import "./components/layout/Header.scss";
 @import "./components/layout/nav.scss";
@@ -25,10 +26,14 @@
 @import "./components/custom/serviceCard.scss";
 @import "./components/custom/downloads.scss";
 @import "./components/custom/faq.scss";
+@import "./components/custom/cta.scss";
+@import "./components/shape/shape.scss";
 
 @import "./components/custom/slick.scss";
 
 @import "./components/custom/subHeader.scss";
+@import "./components/custom/circle-animate.scss";
+@import "./components/custom/animation.scss";
 
 /* Scrollbar Style */
 body::-webkit-scrollbar,

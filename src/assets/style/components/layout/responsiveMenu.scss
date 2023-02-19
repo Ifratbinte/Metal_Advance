@@ -17,7 +17,11 @@
     align-items: center;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
+  #topBar {
+    position: relative;
+    z-index: 0;
+  }
   .menu {
     align-items: baseline;
   }
@@ -59,11 +63,12 @@
       right: 2rem;
       height: 2rem;
       width: 2rem;
-      border: 1px solid $primary;
+      border: 1px solid var(--baseLight);
       line-height: 0.675rem;
       border-radius: 50%;
-      background: #6142df;
-      color: $light;
+      background: var(--baseLight);
+      color: var(--basePrimary);
+      box-shadow: rgb(50 50 93 / 25%) 5px 0px 24px 0px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
     }
   }
 }

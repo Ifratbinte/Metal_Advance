@@ -4,8 +4,7 @@ header {
   color: #212529;
 }
 .topBar {
-  display: none;
-  line-height: 60px;
+  // line-height: 60px;
   &-left {
     background-color: var(--baseSecondary);
     display: flex;
@@ -30,13 +29,13 @@ header {
     display: flex;
     align-items: center;
     .ticker {
-      color: var(--baseDark);
+      color: var(--baseLight);
       margin-left: 5rem;
     }
   }
   .marquee {
     &-container {
-      margin-left: 60px;
+      padding: 6px;
     }
     .list {
       li {
@@ -55,10 +54,6 @@ header {
   height: 100%;
   max-width: 9.5rem;
 }
-
-#topBar {
-  // display: none !important;
-}
 @media (min-width: 576px) {
   .header-logo img {
     max-width: 12.5rem;
@@ -66,9 +61,6 @@ header {
 }
 
 @media (min-width: 992px) {
-  #topBar {
-    // display: block !important;
-  }
   .header-logo img {
     max-width: 12.5rem;
   }
@@ -76,6 +68,11 @@ header {
     &-left {
       justify-content: end;
     }
+  }
+}
+@media (max-width: 767px) {
+  .topBar-left {
+    display: none !important;
   }
 }
 
@@ -96,13 +93,14 @@ header {
 }
 .header-background {
   .nav-area {
-    background: var(--basePrimaryDark) !important ;
+    background: var(--baseBlueGrad) !important ;
+    height: 78px;
   }
 }
 
 .section-topContact {
   z-index: 7;
   .icon {
-    height: 60px;
+    height: 45px;
   }
 }
